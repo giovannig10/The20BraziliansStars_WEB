@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    color: #333;
+  }
+  
+  .tabela, .jogadores {
+    margin: 20px 0;
+  }
+  
+  .tabela-content table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tabela-content th, .tabela-content td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .jogadores-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .jogador {
+    background: #e7e7e7;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+  }
