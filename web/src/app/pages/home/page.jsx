@@ -1,62 +1,80 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React from 'react';
+import styles from './home.module.css';
+
 
 export default function Home() {
-  const Home = () => {
     return (
-      <div className="container">
-        <header className="header">
-          <h1>The Brazilian Stars</h1>
-          <p>Aqui você encontra tudo sobre os 20 times que estão disputando o "Brasileirão Betano 2025".</p>
-        </header>
+        <div className={styles.container}>
+            <div className={styles.intro}>
 
-        <section className="tabela">
-          <h2>Tabela do Campeonato em Tempo Real</h2>
+                <p className={styles.description}>
+                    Aqui você encontra tudo sobre os 20 times que estão disputando o
+                    <span>"Brasileirão Betano 2025".</span>
+                </p>
 
-          <div className="tabela-content">
-            
-            <table>
-              <thead>
-                <tr>
-                  <th>Posição</th>
-                  <th>Time</th>
-                  <th>Pontos</th>
-                </tr>
-              </thead>
-              <tbody>
-
-                <tr>
-                  <td>1</td>
-                  <td>Time A</td>
-                  <td>30</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Time B</td>
-                  <td>28</td>
-                </tr>
-
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section className="jogadores">
-          <h2>Fique ligado na Escalação e no Jogador da Semana</h2>
-          <div className="jogadores-content">
-      
-            <div className="jogador">
-              <h3>Vitinha</h3>
+                <button className={styles.conheca}>
+                    <a href="/times">Conheça a história, o estádio, a torcida, o elenco e os títulos de cada clube</a>
+                </button>
             </div>
-            <div className="jogador">
-              <h3>Goleador</h3>
-            </div>
-          </div>
-        </section>
-      </div>
+
+
+
+            <section className={styles.tabela}>
+                <div className={styles.tituloTabela}><h2>Tabela
+                    do Campeonato
+                    em Tempo Real</h2></div>
+
+                <div className={styles.tabelaContent}>
+                    <iframe
+                        id="sofa-standings-embed-83-72034"
+                        src="https://widgets.sofascore.com/pt-BR/embed/tournament/83/season/72034/standings/Brasileiro%20Serie%20A%202025?widgetTitle=Brasileiro%20Serie%20A%202025&showCompetitionLogo=true"
+                        style={{
+                            height: '600px',
+
+                            width: '700px',
+                            border: '0',
+                            overflow: 'hidden'
+                        }}
+                        scrolling="no"
+                    ></iframe>
+                </div>
+            </section >
+
+
+
+
+
+            <section className={styles.jogadores}>
+                <h2>Fique ligado na escalação e no jogador da semana</h2>
+                <iframe
+                    id="sofa-totw-embed-372-69522-17830"
+                    width="25%"
+                    height="600px"
+                    style={{
+                        display: 'block',
+                        maxWidth: '700px'
+                    }}
+                    src="https://widgets.sofascore.com/pt-BR/embed/unique-tournament/372/season/69522/round/17830/teamOfTheWeek?showCompetitionLogo=true&widgetTheme=light&widgetTitle=Paulista%20S%C3%A9rie%20A1"
+                    frameBorder="0"
+                    scrolling="no"
+                ></iframe>
+                <div style={{ fontSize: '12px', fontFamily: 'Arial, sans-serif', textAlign: 'left' }}>
+                    Time da semana fornecido por <a target="_blank" href="https://www.sofascore.com/">Sofascore</a>
+                </div>
+
+                <iframe
+                    id="sofa-player-embed-874572"
+                    src="https://widgets.sofascore.com/pt-BR/embed/player/874572?widgetTheme=light"
+                    style={{
+                        height: '300px',
+                        width: '20%',
+                        border: '0',
+                        overflow: 'hidden'
+                    }}
+                    scrolling="no"
+                ></iframe>
+
+            </section>
+        </div >
     );
-  };
-
-
 }
-
