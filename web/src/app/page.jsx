@@ -25,13 +25,13 @@ export default function LoginPage() {
           </article>
           <article className={styles.logInWithContainer}>
             <div className={styles.socialMedia}>
-              <img src="#" alt="Foto do logotipo da Google" />
+              <img src="/images/logoGoogle.png" alt="Foto do logotipo da Google" className={styles.mediaImage}/>
             </div>
             <div className={styles.socialMedia}>
-              <img src="#" alt="Foto do logotipo do Facebook" />
+              <img src="/images/logoFace.png" alt="Foto do logotipo do Facebook" className={styles.mediaImage}/>
             </div>
             <div className={styles.socialMedia}>
-              <img src="#" alt="Foto do logotipo da Apple" />
+              <img src="/images/logoApple.png" alt="Foto do logotipo da Apple" className={styles.mediaImage}/>
             </div>
           </article>
         </section>
