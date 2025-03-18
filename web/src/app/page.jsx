@@ -1,10 +1,15 @@
 import styles from "./page.module.css";
 
-export default function Home() {
+export default function LoginPage() {
   return (
     <div>
       <main className={styles.main}>
         <section className={styles.logotypeContainer}>
+          <div className={styles.logotypeImageContainer}>
+          <img src="/images/Logotype.png" alt="Foto da logotipo" className={styles.logotypeImage} />
+          </div>
+          <div className={styles.blueBar}></div>
+          <h1 className={styles.title}>The 20 Brazilians Stars</h1>
         </section>
         <section className={styles.formContainer}>
           <article className={styles.inputContainer}>

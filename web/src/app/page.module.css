@@ -6,9 +6,33 @@
     justify-content: center;
     flex-direction: column;
 }
+.logotypeImageContainer{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logotypeImage{
+    width: 100%;
+    height: auto;
+}
+.title{
+    font-size: 3.2rem;
+    color: #25406A;
+}
 .logotypeContainer{
     width: 35%;
     height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.blueBar{
+    width: 60%;
+    height: 0.5rem;
+    background-color: #25406A;
 }
 .formContainer{
     width: 35%;
@@ -29,6 +53,7 @@
     flex-direction: column;
     gap: 0.6rem;
 }
+
 .input{
     width: 80%;
     height: 35%;
