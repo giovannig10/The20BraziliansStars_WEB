@@ -15,7 +15,7 @@ export default function Home() {
             <button className={styles.logInButton}><h1 className={styles.buttonText}>Entrar</h1></button>
             <h3 className={styles.forgotPassword}>ESQUECEU A SENHA?</h3>
             <h3 className={styles.createAccount}>Não tem uma conta?
-              <a href="" className={styles.createAccountLink}>clique para criar</a>
+              <a href="" className={styles.createAccountLink}>clique para criar.</a>
             </h3>
           </article>
           <article className={styles.logInWithContainer}>
