@@ -1,52 +1,45 @@
-body {
+.container {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header {
-    text-align: center;
     padding: 20px;
   }
   
-  .header h1 {
+  
+  .title {
+    font-size: 2.5em;
     color: #333;
   }
   
-  .tabela, .jogadores {
-    margin: 20px 0;
+  .description {
+    font-size: 2rem;
+    color: #666;
+    width: 30%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
   
-  .tabela-content table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .tabela-content th, .tabela-content td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-  }
-  
-  .jogadores-content {
+  .tabela {
+    margin-bottom: 40px;
     display: flex;
-    justify-content: space-around;
+    width: 100%;
+    flex: 1;
   }
   
-  .jogador {
-    background: #e7e7e7;
-    padding: 10px;
+  .tituloTabela {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ .conheca {
+    margin-bottom: 2rem;
+    background-color: blue;
+    color: white;
+    padding: 1rem;
     border-radius: 5px;
-    text-align: center;
-    flex: 1;
-    margin: 0 10px;
+    text-align: center; 
+    a {
+        color: white;
+        text-decoration: none;
+      }
   }
