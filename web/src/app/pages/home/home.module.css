@@ -1,6 +1,7 @@
 .container {
     font-family: Arial, sans-serif;
     padding: 20px;
+    background-color: #DBDCDD;
   }
   
   
@@ -10,11 +11,13 @@
   }
   
   .description {
-    font-size: 2rem;
+    font-size: 5rem;
     color: #666;
-    width: 30%;
+    width: 50%;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
   }
   
   .tabela {
@@ -26,20 +29,75 @@
   
   .tituloTabela {
     width: 50%;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .tabelaTitle {
+    width: 70%;
+    text-align: justify;
+    font-size: 3.5rem;                                               ;
+  }
   
  .conheca {
-    margin-bottom: 2rem;
-    background-color: blue;
+    margin-bottom: 10rem;
+    background-color: #25406a;
     color: white;
-    padding: 1rem;
+    width: 51%;
     border-radius: 5px;
     text-align: center; 
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
     a {
         color: white;
         text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: bold;
+
       }
+
   }
+
+  .jogadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2 rem;
+    
+  }
+
+  .escalacao, .jogador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+  }
+
+  .jogador {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem; 
+  }
+
+  .tituloJogador{
+    background-color: #25406a;
+    width: 80%;
+    align-items: center;
+    height: 20%;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sectionTitle {
+    width: 40%;
+    text-align: justify;
+    font-size: 1.5rem;
+    color: white;
