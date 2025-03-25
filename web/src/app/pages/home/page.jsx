@@ -20,7 +20,7 @@ export default function Home() {
 
 
             <section className={styles.tabela}>
-                <div className={styles.tituloTabela}><h2>Tabela
+                <div className={styles.tituloTabela}><h2 className={styles.tabelaTitle}>Tabela
                     do Campeonato
                     em Tempo Real</h2></div>
 
@@ -45,10 +45,11 @@ export default function Home() {
 
 
             <section className={styles.jogadores}>
-                <h2>Fique ligado na escalação e no jogador da semana</h2>
+                
+                <article className={styles.escalacao}>
                 <iframe
                     id="sofa-totw-embed-372-69522-17830"
-                    width="25%"
+                    width="50%"
                     height="600px"
                     style={{
                         display: 'block',
@@ -59,20 +60,27 @@ export default function Home() {
                     scrolling="no"
                 ></iframe>
                 <div style={{ fontSize: '12px', fontFamily: 'Arial, sans-serif', textAlign: 'left' }}>
-                    Time da semana fornecido por <a target="_blank" href="https://www.sofascore.com/">Sofascore</a>
+             <a target="_blank" href=""></a>
                 </div>
-
+                </article>
+               
+                    <article className={styles.jogador}>
+                    <div className={styles.tituloJogador}>
+                    <h2 className={styles.sectionTitle}>Fique ligado na escalação e no jogador da semana</h2>
+                        </div>
                 <iframe
                     id="sofa-player-embed-874572"
                     src="https://widgets.sofascore.com/pt-BR/embed/player/874572?widgetTheme=light"
                     style={{
                         height: '300px',
-                        width: '20%',
+                        width: '80%',
                         border: '0',
                         overflow: 'hidden'
                     }}
                     scrolling="no"
                 ></iframe>
+                    </article>
+               
 
             </section>
         </div >
