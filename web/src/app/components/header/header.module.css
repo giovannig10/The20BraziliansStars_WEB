@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
 }
 
 .paiIcones {
@@ -30,17 +29,20 @@
 
 .home {
     width: auto;
-    height: 90%;
+    height: 60%;
+    cursor: pointer;
 }
 
 .shield {
     width: auto;
-    height: 80%;
+    height: 60%;
+    cursor: pointer;
 }
 
 .user {
     width: auto;
-    height: 110%;
+    height: 60%;
+    cursor: pointer;
 }
 
 .paiSearch {
@@ -51,7 +53,6 @@
 }
 
 .darkMode {
-    background-color: azure;
     width: 20%;
     height: 100%;
     display: flex;
@@ -62,6 +63,7 @@
 .darkModeIcon {
     width: 3rem;
     height: auto;
+    cursor: pointer;
 }
 
 .filhoSearch {
@@ -74,26 +76,38 @@
 }
 
 .search {
-    background-color: #25406A;
+    background-color: #89909c;
+    border-radius: 0.2rem;
     width: 90%;
-    height: 70%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    text-align: center;
+    cursor: pointer;
 }
 
 .searchIcon {
     height: auto;
-    width: 3rem;
+    width: 1.2rem;
+    margin-left: 1rem;
 }
 
 .searchInput {
-    opacity: 60%;
+    background-color: #89909c;
+    color: black;
+    font-weight: bold;
+    opacity: 100%;
     width: 100%;
     height: 80%;
     border: none;
-    border-radius: 0.2rem;
+    border-color: #89909c;
+    border-radius: 0rem;
     padding: 0.5rem;
     font-size: 1.2rem;
+}
+
+input::placeholder {
+    color: #000000; 
+    opacity: 1; 
 }

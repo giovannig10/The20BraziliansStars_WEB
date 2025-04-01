@@ -1,4 +1,5 @@
 import styles from "./header.module.css"
+import { FaSearch } from "react-icons/fa";
 
 const Header = ({homeIcon , shieldIcon, userIcon}) => {
     return (
@@ -13,13 +14,12 @@ const Header = ({homeIcon , shieldIcon, userIcon}) => {
 
             <div className={styles.paiSearch}>
                 <div className={styles.darkMode}>
-                    <img src="" alt="Dark Mode" className={styles.darkModeIcon} />
+                    <img src="https://img.icons8.com/m_rounded/200/FFFFFF/moon.png" alt="Dark Mode" className={styles.darkModeIcon} />
                 </div>
                 <div className={styles.filhoSearch}>
                     <div className={styles.search}>
-        
-
-                    <input type="text" placeholder="Pesquisar" className={styles.searchInput} />
+                    <FaSearch className={styles.searchIcon}/>
+                    <input type="text"  placeholder= " Pesquisar..." className={styles.searchInput} />
                     </div>
 
                     </div>

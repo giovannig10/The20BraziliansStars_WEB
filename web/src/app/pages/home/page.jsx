@@ -5,7 +5,9 @@ import Header from "../../components/header";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Header />
+      <Header homeIcon={"https://img.icons8.com/m_rounded/200/FFFFFF/home.png"}
+      shieldIcon={"https://img.icons8.com/m_rounded/200/FFFFFF/shield.png"}
+      userIcon={"https://img.icons8.com/m_rounded/200/FFFFFF/user.png"}/>
 
       <div className={styles.intro}>
         <p className={styles.description}>
