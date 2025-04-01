@@ -1,6 +1,5 @@
 .container {
     font-family: Arial, sans-serif;
-    padding: 20px;
     background-color: #DBDCDD;
   }
   
@@ -15,7 +14,7 @@
     color: #666;
     width: 50%;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+
     padding: 1rem;
     text-align: center;
   }
@@ -101,3 +100,4 @@
     text-align: justify;
     font-size: 1.5rem;
     color: white;
+  }
