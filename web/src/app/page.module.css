@@ -1,0 +1,119 @@
+
+.main{
+    height: 100vh;
+    background: radial-gradient(#DBDCDD, #DBDCDD, #ADADAD );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logotypeImageContainer{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logotypeImage{
+    width: 100%;
+    height: auto;
+}
+.title{
+    font-size: 3.2rem;
+    color: #25406A;
+}
+.logotypeContainer{
+    width: 35%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.blueBar{
+    width: 60%;
+    height: 0.5rem;
+    background-color: #25406A;
+}
+.formContainer{
+    width: 35%;
+    height: 40%;
+    background-color: rgb(204, 204, 204, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 0.5rem 0.5rem rgb(0, 0, 0, 0.07);
+}
+.inputContainer{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.input{
+    width: 80%;
+    height: 35%;
+    background-color:#B7B8BA;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.4rem;
+}
+.entryContainer{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logInButton{
+    width: 30%;
+    height: 45%;
+    background-color: rgb(0, 0, 0, 0);
+    margin-bottom: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px #25406A solid;
+    border-radius: 0.5rem;
+    color: #25406A;
+}
+.forgotPassword{
+    font-size: 1.0rem;
+    color: #25406A;
+}
+.createAccount, .createAccountLink{
+    font-size: 0.9rem;
+    color: #25406A;
+}
+.createAccountLink{
+    text-decoration: underline;
+}
+.logInWithContainer{
+    width: 83%;
+    height: 30%;
+    background-color: rgb(204, 204, 204, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    gap: 0.3rem;
+    box-shadow: 0 0 0.5rem 0.5rem rgb(0, 0, 0, 0.07);
+}
+.socialMedia{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mediaImage{
+    width: 50%;
+    height: auto;
+}
