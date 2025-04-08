@@ -9,7 +9,6 @@
 .cardTimeContainer{
     width: 90%;
     height: 80%;
-    background-color: red;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     display: flex;
@@ -37,8 +36,8 @@
     justify-content: center;
 }
 .shieldImage{
-    width: 80%;
-    height: auto;
+    width: auto;
+    height: 80%;
 }
 .nameContainer{
     width: 100%;
