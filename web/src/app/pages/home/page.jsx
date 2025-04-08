@@ -4,21 +4,34 @@ import Header from "../../components/header";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Header />
 
-      <div className={styles.intro}>
-        <p className={styles.description}>
-          Aqui você encontra tudo sobre os 20 times que estão disputando o
-          <span>"Brasileirão Betano 2025".</span>
-        </p>
+    <div className={styles.containerPai}>
 
-        <button className={styles.conheca}>
+    <Header />
+
+      <div className={styles.containerHeroSection}>  
+
+      <div className={styles.containerTituloLogo}>
+
+      <div className={styles.containerTitulo}>
+      <h1 className={styles.titulo}>
+      Aqui você encontra tudo <br /> sobre os 20 times que estão disputando o “Brasileirão Betano 2025”.
+        </h1>
+      </div>
+
+      <div className={styles.containerLogo}> <img src="" alt="" /> </div>
+
+      </div>
+
+      <div className={styles.containerButton}>
+      <button className={styles.conheca}>
           <a href="/times">
             Conheça a história, o estádio, a torcida, o elenco e os títulos de
-            cada clube
+            cada clube  <span> → </span>
           </a>
         </button>
+      </div>
+
       </div>
 
       <section className={styles.tabela}>

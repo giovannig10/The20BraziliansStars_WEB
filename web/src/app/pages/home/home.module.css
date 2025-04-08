@@ -1,23 +1,53 @@
-.container {
-    font-family: Arial, sans-serif;
-    background-color: #DBDCDD;
-  }
-  
-  
-  .title {
-    font-size: 2.5em;
-    color: #333;
-  }
-  
-  .description {
-    font-size: 5rem;
-    color: #666;
-    width: 50%;
-    margin-bottom: 2rem;
+.containerPai {
+    background-color: var(--cinza-fundo);
+    width: 100%;
+    height: 200Vh;
 
-    padding: 1rem;
-    text-align: center;
   }
+
+  .containerHeroSection {
+    width: 100%;
+    height: 35%;
+    color: var(--azul);
+  }
+
+  .containerTituloLogo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+  }
+
+  .containerTitulo {
+    width: 50%;
+    height: 100%;
+  }
+
+  .titulo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    color: #25406a;
+    font-size: 4rem;
+    margin-top: 9rem;
+  }
+
+  .containerLogo {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 0, 242);
+  }
+
+  .containerButton {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   
   .tabela {
     margin-bottom: 40px;
@@ -43,7 +73,7 @@
     margin-bottom: 10rem;
     background-color: #25406a;
     color: white;
-    width: 51%;
+    width: 55%;
     border-radius: 5px;
     text-align: center; 
     height: 5rem;
@@ -51,14 +81,13 @@
     justify-content: center;
     align-items: center;
     border: none;
+    margin: 2rem;
     a {
         color: white;
         text-decoration: none;
         font-size: 1.6rem;
         font-weight: bold;
-
       }
-
   }
 
   .jogadores {
