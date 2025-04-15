@@ -52,7 +52,7 @@
 
 .conheca {
   margin-bottom: 10rem;
-  background-color: #25406a;
+  background-color: var(--azul);
   color: white;
   width: 55%;
   border-radius: 5px;
