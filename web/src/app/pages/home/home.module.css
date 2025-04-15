@@ -171,10 +171,9 @@
 }
 
 .containerCarrossel {
-  width: 100%;
+  width: 70%;
   height: 80%;
   display: flex;;
   align-items: center;
   justify-content: center;
-  background-color: aquamarine;
 }
