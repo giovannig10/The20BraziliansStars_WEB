@@ -1,132 +1,138 @@
 .containerPai {
-    background-color: var(--cinza-fundo);
-    width: 100%;
-    height: 200Vh;
+  background-color: var(--cinza-fundo);
+  width: 100%;
+  height: 400vh;  
+}
 
-  }
+.containerHeroSection {
+  width: 100%;
+  height: 20%;
+  color: var(--azul);
+  background-color: rgb(16, 91, 156);
+}
 
-  .containerHeroSection {
-    width: 100%;
-    height: 35%;
-    color: var(--azul);
-  }
+.containerTituloLogo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80%;
+}
 
-  .containerTituloLogo {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 80%;
-  }
+.containerTitulo {
+  width: 50%;
+  height: 100%;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .containerTitulo {
-    width: 50%;
-    height: 100%;
-  }
+.titulo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  color: #25406a;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 7rem;
+}
 
-  .titulo {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-    color: #25406a;
-    font-size: 4rem;
-    margin-top: 9rem;
-  }
+.containerLogo {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(255, 0, 242);
+}
 
-  .containerLogo {
-    width: 50%;
-    height: 100%;
-    background-color: rgb(255, 0, 242);
-  }
+.containerButton {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 
-  .containerButton {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+.containerTabela {
+  width: 100%;
+  height: 30%;
+  background-color: rgb(255, 0, 242);
+  display: flex;
+  flex-direction: row;
+}
 
-  
-  .tabela {
-    margin-bottom: 40px;
-    display: flex;
-    width: 100%;
-    flex: 1;
-  }
-  
-  .tituloTabela {
-    width: 50%;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .tabelaTitle {
-    width: 70%;
-    text-align: justify;
-    font-size: 3.5rem;                                               ;
-  }
-  
- .conheca {
-    margin-bottom: 10rem;
-    background-color: #25406a;
+.containerTituloTabela {
+  width: 45%;
+  height: 100%;
+  background-color: blue;
+}
+
+.containerTabelaIframe {
+  width: 55%;
+  height: 100%;
+  background-color: salmon;
+}
+
+.conheca {
+  margin-bottom: 10rem;
+  background-color: #25406a;
+  color: white;
+  width: 55%;
+  border-radius: 5px;
+  text-align: center;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin: 2rem;
+
+  a {
     color: white;
-    width: 55%;
-    border-radius: 5px;
-    text-align: center; 
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    margin: 2rem;
-    a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.6rem;
-        font-weight: bold;
-      }
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
   }
+}
 
-  .jogadores {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 2 rem;
-    
-  }
+.jogadores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2 rem;
 
-  .escalacao, .jogador{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: auto;
-  }
+}
 
-  .jogador {
-    display: flex;
-    justify-content: flex-start;
-    gap: 3rem; 
-  }
+.escalacao,
+.jogador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+}
 
-  .tituloJogador{
-    background-color: #25406a;
-    width: 80%;
-    align-items: center;
-    height: 20%;
-    border-radius: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.jogador {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+}
 
-  .sectionTitle {
-    width: 40%;
-    text-align: justify;
-    font-size: 1.5rem;
-    color: white;
-  }
+.tituloJogador {
+  background-color: #25406a;
+  width: 80%;
+  align-items: center;
+  height: 20%;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionTitle {
+  width: 40%;
+  text-align: justify;
+  font-size: 1.5rem;
+  color: white;
+}

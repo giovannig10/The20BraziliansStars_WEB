@@ -19,7 +19,7 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className={styles.containerLogo}> <img src="" alt="" /> </div>
+      <div className={styles.containerLogo}> <img src="./logo.png" alt="Logo do site"/> </div>
 
       </div>
 
@@ -34,7 +34,12 @@ export default function Home() {
 
       </div>
 
-      <section className={styles.tabela}>
+      <section className={styles.containerTabela}>
+        <div className={styles.containerTituloTabela}></div>
+        <div className={styles.containerTabelaIframe}></div>
+      </section>
+
+      {/* <section className={styles.tabela}>
         <div className={styles.tituloTabela}>
           <h2 className={styles.tabelaTitle}>
             Tabela do Campeonato em Tempo Real
@@ -55,9 +60,9 @@ export default function Home() {
             scrolling="no"
           ></iframe>
         </div>
-      </section>
+      </section> */}
 
-      <section className={styles.jogadores}>
+      {/* <section className={styles.jogadores}>
         <article className={styles.escalacao}>
           <iframe
             id="sofa-totw-embed-372-69522-17830"
@@ -100,7 +105,7 @@ export default function Home() {
             scrolling="no"
           ></iframe>
         </article>
-      </section>
+      </section> */}
     </div>
   );
 }
