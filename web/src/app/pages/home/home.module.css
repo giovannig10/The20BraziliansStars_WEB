@@ -4,9 +4,14 @@
   height: 300vh;  
 }
 
+.containerHeader {
+  height: 5%;
+  width: 100%;
+}
+
 .containerHeroSection {
   width: 100%;
-  height: 25%;
+  height: 20%;
   color: var(--azul);
 }
 
@@ -30,28 +35,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
   color: var(--azul);
   font-size: 4rem;
   font-weight: bold;
-  margin-top: 7rem;
 }
 
 .containerLogo {
   width: 50%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: auto;
+  height: 100%;
 }
 
 .containerButton {
-  width: 100%;
+  width: 98%;
   height: 20%;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: flex-end;
+  align-items:center;
 }
 
 .conheca {
-  margin-bottom: 10rem;
   background-color: var(--azul);
   color: white;
   width: 55%;
@@ -62,10 +72,31 @@
   justify-content: center;
   align-items: center;
   border: none;
-  margin: 2rem;
 
   a {
     color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+
+.conheca:hover {
+  background-color: var(--cinza-fundo);
+  width: 55%;
+  border-radius: 5px;
+  text-align: center;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border 0.3s ease;
+  border: 8px solid var(--azul);
+
+  a {
+    color: var(--azul);
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: bold;
@@ -78,7 +109,7 @@
   height: 42%;
   display: flex;
   flex-direction: row;
-  background-color: #253f6a25;
+  background-color: #253f6a11;
 }
 
 .containerTituloTabela {
@@ -92,10 +123,12 @@
 .containerTituloT {
   width: 80%;
   height: 50% ;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .tituloTabela {
-  font-size: 82px;
+  font-size: 5rem;
   color: var(--azul);
 }
 
@@ -108,16 +141,11 @@
 }
 
 .containerIframe {
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 95%;
 }
 
-.iframe {
-  width: 100%;
-  height: 100%;
-}
-
-.containerJogadores {
+.containerCampeoes {
   height: 33%;
   width: 100%;
   display: flex;
@@ -126,40 +154,27 @@
   flex-direction: column;
 }
 
-.containerTituloJogadores {
-  width: 70%;
+.tituloCampeoes {
+  width: 100%;
   height: 20%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  border-radius: 0.7rem ;
-  color: white;
-  font-weight: bold;
-  font-size: 1.7rem;
-  background-color: var(--azul);
+  justify-content: center;
 }
 
-.containerIframes {
+.tituloCampeoesText {
+  width: 70%;
+  height: 50%;
+  color: var(--azul);
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.containerCarrossel {
   width: 100%;
   height: 80%;
-  display: flex;
-  flex-direction: row;
+  display: flex;;
   align-items: center;
-}
-
-.containerEscalacao {
-  width: 50%;
-  height: 90%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.containerJogador {
-  width: 50%;
-  height: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: aquamarine;
 }
