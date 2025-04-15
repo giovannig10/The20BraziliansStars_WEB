@@ -4,3 +4,8 @@
   padding: 0;
   box-sizing: border-box;
  }
+
+ :root {
+     --azul: #25406A;
+     --cinza-fundo: #DBDCDD;
+ }

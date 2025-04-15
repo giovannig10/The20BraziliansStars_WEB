@@ -1,103 +1,164 @@
-.container {
-    font-family: Arial, sans-serif;
-    background-color: #DBDCDD;
-  }
-  
-  
-  .title {
-    font-size: 2.5em;
-    color: #333;
-  }
-  
-  .description {
-    font-size: 5rem;
-    color: #666;
-    width: 50%;
-    margin-bottom: 2rem;
+.containerPai {
+  background-color: var(--cinza-fundo);
+  width: 100%;
+  height: 400vh;  
+}
 
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .tabela {
-    margin-bottom: 40px;
-    display: flex;
-    width: 100%;
-    flex: 1;
-  }
-  
-  .tituloTabela {
-    width: 50%;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .tabelaTitle {
-    width: 70%;
-    text-align: justify;
-    font-size: 3.5rem;                                               ;
-  }
-  
- .conheca {
-    margin-bottom: 10rem;
-    background-color: #25406a;
+.containerHeroSection {
+  width: 100%;
+  height: 25%;
+  color: var(--azul);
+}
+
+.containerTituloLogo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80%;
+}
+
+.containerTitulo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  color: var(--azul);
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 7rem;
+}
+
+.containerLogo {
+  width: 50%;
+  height: 100%;
+}
+
+.containerButton {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.conheca {
+  margin-bottom: 10rem;
+  background-color: var(--azul);
+  color: white;
+  width: 55%;
+  border-radius: 5px;
+  text-align: center;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin: 2rem;
+
+  a {
     color: white;
-    width: 51%;
-    border-radius: 5px;
-    text-align: center; 
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.6rem;
-        font-weight: bold;
-
-      }
-
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
   }
+}
 
-  .jogadores {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 2 rem;
-    
-  }
 
-  .escalacao, .jogador{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: auto;
-  }
+.containerTabela {
+  width: 100%;
+  height: 42%;
+  display: flex;
+  flex-direction: row;
+}
 
-  .jogador {
-    display: flex;
-    justify-content: flex-start;
-    gap: 3rem; 
-  }
+.containerTituloTabela {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .tituloJogador{
-    background-color: #25406a;
-    width: 80%;
-    align-items: center;
-    height: 20%;
-    border-radius: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.containerTituloT {
+  width: 80%;
+  height: 50% ;
+}
 
-  .sectionTitle {
-    width: 40%;
-    text-align: justify;
-    font-size: 1.5rem;
-    color: white;
-  }
+.tituloTabela {
+  font-size: 82px;
+  color: var(--azul);
+}
+
+.containerTabelaIframe {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerIframe {
+  width: 90%;
+  height: 90%;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.containerJogadores {
+  height: 33%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.containerTituloJogadores {
+  width: 70%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.7rem ;
+  color: white;
+  font-weight: bold;
+  font-size: 1.7rem;
+  background-color: var(--azul);
+}
+
+.containerIframes {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.containerEscalacao {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerJogador {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

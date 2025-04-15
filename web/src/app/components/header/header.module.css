@@ -30,17 +30,17 @@
 
 .home {
     width: auto;
-    height: 90%;
+    height: 3rem;
 }
 
 .shield {
     width: auto;
-    height: 80%;
+    height: 3rem;
 }
 
 .user {
     width: auto;
-    height: 110%;
+    height: 3rem;
 }
 
 .paiSearch {
@@ -51,7 +51,6 @@
 }
 
 .darkMode {
-    background-color: azure;
     width: 20%;
     height: 100%;
     display: flex;
