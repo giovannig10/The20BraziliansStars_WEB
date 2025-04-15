@@ -35,8 +35,18 @@ export default function Home() {
       </div>
 
       <section className={styles.containerTabela}>
-        <div className={styles.containerTituloTabela}></div>
-        <div className={styles.containerTabelaIframe}></div>
+        <div className={styles.containerTituloTabela}>
+          <div className={styles.containerTituloT}>
+            <h1 className={styles.tituloTabela}>Tabela do Campeonato em Tempo Real</h1>
+          </div>
+        </div>
+        <div className={styles.containerTabelaIframe}>
+          <div className={styles.containerIframe}>
+            
+          {/* <iframe id="sofa-standings-embed-83-72034" src="https://widgets.sofascore.com/pt-BR/embed/tournament/83/season/72034/standings/Brasileiro%20Serie%20A%202025?widgetTitle=Brasileiro%20Serie%20A%202025&showCompetitionLogo=true" style={styles.iframe} frameborder="0" scrolling="no"></iframe> */}
+
+          </div>
+        </div>
       </section>
 
       {/* <section className={styles.tabela}>

@@ -8,7 +8,6 @@
   width: 100%;
   height: 20%;
   color: var(--azul);
-  background-color: rgb(16, 91, 156);
 }
 
 .containerTituloLogo {
@@ -21,7 +20,6 @@
 .containerTitulo {
   width: 50%;
   height: 100%;
-  background-color: salmon;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +40,6 @@
 .containerLogo {
   width: 50%;
   height: 100%;
-  background-color: rgb(255, 0, 242);
 }
 
 .containerButton {
@@ -56,7 +53,6 @@
 .containerTabela {
   width: 100%;
   height: 30%;
-  background-color: rgb(255, 0, 242);
   display: flex;
   flex-direction: row;
 }
@@ -64,13 +60,38 @@
 .containerTituloTabela {
   width: 45%;
   height: 100%;
-  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerTituloT {
+  width: 80%;
+  height: 50% ;
+}
+
+.tituloTabela {
+  font-size: 82px;
+  color: var(--azul);
 }
 
 .containerTabelaIframe {
   width: 55%;
   height: 100%;
-  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerIframe {
+  width: 90%;
+  height: 90%;
+  background-color: blueviolet;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .conheca {
