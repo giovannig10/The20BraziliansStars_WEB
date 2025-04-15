@@ -1,7 +1,7 @@
 .containerPai {
   background-color: var(--cinza-fundo);
   width: 100%;
-  height: 400vh;  
+  height: 300vh;  
 }
 
 .containerHeroSection {
@@ -78,6 +78,7 @@
   height: 42%;
   display: flex;
   flex-direction: row;
+  background-color: #253f6a25;
 }
 
 .containerTituloTabela {

@@ -1,0 +1,73 @@
+.paiFooter {
+    background-color: #25406A;
+    height: 6rem;
+    width: 100%;
+}
+
+.paiLogo {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paiSections {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contato {
+    height: 100%;
+    width: 49.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato a {
+    text-decoration: none;
+}
+
+.contato h1 {
+    color: white;
+    font-weight: bold;
+}
+
+.divisoria {
+    height: 90%;
+    width: 0.2%;
+    background-color: white;
+}
+
+.conheca {
+    height: 100%;
+    width: 49.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conheca h1 {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.conheca a {
+    text-decoration: none;
+}
+
+.direitos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: small;
+}
