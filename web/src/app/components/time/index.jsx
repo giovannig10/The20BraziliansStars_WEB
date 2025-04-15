@@ -16,10 +16,11 @@ const Time = ({ time }) => {
           /></div>
         </div>
         <div className={styles.nameContainer}>
+          <div className={styles.nameBottomBar1}></div>
           <div className={styles.name}>
             <h1 className={styles.teamName}>{time.name}</h1>
           </div>
-          <div className={styles.nameBottomBar}></div>
+          <div className={styles.nameBottomBar2}></div>
         </div>
       </div>
     </div>
