@@ -94,7 +94,7 @@ const teams = [
     id: 15,
     name: "Palmeiras",
     shieldImage: "/images/shields/escudo_palmeiras.png",
-    fansBackground: "/images/fansBackground/outra_torcida_lixo.png",
+    fansBackground: "/images/fansBackground/torcida_palmeiras.png",
   },
   {
     id: 16,
