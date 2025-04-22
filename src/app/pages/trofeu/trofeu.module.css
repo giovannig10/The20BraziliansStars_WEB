@@ -2,27 +2,45 @@
   height: 5.5rem;
 }
 
-.titulo {
+.fotoTrofeu {
+  width: 20rem;
+  height: 10px;
+}
+
+.tituloPagina {
   padding: 2rem;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
-  color: #25406A;
-  margin-bottom: 1rem;
+  color: var(--azul);
   text-align: center;
   align-items: center;
 }
 
-.containerTrofeu img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
+.fotoTrofeu{
+  width: 50%;
+  height: 80%;
+}
+
+.containerImagem {
+  display: flex;
+  width: 50rem;
+  height: 20rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.divisoria {
+  width: 80%;
+  height: 0.2rem;
+  background-color: var(--azul);
 }
 
 .description {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #25406A;
+  color: var(--azul);
   margin-bottom: 1rem;
   text-align: justify;
   align-items: center;
@@ -45,6 +63,15 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.tituloTimes {
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
   align-items: center;
 }
 
@@ -71,5 +98,7 @@
 
 .nomeTimes {
   text-align: center;
-
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
 }
