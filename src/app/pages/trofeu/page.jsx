@@ -12,9 +12,15 @@ const TrofeuPage = () => {
       <div className={styles.headers}></div>
 
       <main className={styles.mainContent}>
-        <h1 className={styles.titulo}>Brasileirão</h1>
+        <h1 className={styles.tituloPagina}>Campeonato Brasileiro</h1>
+
+        <div className={styles.containerImagem}>
+        <img className={styles.fotoTrofeu} src="/images/trofeu2.png" alt="Troféu do Campeonato Brasileiro" />
+        <div className={styles.divisoria}></div>
+</div>
+
         <div className={styles.containerTrofeu}>
-          <img src="./trofeu.png" alt="Troféu do Campeonato Brasileiro" />
+
           <p className={styles.description}>
             O Campeonato Brasileiro, ou Brasileirão, é a principal competição de
             futebol do Brasil. Disputado por 20 clubes no formato de pontos
@@ -29,7 +35,7 @@ const TrofeuPage = () => {
 
       <section className={styles.timeSection}>
         <main className={styles.mainTimes}>
-          <h1 className="titulo">ÚLTIMOS TIMES CAMPEÕES</h1>
+          <h1 className={styles.tituloTimes}>ÚLTIMOS TIMES CAMPEÕES</h1>
           <div className={styles.timesCampeoes}>
             <img className={styles.imagemTimes} src="/images/fansBackground/torcida_flamengo.png" alt="flamengo2020" />
             <p className={styles.nomeTimes}>Flamengo, 2020</p>
