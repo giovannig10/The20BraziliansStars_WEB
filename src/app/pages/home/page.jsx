@@ -84,7 +84,7 @@ export default function Home() {
 
         <div className={styles.containerButton}>
           <button className={styles.conheca}>
-            <a className={styles.a} href="/times">
+            <a className={styles.a} href="/pages/teams">
               Conheça a história, o estádio, a torcida, o elenco e os títulos de
               cada clube
             </a>

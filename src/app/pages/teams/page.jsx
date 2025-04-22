@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./teams.module.css";
 import Header from "../../components/header";
+import Footer from "../../components/footer";
 import Time from "../../components/time";
-// import Footer from "../../components/footer";
 
 const teams = [
   {
@@ -131,13 +131,17 @@ const teams = [
 export default function Times() {
   return (
     <div className={styles.container}>
-      {/* <Header/> */}
+
+      <Header/>
+
       <section className={styles.teamsContainer}>
         {teams.map((time) => (
           <Time key={time.id} time={time} />
         ))}
       </section>
-      {/* <Footer/> */}
+
+      <Footer />
+
     </div>
   );
 }
