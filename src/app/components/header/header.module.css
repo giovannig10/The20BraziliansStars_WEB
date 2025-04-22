@@ -1,0 +1,104 @@
+.paiHeader {
+    width: 100%;
+    height: 5.5rem;
+    background-color: #25406A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+}
+
+.paiIcones {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.icones {
+    cursor: pointer;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home {
+    width: auto;
+    height: 3rem;
+}
+
+.shield {
+    width: auto;
+    height: 3rem;
+}
+
+.user {
+    width: auto;
+    height: 3rem;
+}
+
+.paiSearch {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.darkMode {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.darkModeIcon {
+    width: 3rem;
+    height: auto;
+}
+
+.filhoSearch {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    background-color: #25406A;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.searchIcon {
+    height: auto;
+    width: 3rem;
+}
+
+.searchInput {
+    opacity: 60%;
+    width: 100%;
+    height: 80%;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .paiHeader {
+        height: 4.5rem;
+    }
+}
