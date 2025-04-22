@@ -19,3 +19,57 @@
   margin-bottom: 1rem;
 }
 
+.description {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #25406A;
+  margin-bottom: 1rem;
+  text-align: justify;
+  align-items: center;
+  
+}
+
+.containerTrofeu {
+  width: 50%;
+  height: auto;
+}
+
+.mainContent {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTimes {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #25406A;
+  border-radius: 0.5rem;
+  width: 50%;
+  height: 50%;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.imagemTimes {
+  width: 30rem;
+  height: 10rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.nomeTimes {
+  text-align: center;
+
+}
