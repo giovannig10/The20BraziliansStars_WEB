@@ -1,5 +1,5 @@
 .paiFooter {
-    background-color: #25406A;
+    background-color: var(--azul);
     height: 6rem;
     width: 100%;
 }
@@ -10,6 +10,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.logo {
+    width: 2%;
+    height: 100%;
 }
 
 .paiSections {
