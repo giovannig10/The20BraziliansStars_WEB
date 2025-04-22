@@ -1,4 +1,3 @@
-
 .paiHeader {
     width: 100%;
     height: 5.5rem;
@@ -7,6 +6,7 @@
     flex-direction: row;
     justify-content: space-between;
     position: fixed;
+    z-index: 1000;
 }
 
 .paiIcones {
@@ -95,4 +95,10 @@
     border-radius: 0.2rem;
     padding: 0.5rem;
     font-size: 1.2rem;
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .paiHeader {
+        height: 4.5rem;
+    }
 }

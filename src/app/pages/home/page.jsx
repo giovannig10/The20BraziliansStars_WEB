@@ -1,103 +1,135 @@
 import React from "react";
 import styles from "./home.module.css";
 import Header from "../../components/header";
+import Carrossel  from "../../components/carousel";
+import Footer from "../../components/footer";
+
+const items = [
+
+    {
+        id: 1,
+        name: "Palmeiras",
+        shieldImage: "/images/shields/escudo_palmeiras.png",
+        fansBackground: "/images/fansBackground/outra_torcida_lixo.png",
+        titles: 12,
+        ultimo: "2023",
+        apelido: "Verdão",
+    },
+
+    {
+        id: 2,
+        name: "Santos",
+        shieldImage: "/images/shields/escudo_santos.png",
+        fansBackground: "/images/fansBackground/torcida_santos.png",
+        titles: 8,
+        ultimo: "2004",
+        apelido: "Peixe",
+    },
+
+    {
+        id: 3,
+        name: "Flamengo",
+        shieldImage: "/images/shields/escudo_flamengo.png",
+        fansBackground: "/images/fansBackground/torcida_flamengo.png",
+        titles: 8,
+        ultimo: "2020",
+        apelido: "Mengão",
+    },
+
+    {
+        id: 4,
+        name: "Corinthians",
+        shieldImage: "/images/shields/escudo_corinthians.png",
+        fansBackground: "/images/fansBackground/torcida_lixo.png",
+        titles: 7,
+        ultimo: "2017",
+        apelido: "Timão",
+    },
+
+    {
+        id: 5,
+        name: "São Paulo",
+        shieldImage: "/images/shields/escudo_saopaulo.png",
+        fansBackground: "/images/fansBackground/torcida_saopaulo.png",
+        titles: 6,
+        ultimo: "2008",
+        apelido: "Tricolor Paulista",
+    },
+
+]
 
 export default function Home() {
   return (
-
     <div className={styles.containerPai}>
-
       <Header />
 
+      <div className={styles.containerHeader}></div>
+
       <div className={styles.containerHeroSection}>
-
         <div className={styles.containerTituloLogo}>
-
           <div className={styles.containerTitulo}>
             <h1 className={styles.titulo}>
-              Aqui você encontra tudo <br /> sobre os 20 times que estão disputando o “Brasileirão Betano 2025”.
+              Aqui você encontra tudo <br /> sobre os 20 times que estão
+              disputando o “Brasileirão Betano 2025”.
             </h1>
           </div>
 
-          <div className={styles.containerLogo}> <img src="./logo.png" alt="Logo do site" /> </div>
-
+          <div className={styles.containerLogo}>
+            <img
+              src="/images/logo.png"
+              alt="Logo do site"
+            />
+          </div>
         </div>
 
         <div className={styles.containerButton}>
           <button className={styles.conheca}>
             <a className={styles.a} href="/times">
               Conheça a história, o estádio, a torcida, o elenco e os títulos de
-              cada clube  <span> → </span>
+              cada clube
             </a>
           </button>
         </div>
-
       </div>
 
       <section className={styles.containerTabela}>
         <div className={styles.containerTituloTabela}>
           <div className={styles.containerTituloT}>
-            <h1 className={styles.tituloTabela}>Acompanhe a Tabela do Campeonato Brasileiro    em Tempo Real</h1>
+            <h1 className={styles.tituloTabela}>
+              Acompanhe a Tabela do Campeonato Brasileiro em Tempo Real
+            </h1>
           </div>
         </div>
         <div className={styles.containerTabelaIframe}>
           <div className={styles.containerIframe}>
-
             <iframe
               id="sofa-standings-embed-83-72034"
               src="https://widgets.sofascore.com/pt-BR/embed/tournament/83/season/72034/standings/Brasileiro%20Serie%20A%202025?widgetTitle=Brasileiro%20Serie%20A%202025&showCompetitionLogo=true"
               style={{
                 height: "100%",
-
                 width: "100%",
                 border: "0",
-                overflow: "hidden",
+                overflow: "auto",
               }}
-              scrolling="no"
+              scrolling="auto"
             ></iframe>
-
-            {/* <iframe id="sofa-standings-embed-83-72034" src="https://widgets.sofascore.com/pt-BR/embed/tournament/83/season/72034/standings/Brasileiro%20Serie%20A%202025?widgetTitle=Brasileiro%20Serie%20A%202025&showCompetitionLogo=true" style={styles.iframe} frameborder="0" scrolling="no"></iframe> */}
-
           </div>
         </div>
       </section>
 
-      <section className={styles.containerJogadores}>
-
-        <div className={styles.containerTituloJogadores}>       
-          <h2 className={styles.sectionTitle}>
-          Fique ligado na escalação e no jogador da semana
-        </h2>
-      </div>
-
-      <div className={styles.containerIframes}>        
-        <div className={styles.containerEscalacao}>
-          <iframe
-            id="sofa-totw-embed-372-69522-17830"
-            width="85%"
-            height="90%"
-            src="https://widgets.sofascore.com/pt-BR/embed/unique-tournament/372/season/69522/round/17830/teamOfTheWeek?showCompetitionLogo=true&widgetTheme=light&widgetTitle=Paulista%20S%C3%A9rie%20A1"
-            frameBorder="0"
-            scrolling="no"
-          ></iframe>
+      <section className={styles.containerCampeoes}>
+        <div className={styles.tituloCampeoes}>
+          <div className={styles.tituloCampeoesText}>Conheça os 5 maiores campeões brasileiros</div>
         </div>
 
-        <div className={styles.containerJogador}>
-          <iframe
-            id="sofa-player-embed-874572"
-            src="https://widgets.sofascore.com/pt-BR/embed/player/874572?widgetTheme=light"
-            style={{
-              height: "70%",
-              width: "90%",
-              border: 0,
-              overflow: "hidden",
-            }}
-            scrolling="no"
-          ></iframe>
-        </div></div>
+        <div className={styles.containerCarrossel}>
 
+        < Carrossel items={items} />
 
+        </div>
       </section>
+
+      <Footer />
     </div>
   );
 }
