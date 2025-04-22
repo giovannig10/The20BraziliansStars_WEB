@@ -92,10 +92,8 @@ const jogos =[
 ]
 
 
-teams.map((time) => {
-  time.points = time.wins * 3 + time.draws * 1 + time.losses * 0;
-  time.goalsDifference = time.goalsFavor - time.goalsOwn;
-
+teams.forEach((time) => {
+  
   jogos.forEach((jogo) => {
     if(jogo.teamHome === time.name){
         time.games ++;
@@ -103,11 +101,11 @@ teams.map((time) => {
         time.goalsOwn += jogo.goalsAway;
         
         if(jogo.goalsHome > jogo.goalsAway){
-            time.wins ++;
+          time.wins ++;
         }else if (jogo.goalsHome < jogo.goalsAway){
-            time.losses ++;
+          time.losses ++;
         }else {
-            time.draws ++;
+          time.draws ++;
         }
     };
 
@@ -115,16 +113,19 @@ teams.map((time) => {
         time.games ++;
         time.goalsFavor += jogo.goalsAway;
         time.goalsOwn += jogo.goalsHome;
-
+        
         if(jogo.goalsAway > jogo.goalsHome){
-            time.wins ++;
+          time.wins ++;
         }else if (jogo.goalsAway < jogo.goalsHome){
-            time.losses ++;
+          time.losses ++;
         }else {
-            time.draws ++;
+          time.draws ++;
         }
     };
   });
+
+  time.points = ((time.wins * 3) + (time.draws * 1) + (time.losses * 0));
+  time.goalsDifference = time.goalsFavor - time.goalsOwn;
 });
 
 teams.map((time) => {
@@ -132,7 +133,12 @@ teams.map((time) => {
     console.log(
       "algo na contagem da quantidade de jogos, vitórias, empates e/ou derrotas não está correto."
     );
-  }
+  };
+  if (time.points !== ((time.wins * 3) + (time.draws * 1) + (time.losses * 0))) {
+    console.log(
+      "algo na contagem da quantidade de jogos, vitórias, empates e/ou derrotas não está correto."
+    );
+  };
 });
 
 let tabela = teams.sort((timeA, timeB) => {
