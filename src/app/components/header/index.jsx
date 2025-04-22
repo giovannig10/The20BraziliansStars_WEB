@@ -11,7 +11,7 @@ const Header = (
                 <img className={styles.home} src="https://img.icons8.com/m_rounded/200/FFFFFF/home.png" alt="Home" />
                 </a>
 
-                <a href="/pages/times">
+                <a href="/pages/teams">
                 <img className={styles.shield} src="https://img.icons8.com/m_rounded/200/FFFFFF/shield.png" alt="Shield" />
                 </a>
 
