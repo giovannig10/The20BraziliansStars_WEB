@@ -2,10 +2,10 @@ const teams = [
     {
         name: "Flamengo",
         games: 0,
+        points: 0,
         wins: 0,
         draws: 0,
         losses: 0,
-        points: 0,
         goalsFavor: 0,
         goalsOwn: 0,
         goalsDifference: 0,
@@ -16,10 +16,10 @@ const teams = [
     {
         name: "São Paulo",
         games: 0,
+        points: 0,
         wins: 0,
         draws: 0,
         losses: 0,
-        points: 0,
         goalsFavor: 0,
         goalsOwn: 0,
         goalsDifference: 0,
@@ -30,10 +30,10 @@ const teams = [
     {
         name: "Palmeiras",
         games: 0,
+        points: 0,
         wins: 0,
         draws: 0,
         losses: 0,
-        points: 0,
         goalsFavor: 0,
         goalsOwn: 0,
         goalsDifference: 0,
@@ -44,10 +44,10 @@ const teams = [
     {
         name: "Corinthians",
         games: 0,
+        points: 0,
         wins: 0,
         draws: 0,
         losses: 0,
-        points: 0,
         goalsFavor: 0,
         goalsOwn: 0,
         goalsDifference: 0,
@@ -96,9 +96,51 @@ const jogos =[
     {
         teamHome: "São Paulo",
         teamAway: "Corinthians",
-        goalsHome: 22374,
+        goalsHome: 3,
         goalsAway: 2,
         round: 3,
+    },
+    {
+        teamHome: "Corinthians",
+        teamAway: "São Paulo",
+        goalsHome: 1,
+        goalsAway: 1,
+        round: 4,
+    },
+    {
+        teamHome: "Palmeiras",
+        teamAway: "Flamengo",
+        goalsHome: 2,
+        goalsAway: 2,
+        round: 4,
+    },
+    {
+        teamHome: "São Paulo",
+        teamAway: "Flamengo",
+        goalsHome: 0,
+        goalsAway: 1,
+        round: 5,
+    },
+    {
+        teamHome: "Corinthians",
+        teamAway: "Palmeiras",
+        goalsHome: 3,
+        goalsAway: 1,
+        round: 5,
+    },
+    {
+        teamHome: "Flamengo",
+        teamAway: "Corinthians",
+        goalsHome: 2,
+        goalsAway: 0,
+        round: 6,
+    },
+    {
+        teamHome: "Palmeiras",
+        teamAway: "São Paulo",
+        goalsHome: 1,
+        goalsAway: 0,
+        round: 6,
     },
 
 ]
@@ -182,4 +224,4 @@ let tabela = teams.sort((timeA, timeB) => {
   return timeB.points - timeA.points;
 });
 
-console.table(tabela);
+console.log(tabela);
