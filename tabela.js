@@ -9,6 +9,9 @@ const teams = [
         goalsFavor: 0,
         goalsOwn: 0,
         goalsDifference: 0,
+        retrospect: [
+          null, null, null, null, null
+        ],
     },
     {
         name: "São Paulo",
@@ -20,6 +23,9 @@ const teams = [
         goalsFavor: 0,
         goalsOwn: 0,
         goalsDifference: 0,
+        retrospect: [
+          null, null, null, null, null
+        ],
     },
     {
         name: "Palmeiras",
@@ -31,6 +37,9 @@ const teams = [
         goalsFavor: 0,
         goalsOwn: 0,
         goalsDifference: 0,
+        retrospect: [
+          null, null, null, null, null
+        ],
     },
     {
         name: "Corinthians",
@@ -42,6 +51,9 @@ const teams = [
         goalsFavor: 0,
         goalsOwn: 0,
         goalsDifference: 0,
+        retrospect: [
+          null, null, null, null, null
+        ],
     },
 ];
 
@@ -102,10 +114,17 @@ teams.forEach((time) => {
         
         if(jogo.goalsHome > jogo.goalsAway){
           time.wins ++;
+
+          time.retrospect.shift()
+          time.retrospect.push("V");
         }else if (jogo.goalsHome < jogo.goalsAway){
           time.losses ++;
+          time.retrospect.shift()
+          time.retrospect.push("D");
         }else {
           time.draws ++;
+          time.retrospect.shift()
+          time.retrospect.push("E");
         }
     };
 
@@ -116,10 +135,16 @@ teams.forEach((time) => {
         
         if(jogo.goalsAway > jogo.goalsHome){
           time.wins ++;
+          time.retrospect.shift()
+          time.retrospect.push("V");
         }else if (jogo.goalsAway < jogo.goalsHome){
           time.losses ++;
+          time.retrospect.shift()
+          time.retrospect.push("D");
         }else {
           time.draws ++;
+          time.retrospect.shift()
+          time.retrospect.push("E");
         }
     };
   });
@@ -157,4 +182,4 @@ let tabela = teams.sort((timeA, timeB) => {
   return timeB.points - timeA.points;
 });
 
-console.log(tabela);
+console.table(tabela);
