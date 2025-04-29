@@ -7,7 +7,8 @@
   }
   
   .profileCard {
-    width: 30%;
+    width: 50%;
+    height: 50%;
     border: 1rem;
     padding: 4rem;
     border-radius: 1rem;
@@ -19,12 +20,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
   }
   
   .profileAvatar {
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 100%;
     background-color: #e0e0e0;
     display: flex;
@@ -54,6 +55,9 @@
     justify-content: space-around;
     border: none;
     gap: 1.5rem;
+    :hover {
+        background-color: #e0e0e0;
+      }
   }
   
   .profileEdit {
@@ -68,6 +72,7 @@
     cursor: pointer;
     font-size: 3rem;
     color: #333;
+    
   }
 
   
