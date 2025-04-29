@@ -3,13 +3,14 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f5f5f5;
+    background-color: var(--cinza-fundo);
   }
   
   .profileCard {
-    width: 400px;
-    padding: 20px;
-    border-radius: 8px;
+    width: 30%;
+    border: 1rem;
+    padding: 4rem;
+    border-radius: 1rem;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -18,13 +19,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
   }
   
   .profileAvatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
     background-color: #e0e0e0;
     display: flex;
     justify-content: center;
@@ -32,15 +33,15 @@
   }
   
   .profileAvatarIcon {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #757575;
   }
   
-  .profileName {
+.profileName {
     margin: 10px 0 5px;
     font-size: 18px;
-    color: #333;
-  }
+    color: var(--azul);
+}
   
   .profileId {
     margin: 0;
@@ -52,6 +53,7 @@
     display: flex;
     justify-content: space-around;
     border: none;
+    gap: 1.5rem;
   }
   
   .profileEdit {
@@ -61,15 +63,15 @@
     width: 33.3%;
     height: 3rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 1rem;
     background-color: #f0f0f0;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 3rem;
     color: #333;
   }
 
   
   .profileButtonIcon {
-    font-size: 18px;
-    margin-right: 5px;
+    font-size: 2rem;
+    margin-right: 0.5rem;
   }
