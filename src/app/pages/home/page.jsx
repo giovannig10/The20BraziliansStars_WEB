@@ -1,62 +1,60 @@
 import React from "react";
 import styles from "./home.module.css";
 import Header from "../../components/header";
-import Carrossel  from "../../components/carousel";
+import Carrossel from "../../components/carousel";
 import Footer from "../../components/footer";
 
 const items = [
+  {
+    id: 1,
+    name: "Palmeiras",
+    shieldImage: "/images/shields/escudo_palmeiras.png",
+    fansBackground: "/images/fansBackground/outra_torcida_lixo.png",
+    titles: 12,
+    ultimo: "2023",
+    apelido: "Verdão",
+  },
 
-    {
-        id: 1,
-        name: "Palmeiras",
-        shieldImage: "/images/shields/escudo_palmeiras.png",
-        fansBackground: "/images/fansBackground/outra_torcida_lixo.png",
-        titles: 12,
-        ultimo: "2023",
-        apelido: "Verdão",
-    },
+  {
+    id: 2,
+    name: "Santos",
+    shieldImage: "/images/shields/escudo_santos.png",
+    fansBackground: "/images/fansBackground/torcida_santos.png",
+    titles: 8,
+    ultimo: "2004",
+    apelido: "Peixe",
+  },
 
-    {
-        id: 2,
-        name: "Santos",
-        shieldImage: "/images/shields/escudo_santos.png",
-        fansBackground: "/images/fansBackground/torcida_santos.png",
-        titles: 8,
-        ultimo: "2004",
-        apelido: "Peixe",
-    },
+  {
+    id: 3,
+    name: "Flamengo",
+    shieldImage: "/images/shields/escudo_flamengo.png",
+    fansBackground: "/images/fansBackground/torcida_flamengo.png",
+    titles: 8,
+    ultimo: "2020",
+    apelido: "Mengão",
+  },
 
-    {
-        id: 3,
-        name: "Flamengo",
-        shieldImage: "/images/shields/escudo_flamengo.png",
-        fansBackground: "/images/fansBackground/torcida_flamengo.png",
-        titles: 8,
-        ultimo: "2020",
-        apelido: "Mengão",
-    },
+  {
+    id: 4,
+    name: "Corinthians",
+    shieldImage: "/images/shields/escudo_corinthians.png",
+    fansBackground: "/images/fansBackground/torcida_lixo.png",
+    titles: 7,
+    ultimo: "2017",
+    apelido: "Timão",
+  },
 
-    {
-        id: 4,
-        name: "Corinthians",
-        shieldImage: "/images/shields/escudo_corinthians.png",
-        fansBackground: "/images/fansBackground/torcida_lixo.png",
-        titles: 7,
-        ultimo: "2017",
-        apelido: "Timão",
-    },
-
-    {
-        id: 5,
-        name: "São Paulo",
-        shieldImage: "/images/shields/escudo_saopaulo.png",
-        fansBackground: "/images/fansBackground/torcida_saopaulo.png",
-        titles: 6,
-        ultimo: "2008",
-        apelido: "Tricolor Paulista",
-    },
-
-]
+  {
+    id: 5,
+    name: "São Paulo",
+    shieldImage: "/images/shields/escudo_saopaulo.png",
+    fansBackground: "/images/fansBackground/torcida_saopaulo.png",
+    titles: 6,
+    ultimo: "2008",
+    apelido: "Tricolor Paulista",
+  },
+];
 
 export default function Home() {
   return (
@@ -75,10 +73,7 @@ export default function Home() {
           </div>
 
           <div className={styles.containerLogo}>
-            <img
-              src="/images/logo.png"
-              alt="Logo do site"
-            />
+            <img src="/images/logo.png" alt="Logo do site" />
           </div>
         </div>
 
@@ -102,30 +97,73 @@ export default function Home() {
         </div>
         <div className={styles.containerTabelaIframe}>
           <div className={styles.containerIframe}>
-            <iframe
-              id="sofa-standings-embed-83-72034"
-              src="https://widgets.sofascore.com/pt-BR/embed/tournament/83/season/72034/standings/Brasileiro%20Serie%20A%202025?widgetTitle=Brasileiro%20Serie%20A%202025&showCompetitionLogo=true"
-              style={{
-                height: "100%",
-                width: "100%",
-                border: "0",
-                overflow: "auto",
-              }}
-              scrolling="auto"
-            ></iframe>
+            <div className={styles.table}>
+              <div className={styles.tableHeader}>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>Pos</h1>
+                </div>
+                <div className={styles.clubItem}>
+                  <h1 className={styles.headerItemText}>Clube</h1>
+                </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>Jgs</h1>
+                </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>Pts</h1>
+                </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>Vit</h1>
+                </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>Der</h1>
+                </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>Emp</h1>
+                </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>GS</h1>
+                </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>GF</h1>
+                </div>
+                <div className={styles.retrospectItem}>
+                  <h1 className={styles.headerItemText}>Últimas Cinco</h1>
+                </div>
+              </div>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+            </div>
           </div>
         </div>
       </section>
 
       <section className={styles.containerCampeoes}>
         <div className={styles.tituloCampeoes}>
-          <div className={styles.tituloCampeoesText}>Conheça os 5 maiores campeões brasileiros</div>
+          <div className={styles.tituloCampeoesText}>
+            Conheça os 5 maiores campeões brasileiros
+          </div>
         </div>
 
         <div className={styles.containerCarrossel}>
-
-        < Carrossel items={items} />
-
+          <Carrossel items={items} />
         </div>
       </section>
 

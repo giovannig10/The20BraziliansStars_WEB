@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./profile.module.css";
 import Header from "@/app/components/header";
 import Footer from "@/app/components/footer";
-import { Edit3, Heart, Settings, User  } from "@deemlol/next-icons";
+// import { Edit3, Heart, Settings, User  } from "@deemlol/next-icons";
 
 const ProfilePage = () => {
   return (
