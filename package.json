@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@deemlol/next-icons": "^0.1.9",
+    "@deemlol/next-icons": "^0.1.4",
     "next": "^15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
