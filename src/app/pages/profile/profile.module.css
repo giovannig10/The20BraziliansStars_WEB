@@ -55,9 +55,10 @@
     justify-content: space-around;
     border: none;
     gap: 1.5rem;
-    hover {
-        background-color: #e0e0e0;
-      }
+  }
+
+  .profileEdit:hover {
+    background-color: rgb(182, 180, 180);
   }
   
   .profileEdit {
