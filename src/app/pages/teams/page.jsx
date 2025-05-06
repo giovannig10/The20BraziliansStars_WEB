@@ -140,7 +140,7 @@ export default function Times() {
         ))}
       </section>
 
-      <Footer />
+      <Footer/>
 
     </div>
   );
