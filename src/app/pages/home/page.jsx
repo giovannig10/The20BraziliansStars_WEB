@@ -10,7 +10,7 @@ const items = [
         id: 1,
         name: "Palmeiras",
         shieldImage: "/images/shields/escudo_palmeiras.png",
-        fansBackground: "/images/fansBackground/outra_torcida_lixo.png",
+        fansBackground: "/images/fansBackground/torcida_palmeiras.png",
         titles: 12,
         ultimo: "2023",
         apelido: "Verdão",
@@ -61,9 +61,12 @@ const items = [
 export default function Home() {
   return (
     <div className={styles.containerPai}>
+
+      <div className={styles.containerHeader}>
+
       <Header />
 
-      <div className={styles.containerHeader}></div>
+      </div>
 
       <div className={styles.containerHeroSection}>
         <div className={styles.containerTituloLogo}>
