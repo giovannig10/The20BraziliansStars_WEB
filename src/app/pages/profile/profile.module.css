@@ -1,0 +1,82 @@
+.profileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cinza-fundo);
+  }
+  
+  .profileCard {
+    width: 50%;
+    height: 50%;
+    border: 1rem;
+    padding: 4rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profileHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  
+  .profileAvatar {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profileAvatarIcon {
+    font-size: 2.5rem;
+    color: #757575;
+  }
+  
+.profileName {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: var(--azul);
+}
+  
+  .profileId {
+    margin: 0;
+    font-size: 14px;
+    color: #757575;
+  }
+  
+  .profileActions{
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    gap: 1.5rem;
+    :hover {
+        background-color: #e0e0e0;
+      }
+  }
+  
+  .profileEdit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
+    height: 3rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 3rem;
+    color: #333;
+    
+  }
+
+  
+  .profileButtonIcon {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+  }
