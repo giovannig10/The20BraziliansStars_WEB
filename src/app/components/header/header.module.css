@@ -101,4 +101,19 @@
     .paiHeader {
         height: 4.5rem;
     }
+
+    .home {
+        width: auto;
+        height: 2.4rem;
+    }
+    
+    .shield {
+        width: auto;
+        height: 2.4rem;
+    }
+    
+    .user {
+        width: auto;
+        height: 2.5rem;
+    }
 }

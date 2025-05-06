@@ -15,7 +15,7 @@ const Header = (
                 <img className={styles.shield} src="https://img.icons8.com/m_rounded/200/FFFFFF/shield.png" alt="Shield" />
                 </a>
 
-                <a href="">
+                <a href="/pages/profile">
                 <img className={styles.user} src="https://img.icons8.com/m_rounded/200/FFFFFF/user.png" alt="User" />
                 </a>
                 </div>
@@ -23,7 +23,7 @@ const Header = (
 
             <div className={styles.paiSearch}>
                 <div className={styles.darkMode}>
-                    <img src="" alt="Dark Mode" className={styles.darkModeIcon} />
+                    <img src="#" alt="Dark Mode" className={styles.darkModeIcon} />
                 </div>
                 <div className={styles.filhoSearch}>
                     <div className={styles.search}>
