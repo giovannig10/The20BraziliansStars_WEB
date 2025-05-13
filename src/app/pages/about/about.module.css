@@ -1,0 +1,73 @@
+
+.container {
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+  }
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 1rem;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(219, 219, 226);
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+  }
+  .titleContainer {
+    display: flex;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #25406A;
+    text-align: center;
+  }
+  
+  .gridEquipe {
+    height: 8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    height: 60%;
+  }
+  
+  .membro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .membro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .membro p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #25406A;
+    margin: 0;
+  }
+  
+  .membro span {
+    font-size: 0.9rem;
+    color: #666;
+  }
