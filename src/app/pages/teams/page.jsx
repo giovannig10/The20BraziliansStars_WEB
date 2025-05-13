@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./teams.module.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import Time from "../../components/time";
+import Time from "../../components/team";
 
 import { IoHomeOutline } from "react-icons/io5";
 import { BsFillShieldFill } from "react-icons/bs";

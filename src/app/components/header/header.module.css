@@ -57,6 +57,7 @@
 .darkModeIcon {
     width: 3rem;
     height: auto;
+    cursor: pointer;
 }
 
 .filhoSearch {

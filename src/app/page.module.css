@@ -1,11 +1,12 @@
 
 .main{
-    height: 150vh;
+    height: 100vh;
     background: radial-gradient(#DBDCDD, #DBDCDD, #ADADAD );
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 5rem;
 }
 .logotypeImageContainer{
     width: 100%;
@@ -96,6 +97,7 @@
     border: 1px #25406A solid;
     border-radius: 0.5rem;
     color: #25406A;
+    cursor: pointer;
 }
 .forgotPassword{
     font-size: 1.0rem;
@@ -125,6 +127,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .mediaImage{
     width: 50%;

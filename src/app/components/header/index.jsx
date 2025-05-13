@@ -1,4 +1,6 @@
 import styles from "./header.module.css";
+import { RiMoonFill } from "react-icons/ri";
+
 
 const Header = ({ homeIcon, shieldIcon, userIcon }) => {
     return (
@@ -13,7 +15,7 @@ const Header = ({ homeIcon, shieldIcon, userIcon }) => {
 
             <div className={styles.paiSearch}>
                 <div className={styles.darkMode}>
-                    <img src="#" alt="Dark Mode" className={styles.darkModeIcon} />
+                <RiMoonFill color="white" className={styles.darkModeIcon} />
                 </div>
                 <div className={styles.filhoSearch}>
                     <div className={styles.search}>
