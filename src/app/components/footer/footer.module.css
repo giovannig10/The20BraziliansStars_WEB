@@ -13,8 +13,8 @@
 }
 
 .logo {
-    width: 2%;
-    height: 100%;
+    width: 1.5rem;
+    height: 1rem;
 }
 
 .paiSections {
@@ -45,7 +45,7 @@
 }
 
 .divisoria {
-    height: 90%;
+    height: 85%;
     width: 0.2%;
     background-color: white;
 }

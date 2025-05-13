@@ -4,6 +4,10 @@ import Header from "../../components/header";
 import Carrossel  from "../../components/carousel";
 import Footer from "../../components/footer";
 
+import { IoHome } from "react-icons/io5";
+import { BsShield } from "react-icons/bs";
+import { IoPersonOutline } from "react-icons/io5";
+
 const items = [
 
     {
@@ -64,7 +68,11 @@ export default function Home() {
 
       <div className={styles.containerHeader}>
 
-      <Header />
+      <Header
+      homeIcon={<IoHome size={48} color={"white"} />}
+      shieldIcon={<BsShield size ={36} color={"white"}/>}
+      userIcon={<IoPersonOutline size={36} color={"white"} />}
+      />
 
       </div>
 

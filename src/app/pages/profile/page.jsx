@@ -2,12 +2,24 @@ import React from "react";
 import styles from "./profile.module.css";
 import Header from "@/app/components/header";
 import Footer from "@/app/components/footer";
+
+import { IoHomeOutline } from "react-icons/io5";
+import { BsShield } from "react-icons/bs";
+import { IoPersonSharp } from "react-icons/io5";
+
+
 import { Edit3, Heart, Settings, User  } from "@deemlol/next-icons";
 
 const ProfilePage = () => {
   return (
     <div>
-      <Header />
+
+      <Header
+      homeIcon={<IoHomeOutline size={36} color={"white"} />}
+      shieldIcon={<BsShield size ={36} color={"white"}/>}
+      userIcon={<IoPersonSharp size={46} color={"white"} />}
+      />
+
       <div className={styles.profileContainer}>
         <div className={styles.profileCard}>
           <div className={styles.profileHeader}>
