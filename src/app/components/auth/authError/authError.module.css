@@ -1,0 +1,299 @@
+.formContainer {
+    width: 100%;
+  }
+  
+  .form {
+    width: 100%;
+  }
+  
+  .inputGroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #d0d0d0;
+  }
+  
+  .required {
+    color: #ff2d55;
+    margin-left: 0.25rem;
+  }
+  
+  .optional {
+    color: #7a7a7a;
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-left: 0.25rem;
+  }
+  
+  .inputWrapper {
+    position: relative;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.875rem 1rem 0.875rem 2.5rem;
+    font-size: 1rem;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 0.5rem;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #5ac8fa;
+    box-shadow: 0 0 0 2px rgba(90, 200, 250, 0.2);
+  }
+  
+  .input::placeholder {
+    color: #777;
+  }
+  
+  .inputIcon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    pointer-events: none;
+  }
+  
+  .input:focus + .inputIcon {
+    color: #5ac8fa;
+  }
+  
+  .rememberForgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .checkboxGroup {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    accent-color: #5ac8fa;
+  }
+  
+  .checkboxLabel {
+    font-size: 0.875rem;
+    color: #d0d0d0;
+  }
+  
+  .forgotLink {
+    font-size: 0.875rem;
+    color: #5ac8fa;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .forgotLink:hover {
+    color: #7cd6ff;
+    text-decoration: underline;
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background: linear-gradient(90deg, #ff2d55, #5ac8fa);
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .submitButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 45, 85, 0.3);
+  }
+  
+  .submitButton:disabled {
+    background: #555;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .loadingSpinner {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .errorMessage,
+  .successMessage {
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    animation: slideIn 0.3s ease;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .errorMessage {
+    background-color: rgba(255, 45, 85, 0.15);
+    border: 1px solid rgba(255, 45, 85, 0.3);
+    color: #ff6b89;
+  }
+  
+  .successMessage {
+    background-color: rgba(48, 209, 88, 0.15);
+    border: 1px solid rgba(48, 209, 88, 0.3);
+    color: #30d158;
+  }
+  
+  .errorMessage svg,
+  .successMessage svg {
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+  }
+  
+  .termsGroup {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .termsLabel {
+    font-size: 0.875rem;
+    color: #d0d0d0;
+    margin-left: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  .termsLink {
+    color: #5ac8fa;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .termsLink:hover {
+    color: #7cd6ff;
+    text-decoration: underline;
+  }
+  
+  .socialLogin {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .orText {
+    position: relative;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    color: #777;
+  }
+  
+  .orText::before,
+  .orText::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 35%;
+    height: 1px;
+    background-color: #333;
+  }
+  
+  .orText::before {
+    left: 0;
+  }
+  
+  .orText::after {
+    right: 0;
+  }
+  
+  .socialButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .socialButton {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .socialButton:hover {
+    transform: translateY(-2px);
+  }
+  
+  .googleButton {
+    color: #ea4335;
+  }
+  
+  .googleButton:hover {
+    background-color: rgba(234, 67, 53, 0.1);
+    border-color: rgba(234, 67, 53, 0.3);
+  }
+  
+  .twitterButton {
+    color: #1da1f2;
+  }
+  
+  .twitterButton:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+    border-color: rgba(29, 161, 242, 0.3);
+  }
+  
+  .githubButton {
+    color: #fff;
+  }
+  
+  .githubButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .rememberForgot {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+  }
