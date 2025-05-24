@@ -7,7 +7,6 @@ import { IoHomeOutline } from "react-icons/io5";
 import { BsShield } from "react-icons/bs";
 import { IoPersonSharp } from "react-icons/io5";
 
-
 import { Edit3, Heart, Settings, User  } from "@deemlol/next-icons";
 
 const ProfilePage = () => {
