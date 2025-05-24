@@ -118,7 +118,7 @@ const Carousel = ({ items }) => {
                                     <p className={styles.cardDescription}>O {item.apelido} foi campeão {item.titles} vezes!</p>
                                     <div className={styles.cardFooter}>
                                         <span className={styles.cardDate}>O ultimo título foi em {item.ultimo}</span>
-                                        <button className={styles.readMoreButton}>Ler mais</button>
+                                        <button className={styles.readMoreButton}>Ver mais</button>
                                     </div>
                                 </div>
                             </div>

@@ -20,7 +20,6 @@
 }
 
 .icones {
-    cursor: pointer;
     width: 90%;
     height: 80%;
     display: flex;
@@ -29,18 +28,15 @@
 }
 
 .home {
-    width: auto;
-    height: 3rem;
+    cursor: pointer;
 }
 
 .shield {
-    width: auto;
-    height: 3rem;
+    cursor: pointer;
 }
 
 .user {
-    width: auto;
-    height: 3rem;
+    cursor: pointer;
 }
 
 .paiSearch {
@@ -61,6 +57,7 @@
 .darkModeIcon {
     width: 3rem;
     height: auto;
+    cursor: pointer;
 }
 
 .filhoSearch {
@@ -100,5 +97,20 @@
 @media (min-width: 1024px) and (max-width: 1366px) {
     .paiHeader {
         height: 4.5rem;
+    }
+
+    .home {
+        width: auto;
+        height: 2.4rem;
+    }
+    
+    .shield {
+        width: auto;
+        height: 2.4rem;
+    }
+    
+    .user {
+        width: auto;
+        height: 2.5rem;
     }
 }

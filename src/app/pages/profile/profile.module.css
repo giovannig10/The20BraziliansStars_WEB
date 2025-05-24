@@ -57,10 +57,9 @@
     gap: 1.5rem;
   }
 
-  .profileActions:hover {
-    background-color: #e0e0e0;
+  .profileEdit:hover {
+    background-color: rgb(182, 180, 180);
   }
-
   
   .profileEdit {
     display: flex;

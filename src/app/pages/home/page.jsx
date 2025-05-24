@@ -4,64 +4,76 @@ import Header from "../../components/header";
 import Carrossel from "../../components/carousel";
 import Footer from "../../components/footer";
 
+import { IoHome } from "react-icons/io5";
+import { BsShield } from "react-icons/bs";
+import { IoPersonOutline } from "react-icons/io5";
+
 const items = [
-  {
-    id: 1,
-    name: "Palmeiras",
-    shieldImage: "/images/shields/escudo_palmeiras.png",
-    fansBackground: "/images/fansBackground/outra_torcida_lixo.png",
-    titles: 12,
-    ultimo: "2023",
-    apelido: "Verdão",
-  },
+    {
+        id: 1,
+        name: "Palmeiras",
+        shieldImage: "/images/shields/escudo_palmeiras.png",
+        fansBackground: "/images/fansBackground/torcida_palmeiras.png",
+        titles: 12,
+        ultimo: "2023",
+        apelido: "Verdão",
+    },
 
-  {
-    id: 2,
-    name: "Santos",
-    shieldImage: "/images/shields/escudo_santos.png",
-    fansBackground: "/images/fansBackground/torcida_santos.png",
-    titles: 8,
-    ultimo: "2004",
-    apelido: "Peixe",
-  },
+    {
+        id: 2,
+        name: "Santos",
+        shieldImage: "/images/shields/escudo_santos.png",
+        fansBackground: "/images/fansBackground/torcida_santos.png",
+        titles: 8,
+        ultimo: "2004",
+        apelido: "Peixe",
+    },
 
-  {
-    id: 3,
-    name: "Flamengo",
-    shieldImage: "/images/shields/escudo_flamengo.png",
-    fansBackground: "/images/fansBackground/torcida_flamengo.png",
-    titles: 8,
-    ultimo: "2020",
-    apelido: "Mengão",
-  },
+    {
+        id: 3,
+        name: "Flamengo",
+        shieldImage: "/images/shields/escudo_flamengo.png",
+        fansBackground: "/images/fansBackground/torcida_flamengo.png",
+        titles: 8,
+        ultimo: "2020",
+        apelido: "Mengão",
+    },
 
-  {
-    id: 4,
-    name: "Corinthians",
-    shieldImage: "/images/shields/escudo_corinthians.png",
-    fansBackground: "/images/fansBackground/torcida_lixo.png",
-    titles: 7,
-    ultimo: "2017",
-    apelido: "Timão",
-  },
+    {
+        id: 4,
+        name: "Corinthians",
+        shieldImage: "/images/shields/escudo_corinthians.png",
+        fansBackground: "/images/fansBackground/torcida_lixo.png",
+        titles: 7,
+        ultimo: "2017",
+        apelido: "Timão",
+    },
 
-  {
-    id: 5,
-    name: "São Paulo",
-    shieldImage: "/images/shields/escudo_saopaulo.png",
-    fansBackground: "/images/fansBackground/torcida_saopaulo.png",
-    titles: 6,
-    ultimo: "2008",
-    apelido: "Tricolor Paulista",
-  },
-];
+    {
+        id: 5,
+        name: "São Paulo",
+        shieldImage: "/images/shields/escudo_saopaulo.png",
+        fansBackground: "/images/fansBackground/torcida_saopaulo.png",
+        titles: 6,
+        ultimo: "2008",
+        apelido: "Tricolor Paulista",
+    },
+
+]
 
 export default function Home() {
   return (
     <div className={styles.containerPai}>
-      <Header />
 
-      <div className={styles.containerHeader}></div>
+      <div className={styles.containerHeader}>
+
+      <Header
+      homeIcon={<IoHome size={48} color={"white"} />}
+      shieldIcon={<BsShield size ={36} color={"white"}/>}
+      userIcon={<IoPersonOutline size={36} color={"white"} />}
+      />
+
+      </div>
 
       <div className={styles.containerHeroSection}>
         <div className={styles.containerTituloLogo}>
@@ -79,7 +91,7 @@ export default function Home() {
 
         <div className={styles.containerButton}>
           <button className={styles.conheca}>
-            <a className={styles.a} href="/times">
+            <a className={styles.a} href="/pages/teams">
               Conheça a história, o estádio, a torcida, o elenco e os títulos de
               cada clube
             </a>

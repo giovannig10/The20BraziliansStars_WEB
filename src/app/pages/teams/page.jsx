@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "./teams.module.css";
 import Header from "../../components/header";
-import Time from "../../components/time";
 import Footer from "../../components/footer";
+import Time from "../../components/team";
+
+import { IoHomeOutline } from "react-icons/io5";
+import { BsFillShieldFill } from "react-icons/bs";
+import { IoPersonOutline } from "react-icons/io5";
 
 const teams = [
   {
@@ -131,13 +135,21 @@ const teams = [
 export default function Times() {
   return (
     <div className={styles.container}>
-      <Header/>
+
+<Header
+      homeIcon={<IoHomeOutline size={36} color={"white"} />}
+      shieldIcon={<BsFillShieldFill size ={46} color={"white"}/>}
+      userIcon={<IoPersonOutline size={36} color={"white"} />}
+      />
+
       <section className={styles.teamsContainer}>
         {teams.map((time) => (
           <Time key={time.id} time={time} />
         ))}
       </section>
+
       <Footer/>
+
     </div>
   );
 }
