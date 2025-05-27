@@ -1,0 +1,106 @@
+
+.main{
+    height: 100vh;
+    background: radial-gradient(#DBDCDD, #DBDCDD, #ADADAD );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.loginBox{
+    width: 100%;
+    height: 90vh;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+.logotypeImageContainer{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logotypeImage{
+    width: auto;
+    height: 100%;
+}
+.title{
+    width: 100%;
+    font-size: 3.2rem;
+    color: #25406A;
+    text-align: center;
+}
+.logotypeContainer{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.blueBarContainer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titleContainer{
+    width: 100%;
+    height: 20%;
+}
+.blueBar{
+    width: 30%;
+    height: 0.5rem;
+    background-color: #25406A;
+}
+.formWrapper{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newAccountContainer{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.newAccountText{
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: #25406A;
+}
+.newAccountLink{
+    font-size: 0.9rem;
+    font-weight: 550;
+    color: #25406A;
+    text-decoration: underline;
+}
+@media (max-width: 700px) {
+    .title{
+        font-size: 2rem;
+    }
+    .blueBar{
+        width: 40%;
+    }
+    .formContainer{
+        width: 80%;
+    }
+}
+@media ((min-width: 700px) and (max-width: 900px)) {
+    .formContainer{
+        width: 70%;
+    }
+}
+@media ((min-width: 900px) and (max-width: 1100px)) {
+    .formContainer{
+        width: 60%;
+    }
+}
