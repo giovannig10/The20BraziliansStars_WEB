@@ -2,10 +2,6 @@
   height: 5.5rem;
 }
 
-.fotoTrofeu {
-  width: 20rem;
-  height: 10px;
-}
 
 .tituloPagina {
   padding: 2rem;
@@ -17,7 +13,7 @@
 }
 
 .fotoTrofeu{
-  width: 50%;
+  width: auto;
   height: 80%;
 }
 
