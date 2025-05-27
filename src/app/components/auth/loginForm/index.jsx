@@ -123,7 +123,7 @@ const LoginForm = () => {
         </div>
       </form>
     </div>
-          </div>
+    </div>
   );
 };
 export default LoginForm;
