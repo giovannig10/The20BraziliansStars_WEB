@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./home.module.css";
 import Header from "../../components/header";
-import Carrossel  from "../../components/carousel";
+import Carrossel from "../../components/carousel";
 import Footer from "../../components/footer";
 
 import { IoHome } from "react-icons/io5";
@@ -9,7 +9,6 @@ import { BsShield } from "react-icons/bs";
 import { IoPersonOutline } from "react-icons/io5";
 
 const items = [
-
     {
         id: 1,
         name: "Palmeiras",
@@ -86,10 +85,7 @@ export default function Home() {
           </div>
 
           <div className={styles.containerLogo}>
-            <img
-              src="/images/logo.png"
-              alt="Logo do site"
-            />
+            <img src="/images/logo.png" alt="Logo do site" />
           </div>
         </div>
 
@@ -113,30 +109,73 @@ export default function Home() {
         </div>
         <div className={styles.containerTabelaIframe}>
           <div className={styles.containerIframe}>
-            <iframe
-              id="sofa-standings-embed-83-72034"
-              src="https://widgets.sofascore.com/pt-BR/embed/tournament/83/season/72034/standings/Brasileiro%20Serie%20A%202025?widgetTitle=Brasileiro%20Serie%20A%202025&showCompetitionLogo=true"
-              style={{
-                height: "100%",
-                width: "100%",
-                border: "0",
-                overflow: "auto",
-              }}
-              scrolling="auto"
-            ></iframe>
+            <div className={styles.table}>
+              <div className={styles.tableHeader}>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>Pos</h1>
+                </div>
+                <div className={styles.clubItem}>
+                  <h1 className={styles.headerItemText}>Clube</h1>
+                </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>Jgs</h1>
+                </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>Pts</h1>
+                </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>Vit</h1>
+                </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>Der</h1>
+                </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>Emp</h1>
+                </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>GS</h1>
+                </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>GF</h1>
+                </div>
+                <div className={styles.retrospectItem}>
+                  <h1 className={styles.headerItemText}>Últimas Cinco</h1>
+                </div>
+              </div>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+              <div className={styles.tableTeam}/>
+            </div>
           </div>
         </div>
       </section>
 
       <section className={styles.containerCampeoes}>
         <div className={styles.tituloCampeoes}>
-          <div className={styles.tituloCampeoesText}>Conheça os 5 maiores campeões brasileiros</div>
+          <div className={styles.tituloCampeoesText}>
+            Conheça os 5 maiores campeões brasileiros
+          </div>
         </div>
 
         <div className={styles.containerCarrossel}>
-
-        < Carrossel items={items} />
-
+          <Carrossel items={items} />
         </div>
       </section>
 
