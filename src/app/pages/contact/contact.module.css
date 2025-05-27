@@ -1,0 +1,34 @@
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.pai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    width: 90%;
+    height: 80%;	
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: var(--cinza-fundo-escuro);
+}
+
+.paiForms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
