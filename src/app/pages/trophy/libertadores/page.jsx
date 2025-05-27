@@ -15,7 +15,7 @@ const TrofeuPage = () => {
         <h1 className={styles.tituloPagina}>Copa Libertadores</h1>
 
         <div className={styles.containerImagem}>
-        <img className={styles.fotoTrofeu} src="/images/trofeu2.png" alt="Troféu da Copa Libertadores" />
+        <img className={styles.fotoTrofeu} src="/images/libertadores.png" alt="Troféu da Copa Libertadores" />
         <div className={styles.divisoria}></div>
 </div>
 
