@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./brasileirao.module.css";
-import Header from "../../components/header";
-import Footer from "../../components/footer";
+import Header from "../../../components/header";
+import Footer from "../../../components/footer";
 import { headers } from "next/headers";
 
 const TrofeuPage = () => {
