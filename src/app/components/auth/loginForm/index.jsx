@@ -68,7 +68,7 @@ const LoginForm = () => {
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className={styles.form}>
+      <form onSubmit={handleSubmit} className={styles.inputContainer}>
         <div className={styles.inputGroup}>
           <label htmlFor="email" className={styles.label}>
             Email
@@ -84,19 +84,8 @@ const LoginForm = () => {
               className={styles.input}
               disabled={isLoading}
             />
-            <svg
-              className={styles.inputIcon}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              width="20"
-              height="20"
-            >
-              <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z" />
-            </svg>
           </div>
         </div>
-
         <div className={styles.inputGroup}>
           <label htmlFor="password" className={styles.label}>
             Senha
@@ -112,16 +101,6 @@ const LoginForm = () => {
               className={styles.input}
               disabled={isLoading}
             />
-            <svg
-              className={styles.inputIcon}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              width="20"
-              height="20"
-            >
-              <path d="M19 10H20C20.5523 10 21 10.4477 21 11V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V11C3 10.4477 3.44772 10 4 10H5V9C5 5.13401 8.13401 2 12 2C15.866 2 19 5.13401 19 9V10ZM5 12V20H19V12H5ZM11 14H13V18H11V14ZM17 10V9C17 6.23858 14.7614 4 12 4C9.23858 4 7 6.23858 7 9V10H17Z" />
-            </svg>
           </div>
         </div>
 
@@ -150,7 +129,7 @@ const LoginForm = () => {
         </button>
       </form>
 
-      <div className={styles.socialLogin}>
+      {/* <div className={styles.socialLogin}>
         <p className={styles.orText}>Ou entre com</p>
         <div className={styles.socialButtons}>
           <button className={`${styles.socialButton} ${styles.googleButton}`}>
@@ -193,7 +172,7 @@ const LoginForm = () => {
             </svg>
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

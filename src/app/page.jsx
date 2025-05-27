@@ -1,6 +1,19 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useAuth } from "@/app/context/AuthContext.jsx";
+
+import LoginForm from "./components/auth/loginForm";
+import RegisterForm from "./components/auth/registerForm";
+
 import styles from "./page.module.css";
 
 export default function LoginPage() {
+  const [isLogin, setIsLogin] = useState(true);
+
+  const toggleForm = () => setIsLogin(!isLogin);
+
   return (
     <div>
       <main className={styles.main}>
@@ -13,13 +26,20 @@ export default function LoginPage() {
             />
           </div>
           <div className={styles.blueBarContainer}>
-            <div className={styles.blueBar}/>
+            <div className={styles.blueBar} />
           </div>
           <div className={styles.titleContainer}>
             <h1 className={styles.title}>The 20 Brazilians Stars</h1>
           </div>
         </section>
-        <section className={styles.formContainer}>
+        <div className={styles.formWrapper}>
+          {isLogin ? (
+            <LoginForm />
+          ) : (
+            <RegisterForm onSuccess={() => setIsLogin(true)} />
+          )}
+        </div>
+        {/* <section className={styles.formContainer}>
           <article className={styles.inputContainer}>
             <input type="text" className={styles.input} placeholder="EMAIL:" />
             <input
@@ -63,7 +83,7 @@ export default function LoginPage() {
               />
             </div>
           </article>
-        </section>
+        </section> */}
       </main>
     </div>
   );

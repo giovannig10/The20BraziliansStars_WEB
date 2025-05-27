@@ -1,4 +1,4 @@
-import styles from "./auth.module.css";
+import styles from "./authSuccess.module.css";
 
 const AuthSuccess = ({ message, onClose }) => {
   if (!message) return null;
