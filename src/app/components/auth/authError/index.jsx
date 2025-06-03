@@ -1,4 +1,4 @@
-import styles from "./auth.module.css";
+import styles from "./authError.module.css";
 
 const AuthError = ({ message, onClose }) => {
   if (!message) return null;
