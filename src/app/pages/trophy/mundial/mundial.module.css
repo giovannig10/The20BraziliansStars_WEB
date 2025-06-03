@@ -81,7 +81,7 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  background-color: #25406A;
+
   border-radius: 0.5rem;
   width: 50%;
   height: 50%;
@@ -90,15 +90,16 @@
 }
 
 .imagemTimes {
-  width: 30rem;
-  height: 10rem;
+  width: 50rem;
+  height: 15rem;
   border-radius: 0.5rem;
   padding: 0.5rem;
+  border-radius: 1rem;
 }
 
 .nomeTimes {
   text-align: center;
-  color: #ffffff;
+  color: var(--azul);
   font-size: 1rem;
   font-weight: bold;
 }
