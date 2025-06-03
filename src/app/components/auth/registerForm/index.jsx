@@ -8,7 +8,6 @@ import styles from "./registerForm.module.css";
 const RegisterForm = ({ onSuccess }) => {
   const [formData, setFormData] = useState({
     name: "",
-    nickname: "",
     email: "",
     password: "",
     confirmPassword: "",
@@ -114,44 +113,6 @@ const RegisterForm = ({ onSuccess }) => {
               className={styles.input}
               disabled={isLoading}
             />
-            <svg
-              className={styles.inputIcon}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              width="20"
-              height="20"
-            >
-              <path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM12.1597 16C10.1243 16 8.29182 16.8687 7.01276 18.2556C8.23325 19.3334 9.80229 20 11.5222 20C13.4006 20 15.1023 19.2023 16.3522 17.9211C15.0887 16.7535 13.2586 16 12.1597 16ZM12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4Z" />
-            </svg>
-          </div>
-        </div>
-
-        <div className={styles.inputGroup}>
-          <label htmlFor="nickname" className={styles.label}>
-            Nickname <span className={styles.optional}>(opcional)</span>
-          </label>
-          <div className={styles.inputWrapper}>
-            <input
-              type="text"
-              id="nickname"
-              name="nickname"
-              placeholder="Como você quer ser chamado(a)"
-              value={formData.nickname}
-              onChange={handleChange}
-              className={styles.input}
-              disabled={isLoading}
-            />
-            <svg
-              className={styles.inputIcon}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              width="20"
-              height="20"
-            >
-              <path d="M20 22H4V20C4 17.2386 6.23858 15 9 15H15C17.7614 15 20 17.2386 20 20V22ZM12 13C8.68629 13 6 10.3137 6 7C6 3.68629 8.68629 1 12 1C15.3137 1 18 3.68629 18 7C18 10.3137 15.3137 13 12 13Z" />
-            </svg>
           </div>
         </div>
 
@@ -170,16 +131,6 @@ const RegisterForm = ({ onSuccess }) => {
               className={styles.input}
               disabled={isLoading}
             />
-            <svg
-              className={styles.inputIcon}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              width="20"
-              height="20"
-            >
-              <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z" />
-            </svg>
           </div>
         </div>
 
@@ -198,16 +149,6 @@ const RegisterForm = ({ onSuccess }) => {
               className={styles.input}
               disabled={isLoading}
             />
-            <svg
-              className={styles.inputIcon}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              width="20"
-              height="20"
-            >
-              <path d="M19 10H20C20.5523 10 21 10.4477 21 11V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V11C3 10.4477 3.44772 10 4 10H5V9C5 5.13401 8.13401 2 12 2C15.866 2 19 5.13401 19 9V10ZM5 12V20H19V12H5ZM11 14H13V18H11V14ZM17 10V9C17 6.23858 14.7614 4 12 4C9.23858 4 7 6.23858 7 9V10H17Z" />
-            </svg>
           </div>
         </div>
 
@@ -226,44 +167,22 @@ const RegisterForm = ({ onSuccess }) => {
               className={styles.input}
               disabled={isLoading}
             />
-            <svg
-              className={styles.inputIcon}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              width="20"
-              height="20"
-            >
-              <path d="M19 10H20C20.5523 10 21 10.4477 21 11V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V11C3 10.4477 3.44772 10 4 10H5V9C5 5.13401 8.13401 2 12 2C15.866 2 19 5.13401 19 9V10ZM5 12V20H19V12H5ZM11 14H13V18H11V14ZM17 10V9C17 6.23858 14.7614 4 12 4C9.23858 4 7 6.23858 7 9V10H17Z" />
-            </svg>
           </div>
         </div>
-
-        <div className={styles.termsGroup}>
-          <input type="checkbox" id="terms" className={styles.checkbox} />
-          <label htmlFor="terms" className={styles.termsLabel}>
-            Aceito os{" "}
-            <a href="#" className={styles.termsLink}>
-              Termos e Condições
-            </a>{" "}
-            e a{" "}
-            <a href="#" className={styles.termsLink}>
-              Política de Privacidade
-            </a>
-          </label>
+        <div className={styles.buttonContainer}>
+          <button
+            type="submit"
+            className={styles.submitButton}
+            disabled={isLoading}
+          >
+            {isLoading ? (
+              <span className={styles.loadingSpinner}></span>
+            ) : (
+              "Criar Conta"
+            )}
+          </button>
         </div>
-
-        <button
-          type="submit"
-          className={styles.submitButton}
-          disabled={isLoading}
-        >
-          {isLoading ? (
-            <span className={styles.loadingSpinner}></span>
-          ) : (
-            "Criar Conta"
-          )}
-        </button>
+        
       </form>
     </div>
   );
