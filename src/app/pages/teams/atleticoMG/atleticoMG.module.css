@@ -19,7 +19,7 @@
 }
 
 .pai {
-    height: 98%;
+    height: 99%;
     width: 100%;
     background-color: grey;
 }
@@ -63,8 +63,8 @@
 }
 
 .shield {
-    width: 14rem;
-    height: 14rem;
+    width: 12rem;
+    height: 12rem;
     background-color: var(--azul);
 }
 
@@ -115,6 +115,9 @@
     height: 90%;
     width: 20%;
     background-color: var(--azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hinoText {
@@ -148,4 +151,36 @@
     font-size: larger;
 }
 
+.containerInfos2 {
+    height: 20%;
+    width: 100%;
+    background-color: aqua;
+}
 
+.containerRetrospectiva {
+    height: 40%;
+    width: 100%;
+    background-color: beige;
+}
+
+.containerRetrospectivaTitle {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--azul);
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.containerResultados {
+    height: 40%;
+}
+
+.containerStadium {
+    height: 60%;
+    width: 100%;
+    background-color: lightgreen;
+}

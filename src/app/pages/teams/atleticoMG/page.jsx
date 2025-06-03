@@ -68,6 +68,21 @@ export default function AtleticoMG() {
 
                     </div>
 
+                    <div className={styles.containerInfos2}>
+                        <div className={styles.containerRetrospectiva}>
+                            <div className={styles.containerRetrospectivaTitle}>
+                                <h1> Retrospecto Recente </h1>
+                            </div>
+                            <div className={styles.containerResultados}>
+                                <div className={styles.result}></div>
+                            </div>
+                        </div>
+
+                        <div className={styles.containerStadium}>
+
+                        </div>
+                    </div>
+
                     </div>
 
                 </main>
