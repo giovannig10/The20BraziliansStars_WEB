@@ -52,7 +52,9 @@
 .details {
   width: 100%;
   text-align: left;
-  padding-left: 1rem; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .details summary {
@@ -60,9 +62,19 @@
   color: #25406A;
   font-weight: bold;
   outline: none;
+  list-style: none;
   padding: 0.2rem 0;
   transition: color 0.2s;
   padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .details[open] summary {
@@ -80,7 +92,7 @@
 
 .membro {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: #fff;
@@ -98,23 +110,19 @@
   justify-content: center;
 }
 
-.membro img {
-  display: block;
-  width: 100px;
-  height: 140px;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 20px;
+.imagem {
+  width: 150px;
+  height: 150px;
+  border-radius: 10rem;
   margin-bottom: 1rem;
-  object-fit: cover;
   box-shadow: 0 2px 8px rgba(37, 64, 106, 0.12);
   background: #e0e0e0;
   border: 2px solid #25406A;
-  transition: transform 0.2s;
 }
 
 .membro img:hover {
   transform: scale(1.05);
+  transition: transform 1.5s;
 }
 
 .membro p {
