@@ -107,7 +107,6 @@
 .containerTrofeus {
     height: 30%;
     width: 100%;
-    background-color: var(--azul);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,9 +130,9 @@
 .uniforme1, .uniforme2 {
     height: 90%;
     width: 20%;
-    background-color: var(--azul);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -174,7 +173,7 @@
 }
 
 .containerRetrospectiva {
-    height: 40%;
+    height: 50%;
     width: 100%;
 }
 
@@ -247,7 +246,7 @@
 }
 
 .containerStadium {
-    height: 60%;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -256,7 +255,7 @@
 }
 
 .containerStadiumTitle {
-    height: 20%;
+    height: 10%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -265,5 +264,32 @@
     color: var(--azul);
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.containerPlayers {
+    margin-top: 15rem;
+    height: 55%;
+    width: 100%;
+}
+
+.containerPlayersTitle {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--azul);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.containerPlayersPositions {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
 }
 

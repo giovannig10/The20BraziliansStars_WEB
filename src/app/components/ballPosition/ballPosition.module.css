@@ -1,0 +1,17 @@
+.ballPositionPai {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--azul);
+    font-weight: bold;
+    gap: 0.5rem;
+}
+
+.ballPosition {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.370rem solid var(--azul);
+}

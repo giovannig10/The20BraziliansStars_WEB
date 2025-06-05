@@ -1,11 +1,11 @@
 .carouselContainer {
     position: relative;
+    height: 80%;
     width: 40%;
     overflow: hidden;
 }
 
 .carouselWrapper {
-    position: relative;
     overflow: hidden;
     padding: 0.5rem 0;
 }
@@ -22,7 +22,7 @@
 }
 
 .carouselCard {
-    height: 20rem;
+    height: 25rem;
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
@@ -39,7 +39,7 @@
 
 .cardImageContainer {
     width: 100%;
-    height: 60%;
+    height: 70%;
     overflow: hidden;
     display: flex;
     align-items: center;

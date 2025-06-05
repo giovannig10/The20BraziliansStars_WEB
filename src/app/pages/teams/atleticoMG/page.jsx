@@ -2,6 +2,7 @@ import styles from "./atleticoMG.module.css";
 import Header from "../../../components/header";
 import Footer from "../../../components/footer";
 import CarouselStadium from "../../../components/carouselStadium";
+import BallPosition from "../../../components/ballPosition";
 
 const items = [
   {
@@ -37,7 +38,9 @@ export default function AtleticoMG() {
       <Header />
 
       <main className={styles.main}>
+
         <div className={styles.pai}>
+
           <div className={styles.containerTeam}>
             <div className={styles.containerBanner}>
               <div className={styles.colors}>
@@ -131,7 +134,20 @@ export default function AtleticoMG() {
               </div>
               <CarouselStadium items={items}/>
             </div>
-          </div>  
+          </div>
+
+
+            <div className={styles.containerPlayers}>
+            <div className={styles.containerPlayersTitle}>
+              <h1>Principais Jogadores</h1>
+            </div>
+            <div className={styles.containerPlayersPositions}>
+              <BallPosition backgroundColor="red" name="GOL" />
+              <BallPosition backgroundColor="orange" name="DEF" />
+              <BallPosition backgroundColor="green" name="MC" />
+              <BallPosition backgroundColor="blue" name="ATA" />
+            </div>
+          </div>
 
         </div>
       </main>
