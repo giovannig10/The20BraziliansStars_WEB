@@ -1,8 +1,8 @@
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Atlético Mineiro",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_galo.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_galo.png",
+    foundationYear:5 de março de 1908,
     uniform: [
         "",
         "",
@@ -12,23 +12,29 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Arena MRV",
+    anthem "Nós somos do Clube Atlético Mineiro
+Jogamos com muita raça e amor
+Vibramos com alegria nas vitórias
+Clube Atlético Mineiro
+Galo Forte Vingador",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Bahia",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_bahia.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_bahia.png",
+    foundationYear:1 de janeiro de 1931,
     uniform: [
         "",
         "",
@@ -38,23 +44,30 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Arena Fonte Nova",
+    anthem "Vamos avante, esquadrão
+Vamos, serás o vencedor
+Vamos conquista mais um tento
+Bahia! Bahia! Bahia!
+Ouve essa voz que é seu alento
+Bahia! Bahia! Bahia!",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Botafogo",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_fogao.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_botafogo.png",
+    foundationYear:12 de agosto de 1904,
     uniform: [
         "",
         "",
@@ -64,23 +77,32 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Estádio Nilton Santos",
+    anthem "Botafogo, Botafogo
+Campeão desde 1910
+Foste herói em cada jogo
+Botafogo, por isso é que tu és
+E hás de ser nosso imenso prazer
+Tradições aos milhões tens também
+Tu és o glorioso, não podes perder
+Perder pra ninguém",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Bragantino",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_bragantino.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_bragantino.png",
+    foundationYear:8 de janeiro de 1928,
     uniform: [
         "",
         "",
@@ -90,23 +112,28 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Estádio Nabi Abi Chedid",
+    anthem "Bragantino, o melhor
+Primeiro em emoção
+No campo é o maior
+Arrebenta coração",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Ceará",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_ceara.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_ceara.png",
+    foundationYear:2 de junho de 1914,
     uniform: [
         "",
         "",
@@ -116,23 +143,28 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Arena Castelão",
+    anthem "Campeão da popularidade
+Tua torcida hoje é toda cidade
+É o grande povo a te estimular
+É o vovô, Ceará vai ganhar!",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Corinthians",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_lixo.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_corinthians.png",
+    foundationYear:1 de setembro de 1910,
     uniform: [
         "",
         "",
@@ -142,23 +174,28 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Neo Química Arena",
+    anthem "Salve o Corinthians
+O campeão dos campeões
+Eternamente
+Dentro dos nossos corações",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Cruzeiro",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_cruzeiro.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_cruzeiro.png",
+    foundationYear:2 de janeiro de 1921,
     uniform: [
         "",
         "",
@@ -168,23 +205,28 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Mineirão",
+    anthem "Nos gramados de Minas Gerais
+Temos páginas heroicas e imortais
+Cruzeiro, Cruzeiro querido
+Tão combatido, jamais vencido!",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Flamengo",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_flamengo.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_flamengo.png",
+    foundationYear:15 de novembro de 1895,
     uniform: [
         "",
         "",
@@ -194,23 +236,27 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Maracanã",
+    anthem "Uma vez Flamengo
+Sempre Flamengo
+Flamengo sempre eu hei de se",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Fluminense",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_flu.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_flu.png",
+    foundationYear:21 de julho de 1902,
     uniform: [
         "",
         "",
@@ -220,23 +266,28 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Maracanã",
+    anthem "Sou Tricolor de coração
+Sou do clube tantas vezes campeão
+Fascina pela sua disciplina, o Fluminense me domina
+Eu tenho amor ao Tricolo",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Fortaleza",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_fortaleza.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_fortaleza.png",
+    foundationYear:18 de outubro de 1918,
     uniform: [
         "",
         "",
@@ -246,23 +297,32 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Arena Castelão",
+    anthem "Fortaleza
+Clube de glória e tradição
+Fortaleza
+Quantas vezes campeão
+Fortaleza
+Querido idolatrado
+Estás sempre guardado
+Dentro do meu coração",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Grêmio",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_gremio.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_gremio.png",
+    foundationYear:15 de setembro de 1903,
     uniform: [
         "",
         "",
@@ -272,23 +332,28 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Arena do Grêmio",
+    anthem "Até a pé nós iremos
+Para o que der e vier
+Mas o certo é que nós estaremos
+Com o grêmio onde o grêmio estiver",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Internacional",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_inter.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_inter.png",
+    foundationYear:4 de abril de 1909,
     uniform: [
         "",
         "",
@@ -298,23 +363,30 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Estádio Beira-Rio",
+    anthem "Glória do desporto nacional
+Oh, Internacional
+Que eu vivo a exaltar
+Levas a plagas distantes
+Feitos relevantes
+Vives a brilhar",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Juventude",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_juventude.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_juventude.png",
+    foundationYear:29 de junho de 1913,
     uniform: [
         "",
         "",
@@ -324,23 +396,28 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Alfredo Jaconi",
+    anthem "Juventude, um passado de glórias
+O teu nome querido tornou
+És um clube de muitas vitórias
+Que a cidade em orgulho deixou",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Mirassol",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_mirassol.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_mirassol.png",
+    foundationYear:9 de novembro de 1925,
     uniform: [
         "",
         "",
@@ -350,23 +427,30 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Campos Maia",
+    anthem "O meu coração
+entra em campo
+Com o Mirassol
+É o verde, amarelo
+e branco
+Raça e futebo",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Palmeiras",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_palmeiras.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_palmeiras.png",
+    foundationYear:26 de agosto de 1914,
     uniform: [
         "",
         "",
@@ -376,23 +460,28 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Allianz Parque",
+    anthem "Quando surge o alviverde imponente
+No gramado em que a luta o aguarda
+Sabe bem o que vem pela frente
+Que a dureza do prélio não tarda!",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Santos",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_santos.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_santos.png",
+    foundationYear:14 de abril de 1912,
     uniform: [
         "",
         "",
@@ -402,23 +491,29 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Estádio Vila Belmiro",
+    anthem "Santos! Santos! Gol!
+Agora quem dá bola é o Santos
+O Santos é o novo campeão
+Glorioso alvinegro praiano
+Campeão absoluto desse ano!",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Sport",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_saopaulo.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_saopaulo.png",
+    foundationYear:25 de janeiro de 1930,
     uniform: [
         "",
         "",
@@ -428,23 +523,30 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Estádio Cícero Pompeu de Toledo",
+    anthem "Salve o Tricolor Paulista
+Amado clube brasileiro
+Tu és forte, tu és grande
+Dentre os grandes, és o primeiro
+Tu és forte, tu és grande
+Dentre os grandes, és o primeiro",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Sport",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_sport.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_sport.png",
+    foundationYear:13 de maio de 1905,
     uniform: [
         "",
         "",
@@ -454,23 +556,31 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
+    stadiumName: "Estádio Adelmar da Costa Carvalho (Ilha do Retiro)",
+    anthem "Com o Sport eternamente estarei
+Pois rubro-negras
+São as cores que abracei
+E o abraço, de tão forte
+Não tem separação
+Pra mim, o meu Sport é religião
+A vida a gente vive pra vencer",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
     points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Vasco da Gama",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_vasco.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_vasco.png",
+    foundationYear:21 de agosto de 1898,
     uniform: [
         "",
         "",
@@ -480,23 +590,28 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Estádio São Januário",
+    anthem "Vamos todos cantar de coração
+A Cruz de Malta é o meu pendão
+Tu tens o nome do heroico português
+Vasco da Gama, a tua fama assim se fez",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
 {
-    name: "",
-    fansbackground: "",
-    shield: "",
-    foundationYear:,
+    name: "Vitória",
+    fansbackground: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/fansBackground/torcida_vitoria.png",
+    shield: "https://raw.githubusercontent.com/giovannig10/The20BraziliansStars_WEB/refs/heads/main/public/images/shields/escudo_vitoria.png",
+    foundationYear:13 de maio de 1899,
     uniform: [
         "",
         "",
@@ -506,15 +621,24 @@
         "",
         "",
     ],
-    stadiumName: "",
-    anthem "",
-    titles: [],
-    games:,
-    wins:,
-    draws:,
-    losses:,
-    points:,
-    goalsFavor:,
-    goalsOwn:,
-    goalsDifference:,
+    stadiumName: "Estádio Manoel Barradas",
+    anthem "Eu sou Leão da Barra , tradição
+Eu sou vermelho e preto
+Eu sou paixão
+Pelos campos do Brasil
+Nosso grito já se ouviu ...
+Ô ô ô ô ô ô ô ô
+Ô ô ô ô ô ô ô ô
+Vitória!",
+    titles: [
+        0, 1, 2
+    ],
+    games:0,
+    wins:0,
+    draws:0,
+    losses:0,
+    points:0,
+    goalsFavor:0,
+    goalsOwn:0,
+    goalsDifference:0,
 }
