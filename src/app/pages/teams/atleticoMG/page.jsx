@@ -2,6 +2,7 @@ import styles from "./atleticoMG.module.css";
 import Header from "../../../components/header";
 import Footer from "../../../components/footer";
 import CarouselStadium from "../../../components/carouselStadium";
+import PlayersCard from "../../../components/playersCard";
 import BallPosition from "../../../components/ballPosition";
 
 const items = [
@@ -146,6 +147,10 @@ export default function AtleticoMG() {
               <BallPosition backgroundColor="orange" name="DEF" />
               <BallPosition backgroundColor="green" name="MC" />
               <BallPosition backgroundColor="blue" name="ATA" />
+            </div>
+
+            <div className={styles.playersContent}>
+            <PlayersCard/>
             </div>
           </div>
 
