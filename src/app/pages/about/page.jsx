@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./about.module.css";
 import Header from "@/app/components/header";
 import Footer from "@/app/components/footer";
+import Membro from "@/app/components/membro";
 
-const linkedinIcon = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg";
 
 const SobreNosPage = () => {
   return (
@@ -14,224 +14,56 @@ const SobreNosPage = () => {
           <h1 className={styles.titulo}>Conheça nossa equipe</h1>
         </div>
         <div className={styles.gridEquipe_1}>
-          <div className={styles.membro}>
-            <img className={styles.imagem} src="/images/giovanni.jpg" alt="Giovanni Gonçalves" />
-            <div className={styles.texts}>
-              <p>Giovanni Gonçalves</p>
-              <span>Product Owner</span>
-              <details className={styles.details}>
-                <summary>Mais detalhes</summary>
-                <div className={styles.links}>
-                  {/* github */}
-                  <a
-                    href="https://github.com/giovannig10"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                      alt="GitHub"
-                      style={{ width: 24, height: 24 }}
-                    />
-                  </a>
-                  {/* linkedin */}
-                  <a
-                    href="https://www.linkedin.com/in/giovanni-goncalves/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={linkedinIcon}
-                      alt="LinkedIn"
-                      style={{ width: 24, height: 24 }}
-                    />
-                  </a>
-                </div>
-              </details>
-            </div>
-          </div>
-          <div className={styles.membro}>
-            <img className={styles.imagem} src="/images/joao.jpg" alt="João Gianonni" />
-            <div className={styles.texts}>
-              <p>João Vitor Gianonni</p>
-              <span>Scrum Master</span>
-              <details className={styles.details}>
-                <summary>Mais detalhes</summary>
-                <div className={styles.links}>
-                  {/* github */}
-                  <a
-                    href="https://github.com/joaogianoni23"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                      alt="GitHub"
-                      style={{ width: 24, height: 24 }}
-                    />
-                  </a>
-                  {/* linkedin */}
-                  <a
-                    href="https://www.linkedin.com/in/joaovitor-gianonni/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={linkedinIcon}
-                      alt="LinkedIn"
-                      style={{ width: 24, height: 24 }}
-                    />
-                  </a>
-                </div>
-              </details>
-            </div>
-          </div>
-          <div className={styles.membro}>
-            <img className={styles.imagem} src="/images/valverde.jpg" alt="Vinicius Valverde" />
-            <div className={styles.texts}>
-              <p>Vinicius Valverde</p>
-              <span>Membro Desenvolvedor</span>
-              <details className={styles.details}>
-                <summary>Mais detalhes</summary>
-                <div className={styles.links}>
-                  {/* github */}
-                  <a
-                    href="https://github.com/viniciusValverde1410"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                      alt="GitHub"
-                      style={{ width: 24, height: 24 }}
-                    />
-                  </a>
-                  {/* linkedin */}
-                  <a
-                    href="https://www.linkedin.com/in/vinicius-valverde/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={linkedinIcon}
-                      alt="LinkedIn"
-                      style={{ width: 24, height: 24 }}
-                    />
-                  </a>
-                </div>
-              </details>
-            </div>
-          </div>
+          <Membro
+          img = "/images/giovanni.jpg"
+          name = "Giovanni Gonçalves"
+          func = "Product Owner"
+          github = "https://github.com/giovannig10"
+          gmail = "mailto:giovannig10@gmail.com"
+          linkedin = "https://www.linkedin.com/in/"
+          />
+          <Membro
+          img = "/images/joao.jpg"
+          name = "João Vitor Gianonni"
+          func = "Scrum Master"
+          github = "https://github.com/joaogianoni23"
+          gmail = "mailto:joao.gianoni@aluno.senai.br"
+          linkedin = "https://www.linkedin.com/in/joaogianoni/"
+          />
+          <Membro
+          img = "/images/valverde.jpg"
+          name = "Vinicius Valverde"
+          func = "Membro Desenvolvedor"
+          github = "https://github.com/viniciusValverde1410"
+          gmail = "mailto:vinicius.valverde@aluno.senai.br"
+          linkedin = "https://www.linkedin.com/in/https://www.linkedin.com/in/vin%C3%ADcius-valverde-b987a8339//"
+          />
         </div>
         <div className={styles.gridEquipe_2}>
-          <div className={styles.membro}>
-            <img className={styles.imagem} src="/images/gabriela.jpg" alt="Gabriela Fernanda" />
-            <div className={styles.texts}>
-              <p>Gabriela Fernanda</p>
-              <span>Membro Desenvolvedor</span>
-              <details className={styles.details}>
-                <summary>Mais detalhes</summary>
-                <div className={styles.links}>
-                  {/* github */}
-                  <a
-                    href="https://github.com/gabriela-fernanda14"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                      alt="GitHub"
-                      style={{ width: 24, height: 24 }}
-                    />
-                  </a>
-                  {/* linkedin */}
-                  <a
-                    href="https://www.linkedin.com/in/gabriela-fernanda/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={linkedinIcon}
-                      alt="LinkedIn"
-                      style={{ width: 24, height: 24 }}
-                    />
-                  </a>
-                </div>
-              </details>
-            </div>
-          </div>
-          <div className={styles.membro}>
-            <img className={styles.imagem} src="/images/pedro.jpg" alt="Pedro Oliveira" />
-            <div className={styles.texts}>
-              <p>Pedro Oliveira</p>
-              <span>Membro Desenvolvedor</span>
-              <details className={styles.details}>
-                <summary>Mais detalhes</summary>
-                <div className={styles.links}>
-                  {/* github */}
-                  <a
-                    href="https://github.com/pedro-ols"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                      alt="GitHub"
-                      style={{ width: 24, height: 24 }}
-                    />
-                  </a>
-                  {/* linkedin */}
-                  <a
-                    href="https://www.linkedin.com/in/pedro-oliveira/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={linkedinIcon}
-                      alt="LinkedIn"
-                      style={{ width: 24, height: 24 }}
-                    />
-                  </a>
-                </div>
-              </details>
-            </div>
-          </div>
-          <div className={styles.membro}>
-            <img className={styles.imagem} src="/images/vitor.jpg" alt="Vitor Sampaio" />
-            <div className={styles.texts}>
-              <p>Vitor Sampaio</p>
-              <span>Membro Desenvolvedor</span>
-              <details className={styles.details}>
-                <summary>Mais detalhes</summary>
-                <div className={styles.links}>
-                  {/* github */}
-                  <a
-                    href="https://github.com/vitor-sampai0"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                      alt="GitHub"
-                      style={{ width: 24, height: 24 }}
-                    />
-                  </a>
-                  {/* linkedin */}
-                  <a
-                    href="https://www.linkedin.com/in/vitor-sampaio/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={linkedinIcon}
-                      alt="LinkedIn"
-                      style={{ width: 24, height: 24 }}
-                    />
-                  </a>
-                </div>
-              </details>
-            </div>
-          </div>
+          <Membro
+            img="/images/gabriela.jpg"
+            name="Gabriela Fernanda"
+            func="Membro Desenvolvedor"
+            github="https://github.com/gabriela-fernanda14"
+            gmail="mailto:grabiela.e.barbosa@aluno.senai.br"
+            linkedin="https://www.linkedin.com/in/"
+          />
+          <Membro
+            img="/images/pedro.jpg"
+            name="Pedro Oliveira"
+            func="Membro Desenvolvedor"
+            github="https://github.com/pedro-ols"
+            gmail="mailto:pedro."
+            linkedin="www.linkedin.com/in/pedro-santos-52a5a02b1"
+          />
+          <Membro
+            img="/images/vitor.jpg"
+            name="Vitor Sampaio"
+            func="Membro Desenvolvedor"
+            github="https://github.com/vitor-sampai0"
+            gmail="mailto:vitor.s.lira@aluno.senai.br"
+            linkedin="https://www.linkedin.com/in/vitor-sampaio-152839241/"
+          />
         </div>
       </div>
       <Footer />

@@ -110,17 +110,6 @@ const LoginForm = () => {
             "Entrar"
           )}
         </button>
-        <div className={styles.rememberForgot}>
-          <div className={styles.checkboxGroup}>
-            <input type="checkbox" id="remember" className={styles.checkbox} />
-            <label htmlFor="remember" className={styles.checkboxLabel}>
-              Lembrar-me
-            </label>
-          </div>
-          <a href="#" className={styles.forgotLink}>
-            Esqueceu a senha?
-          </a>
-        </div>
       </form>
     </div>
     </div>

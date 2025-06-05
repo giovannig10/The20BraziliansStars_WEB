@@ -160,8 +160,8 @@
 }
 
 .submitButton {
-  width: 30%;
-  height: 45%;
+  width: 20%;
+  height: 30%;
   background-color: rgb(0, 0, 0, 0);
   margin-bottom: 0.7rem;
   display: flex;

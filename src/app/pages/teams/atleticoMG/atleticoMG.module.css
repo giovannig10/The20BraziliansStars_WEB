@@ -171,7 +171,6 @@
 .containerInfos2 {
     height: 15%;
     width: 100%;
-    background-color: aqua;
 }
 
 .containerRetrospectiva {
@@ -180,7 +179,7 @@
 }
 
 .containerRetrospectivaTitle {
-    height: 40%;
+    height: 50%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -192,7 +191,7 @@
 }
 
 .containerResultados {
-    height: 60%;
+    height: 30%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -200,7 +199,7 @@
 }
 
 .result {
-    height: 40%;
+    height: 100%;
     width: 22%;
     background-color: transparent;
     border: 4px solid var(--azul);
@@ -250,5 +249,21 @@
 .containerStadium {
     height: 60%;
     width: 100%;
-    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.containerStadiumTitle {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--azul);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+

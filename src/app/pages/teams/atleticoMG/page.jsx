@@ -1,6 +1,35 @@
 import styles from "./atleticoMG.module.css";
 import Header from "../../../components/header";
 import Footer from "../../../components/footer";
+import CarouselStadium from "../../../components/carouselStadium";
+
+const items = [
+  {
+    name: "Estádio Mineirão",
+    image: [
+      "https://www.estadios.net/wp-content/uploads/2018/12/estadio-mineirao.jpg",
+    ],
+    location: "Belo Horizonte - MG",
+    capacity: "61.500",
+  },
+  {
+    name: "Estádio Mineirão",
+    image: [
+      "https://www.aeroportoconfins.net/wp-content/uploads/2014/06/mineirao.jpg",
+    ],
+    location: "Belo Horizonte - MG",
+    capacity: "61.500",
+  },
+  {
+    name: "Estádio Mineirão",
+    image: [
+      "https://portalbelohorizonte.com.br/sites/default/files/arquivos/ao-ar-livre-e-esportes/2021-07/mineirao-6.jpg",
+    ],
+    location: "Belo Horizonte - MG",
+    capacity: "61.500",
+  },
+
+];
 
 export default function AtleticoMG() {
   return (
@@ -90,14 +119,19 @@ export default function AtleticoMG() {
                 <h1>E</h1>
               </div>
               <div className={styles.win}>
-                <h1></h1>
+                <h1>V</h1>
               </div>
               </div>
               </div>
             </div>
 
-            <div className={styles.containerStadium}></div>
-          </div>
+            <div className={styles.containerStadium}>
+              <div className={styles.containerStadiumTitle}>
+                <h1> Estádio </h1>
+              </div>
+              <CarouselStadium items={items}/>
+            </div>
+          </div>  
 
         </div>
       </main>
