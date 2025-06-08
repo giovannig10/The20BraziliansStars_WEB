@@ -8,16 +8,16 @@ import axios from 'axios';
 const Tabela = () => {
     const url = "https://tbs-back.coolify.fps92.dev/teams";
 
-    const [teams, setCharacters] = useState([]);
+    const [teams, setTeams] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null)
 
     useEffect(() => {
-        const fetchFilms = async () => {
+        const fetchTeams = async () => {
             try {
                 setLoading(true);
                 const response = await axios.get(url);
-                setCharacters(response.data);
+                setTeams(response.data);
                 setLoading(false)
             } catch (error) {
                 console.log("Erro ao buscar times na API");
@@ -25,7 +25,7 @@ const Tabela = () => {
                 setLoading(false);
             };
         };
-        fetchFilms();
+        fetchTeams();
     }, []);
 
     if (loading) {
