@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./teams.module.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import Time from "../../components/team";
+import Times from "../../components/teams";
 
 import { IoHomeOutline } from "react-icons/io5";
 import { BsFillShieldFill } from "react-icons/bs";
@@ -132,7 +132,7 @@ const teams = [
   },
 ];
 
-export default function Times() {
+export default function TimesPage() {
   return (
     <div className={styles.container}>
 
@@ -144,7 +144,7 @@ export default function Times() {
 
       <section className={styles.teamsContainer}>
         {teams.map((time) => (
-          <Time key={time.id} time={time} />
+          <Times key={time.id} time={time} />
         ))}
       </section>
 
