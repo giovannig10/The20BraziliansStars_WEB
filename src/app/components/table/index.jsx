@@ -31,7 +31,7 @@ const Tabela = () => {
     if (loading) {
         return (
             <div className={styles.loading}>
-                Carregando filmes...
+                Carregando Times...
             </div>
         )
     }
@@ -45,8 +45,8 @@ const Tabela = () => {
 
     return (
         <section className={styles.cardsList}>
-            {teams.map((team) => (
-                <TableItem key={team.id} team={team} />
+            {teams.map((team, index) => (
+                <TableItem key={team.id} team={team} index={index}/>
             ))};
         </section>
     )
