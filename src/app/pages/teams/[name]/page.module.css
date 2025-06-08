@@ -1,0 +1,9 @@
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
