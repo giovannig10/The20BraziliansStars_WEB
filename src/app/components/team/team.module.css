@@ -39,13 +39,13 @@
     flex-direction: row;
 }
 
-.white {
+.one {
     height: 100%;
     width: 9.09090909091%;
     background-color: white;
 }
 
-.black {
+.two {
     height: 100%;
     width: 9.09090909091%;
     background-color: black;
