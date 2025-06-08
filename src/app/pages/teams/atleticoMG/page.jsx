@@ -88,9 +88,9 @@ export default function AtleticoMG() {
                     </div>
                     <div className={styles.text}>
                       <h2>
-                        Nós somos do Clube Atlético Mineiro Jogamos com muita
+                        "Nós somos do Clube Atlético Mineiro Jogamos com muita
                         raça e amor Vibramos com alegria nas vitórias Clube
-                        Atlético Mineiro Galo Forte Vingador
+                        Atlético Mineiro Galo Forte Vingador"
                       </h2>
                     </div>
                   </div>

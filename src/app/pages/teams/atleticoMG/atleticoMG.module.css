@@ -162,6 +162,7 @@
     height: 80%;
     text-align: center;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     font-size: larger;
@@ -270,7 +271,6 @@
     margin-top: 15rem;
     height: 55%;
     width: 100%;
-    background-color: aqua;
 }
 
 .containerPlayersTitle {
@@ -300,5 +300,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
 }
