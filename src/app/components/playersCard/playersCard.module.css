@@ -1,0 +1,112 @@
+.playersCardsPai {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    width: 25%;
+    height: 30%;
+    border-radius: 10px;
+    margin: 3rem;
+    background-color: var(--azul);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardImage {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.imagePNG {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+
+.cardInfo {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+}
+
+.cardName {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.cardNumber {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cardPlayerInfos {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardNationality {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nationality {
+    width: 15%;
+    height: 60%;
+}
+
+.nationalityImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardPosition {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position {
+    width: 80%;
+    height: 20%;
+    border-radius: 10px;
+}
