@@ -3,6 +3,7 @@ import styles from "./home.module.css";
 import Header from "../../components/header";
 import Carrossel from "../../components/carousel";
 import Footer from "../../components/footer";
+import Tabela from "../../components/table";
 
 import { IoHome } from "react-icons/io5";
 import { BsShield } from "react-icons/bs";
@@ -142,26 +143,7 @@ export default function Home() {
                   <h1 className={styles.headerItemText}>Últimas Cinco</h1>
                 </div>
               </div>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
-              <div className={styles.tableTeam}/>
+              <Tabela/>
             </div>
           </div>
         </div>
