@@ -1,0 +1,13 @@
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+  }
+  
+  .loadingContainer p {
+    margin-top: 16px;
+    color: #6b7280;
+  }
