@@ -5,12 +5,12 @@ const Loading = () => {
   return (
     <div className={styles.loadingContainer}>
       <PulseLoader
-        color="#36d7b7"
-        size={15}
+        color="#000"
+        size={30}
         margin={2}
-        style={{ transitionDelay: "0s" }}
+        style={{ transitionDelay: "2s" }}
       />
-      Carregando filmes...
+      Carregando...
     </div>
   );
 };
