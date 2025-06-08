@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+.teamInfos{
+    width: 8.35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teamImageContainer {
+    width: 14%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teamImage {
+    width: 60%;
+    height: 80%;
+    object-fit: contain;
+}
+.teamRetrospect {
+    width: 19.2%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemText{
+    color: var(--azul);
+    font-size: 1.2rem;
+}
+.draw, .lose, .win {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #ffffff ;
+}
+.draw {
+    background-color: #DDDDDD;
+}
+.lose {
+    background-color: #FF0000;
+}
+.win {
+    background-color: #00FF00;
+}
