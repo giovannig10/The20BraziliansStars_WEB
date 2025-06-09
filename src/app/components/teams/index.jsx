@@ -2,7 +2,7 @@ import styles from "./time.module.css";
 
 const Times = ({ time }) => {  
   return (
-    <div className={styles.container}>
+    <a href={`/${team.name}`} className={styles.container}>
       <div className={styles.cardTimeContainer} style={{
       backgroundImage: `url(${time.fansBackground})`, 
       backgroundSize: 'cover', 
@@ -10,9 +10,9 @@ const Times = ({ time }) => {
       }}>
         <div className={styles.shieldContainer}>
             <div className={styles.shield}><img
-            src={time.shieldImage}
+            src={time.shield}
             className={styles.shieldImage}
-            alt="Escudo de time"
+            alt={`Escudo do ${time.name}`}
           /></div>
         </div>
         <div className={styles.nameContainer}>
@@ -23,7 +23,7 @@ const Times = ({ time }) => {
           <div className={styles.nameBottomBar2}></div>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
 

@@ -88,7 +88,6 @@ export default function AtleticoMG() {
             </div>
         );
     }
-    console.log(team.name, team.shield);
   return (
     <div className={styles.container}>
       <Header />
