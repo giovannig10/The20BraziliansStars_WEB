@@ -45,17 +45,28 @@ const RegisterForm = ({ onSuccess }) => {
     setIsLoading(true);
 
     try {
-      // Removendo confirmPassword antes de enviar para o backend
       const { confirmPassword, ...userData } = formData;
-      const result = await register(userData);
+      // const response = await fetch("https://tbs-back.coolify.fps92.dev/users", {
+      const response = await fetch("http://localhost:4000/users", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(userData),
+      });
+      const result = await response.json();
+      console.log(result);
 
-      if (result.success) {
+      if (response.ok || response.status === 201) {
         setSuccess("Conta criada com sucesso! Agora você pode fazer login.");
         setTimeout(() => {
           if (onSuccess) onSuccess();
         }, 2000);
       } else {
-        setError(result.message || "Falha ao criar conta. Tente novamente.");
+        const result = await response.json();
+        setError(
+          result.error ||
+            result.message ||
+            "Falha ao criar conta. Tente novamente."
+        );
       }
     } catch (err) {
       console.error("Erro ao registrar:", err);
@@ -182,7 +193,6 @@ const RegisterForm = ({ onSuccess }) => {
             )}
           </button>
         </div>
-        
       </form>
     </div>
   );

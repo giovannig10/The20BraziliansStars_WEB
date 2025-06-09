@@ -34,21 +34,44 @@ const LoginForm = () => {
     setIsLoading(true);
 
     try {
-      const result = await login(formData.email, formData.password);
-
-      if (result.success) {
-        // Redirecionamento tratado internamente pelo AuthContext
+      const response = await fetch("https://tbs-back.coolify.fps92.dev/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: formData.email, password: formData.password }),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        router.push("/pages/home"); 
+        setError("");
+        setIsLoading(false);
       } else {
         setError(
-          result.message || "Falha ao fazer login. Verifique suas credenciais."
+          data.error ||
+            data.message ||
+            "Falha ao fazer login. Verifique suas credenciais."
         );
+        setIsLoading(false);
       }
     } catch (err) {
-      console.error("Erro ao fazer login:", err);
-      setError("Ocorreu um erro no servidor. Tente novamente mais tarde.");
-    } finally {
-      setIsLoading(false);
+      return { success: false, message: "Erro de conexão com o servidor." };
     }
+
+    // try {
+    //   const result = await login(formData.email, formData.password);
+
+    //   if (result.success) {
+    //     // Redirecionamento tratado internamente pelo AuthContext
+    //   } else {
+    //     setError(
+    //       result.message || "Falha ao fazer login. Verifique suas credenciais."
+    //     );
+    //   }
+    // } catch (err) {
+    //   console.error("Erro ao fazer login:", err);
+    //   setError("Ocorreu um erro no servidor. Tente novamente mais tarde.");
+    // } finally {
+    //   setIsLoading(false);
+    // }
   };
 
   return (
@@ -67,51 +90,49 @@ const LoginForm = () => {
           <span>{error}</span>
         </div>
       )}
-    <div className={styles.formContainer}>
-
-      <form onSubmit={handleSubmit} className={styles.inputContainer}>
-        <div className={styles.inputGroup}>
-          <div className={styles.inputWrapper}>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="seu@email.com"
-              value={formData.email}
-              onChange={handleChange}
-              className={styles.input}
-              disabled={isLoading}
+      <div className={styles.formContainer}>
+        <form onSubmit={handleSubmit} className={styles.inputContainer}>
+          <div className={styles.inputGroup}>
+            <div className={styles.inputWrapper}>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seu@email.com"
+                value={formData.email}
+                onChange={handleChange}
+                className={styles.input}
+                disabled={isLoading}
               />
-          </div>
-          
-          <div className={styles.inputWrapper}>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Sua senha"
-              value={formData.password}
-              onChange={handleChange}
-              className={styles.input}
-              disabled={isLoading}
+            </div>
+
+            <div className={styles.inputWrapper}>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Sua senha"
+                value={formData.password}
+                onChange={handleChange}
+                className={styles.input}
+                disabled={isLoading}
               />
+            </div>
           </div>
-        </div>
 
-
-        <button
-          type="submit"
-          className={styles.submitButton}
-          disabled={isLoading}
+          <button
+            type="submit"
+            className={styles.submitButton}
+            disabled={isLoading}
           >
-          {isLoading ? (
-            <span className={styles.loadingSpinner}></span>
-          ) : (
-            "Entrar"
-          )}
-        </button>
-      </form>
-    </div>
+            {isLoading ? (
+              <span className={styles.loadingSpinner}></span>
+            ) : (
+              "Entrar"
+            )}
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

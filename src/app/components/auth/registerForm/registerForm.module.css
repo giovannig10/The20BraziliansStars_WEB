@@ -12,6 +12,10 @@
 .inputWrapper {
   width: 100%;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .inputGroup {
   width: 100%;
@@ -22,8 +26,8 @@
   flex-direction: column;
 }
 .input {
-  width: 100%;
-  height: 50%;
+  width: 80%;
+  height: 2.5rem;
   background-color: #b7b8bab1;
   padding: 1rem;
   border: none;

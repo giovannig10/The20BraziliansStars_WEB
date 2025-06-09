@@ -42,7 +42,7 @@ export default function LoginPage() {
           </div>
           <div className={styles.newAccountContainer}>
             <h1 className={styles.newAccountText}>Não tem uma conta?</h1>
-            <a href="/registrar" className={styles.newAccountLink}>
+            <a href="/register" className={styles.newAccountLink}>
               Clique aqui para se registrar
             </a>
           </div>
