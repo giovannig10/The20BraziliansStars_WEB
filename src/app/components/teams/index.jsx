@@ -1,4 +1,4 @@
-import styles from "./time.module.css";
+import styles from "./teams.module.css";
 
 const Times = ({ time }) => {  
   return (

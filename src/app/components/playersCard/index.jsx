@@ -1,6 +1,9 @@
 import styles from "./playersCard.module.css";
 
 export default function PlayersCard() {
+
+    const url = "https://tbs-back.coolify.fps92.dev/players";
+
   return (
     <div className={styles.playersCardsPai}>
       <div className={styles.card}>

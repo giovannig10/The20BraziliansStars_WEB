@@ -4,7 +4,7 @@
 import { useState, useEffect, useRef } from "react";
 import styles from "./carousel.module.css";
 
-const Carousel = ({ items }) => {
+const CarouselStadium = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const carouselRef = useRef(null);
@@ -106,7 +106,7 @@ const Carousel = ({ items }) => {
               <div className={styles.carouselCard}>
                 <div className={styles.cardImageContainer}>
                   <img
-                    src={item.image}
+                    src={item.image[0]}
                     alt={item.name}
                     className={styles.cardImage}
                   />
@@ -164,4 +164,4 @@ const Carousel = ({ items }) => {
   );
 };
 
-export default Carousel;
+export default CarouselStadium;
