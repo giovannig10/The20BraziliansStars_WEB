@@ -3,6 +3,8 @@
 
 import { useState } from "react";
 import { useAuth } from "@/app/context/AuthContext.jsx";
+import { useRouter } from "next/navigation";
+
 import styles from "./registerForm.module.css";
 
 const RegisterForm = ({ onSuccess }) => {
@@ -16,6 +18,7 @@ const RegisterForm = ({ onSuccess }) => {
   const [success, setSuccess] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const { register } = useAuth();
+  const router = useRouter();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -46,8 +49,7 @@ const RegisterForm = ({ onSuccess }) => {
 
     try {
       const { confirmPassword, ...userData } = formData;
-      // const response = await fetch("https://tbs-back.coolify.fps92.dev/users", {
-      const response = await fetch("http://localhost:4000/users", {
+      const response = await fetch("https://tbs-back.coolify.fps92.dev/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(userData),
@@ -56,12 +58,12 @@ const RegisterForm = ({ onSuccess }) => {
       console.log(result);
 
       if (response.ok || response.status === 201) {
-        setSuccess("Conta criada com sucesso! Agora você pode fazer login.");
+        setSuccess("Conta criada com sucesso!");
         setTimeout(() => {
           if (onSuccess) onSuccess();
         }, 2000);
+        router.push("/pages/home");
       } else {
-        const result = await response.json();
         setError(
           result.error ||
             result.message ||

@@ -34,14 +34,23 @@ const LoginForm = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch("https://tbs-back.coolify.fps92.dev/login", {
+      const token = localStorage.getItem("token");
+
+      const response = await fetch("https://tbs-back.coolify.fps92.dev/users/login", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: formData.email, password: formData.password }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: formData.email,
+          password: formData.password,
+        }),
       });
       const data = await response.json();
+      console.log(data);
       if (response.ok) {
-        router.push("/pages/home"); 
+        localStorage.setItem("token", data.token);
+        router.push("/pages/home");
         setError("");
         setIsLoading(false);
       } else {
