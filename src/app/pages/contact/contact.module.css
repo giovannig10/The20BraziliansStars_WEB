@@ -62,12 +62,13 @@
 
 .forms {
     width: 70%;
-    height: 80%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    background-color: blue;
 }
 
 .messageContainer {

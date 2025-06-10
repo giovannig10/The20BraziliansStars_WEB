@@ -19,20 +19,26 @@ const ContactPage = () => {
 
           <div className={styles.paiForms}>
             <div className={styles.formsContainer}>
-              <form className={styles.forms} action="submit" >
-
+              <form
+                className={styles.forms}
+                action="https://formspree.io/f/mldnjkve"
+                method="POST"
+                target="_blank"
+              >
                 <div className={styles.messageContainer}>
+
                   <label className={styles.labelMensagem}>
+                    
                     <textarea
                       name="mensagem"
                       className={styles.mensagem}
                       required
-                      placeholder ="Mensagem:"
+                      placeholder="Mensagem:"
                     ></textarea>
                   </label>
                 </div>
 
-                <div className={styles.buttonContainer}>  
+                <div className={styles.buttonContainer}>
                   <button type="submit" className={styles.button}>
                     Enviar
                   </button>
@@ -41,7 +47,11 @@ const ContactPage = () => {
             </div>
 
             <div className={styles.imageContainer}>
-                <img className={styles.imageGroup} src="/images/grupo.jpg" alt="" />
+              <img
+                className={styles.imageGroup}
+                src="/images/grupo.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
