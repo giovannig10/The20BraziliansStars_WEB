@@ -39,7 +39,6 @@ export default function PlayersCard({ teamName }) {
 
         setPlayers(filtered);
         setLoading(false);
-
       } catch (error) {
         console.log("Erro ao buscar jogadores na API");
         setError("Não foi possível carregar os jogadores.");
@@ -65,10 +64,17 @@ export default function PlayersCard({ teamName }) {
       </div>
     );
 
+  const positionColors = {
+    "goleiro": "red",
+    "defensor": "yellow",
+    "meio-campista": "green",
+    "atacante": "blue",
+  };
+
   return (
     <div className={styles.playersCardsPai}>
       {players.map((players) => (
-        <div className={styles.card}>
+        <div className={styles.card} key={players.id}>
           <div className={styles.cardImage}>
             <div className={styles.image}>
               <img className={styles.imagePNG} src={players.image} alt="" />
@@ -79,7 +85,7 @@ export default function PlayersCard({ teamName }) {
               <h1>{players.name}</h1>
             </div>
             <div className={styles.cardNumber}>
-              <h1>{players.number}</h1>
+              <h1>#{players.number}</h1>
             </div>
             <div className={styles.cardPlayerInfos}>
               <h2 className={styles.height}>{players.height}</h2>
@@ -97,7 +103,12 @@ export default function PlayersCard({ teamName }) {
             </div>
 
             <div className={styles.cardPosition}>
-              <div className={styles.position}></div>
+              <div className={styles.position}
+                style={{
+                  backgroundColor: positionColors[players.position] || "gray",
+                }}
+                >
+              </div>
             </div>
           </div>
         </div>
