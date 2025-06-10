@@ -13,6 +13,10 @@ import BallPosition from "../ballPosition";
 
 import { useParams } from "next/navigation";
 
+import { IoHomeOutline } from "react-icons/io5";
+import { BsFillShieldFill } from "react-icons/bs";
+import { IoPersonOutline } from "react-icons/io5";
+
 const items = [
   {
     name: "Estádio Mineirão",
@@ -82,7 +86,13 @@ export default function TeamPage() {
   }
   return (
     <div className={styles.container}>
-      <Header />
+      
+      <Header
+        homeIcon={<IoHomeOutline size={36} color={"white"} />}
+        shieldIcon={<BsFillShieldFill size={46} color={"white"} />}
+        userIcon={<IoPersonOutline size={36} color={"white"} />}
+      />
+
 
       <main className={styles.main}>
         <div className={styles.pai}>

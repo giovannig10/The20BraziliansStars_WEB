@@ -14,12 +14,12 @@ export default function PlayersCard({ teamName }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  function normalize(str) {
+  function normalize(str) { // Normaliza uma string: remove acentos, hífens e converte para minúsculas
     return str
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/-/g, "")
-      .toLowerCase();
+      .normalize("NFD") // Remove acentos
+      .replace(/[\u0300-\u036f]/g, "") // Remove marcas de acentuação
+      .replace(/-/g, "") // Remove hífens
+      .toLowerCase(); // Converte para minúsculas
   }
 
   useEffect(() => {

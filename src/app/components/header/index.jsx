@@ -13,19 +13,8 @@ const Header = ({ homeIcon, shieldIcon, userIcon }) => {
                 </div>
             </div>
 
-            <div className={styles.paiSearch}>
-                <div className={styles.darkMode}>
-                <RiMoonFill color="white" className={styles.darkModeIcon} />
-                </div>
-                <div className={styles.filhoSearch}>
-                    <div className={styles.search}>
-                        <input
-                            type="text"
-                            placeholder="Pesquisar"
-                            className={styles.searchInput}
-                        />
-                    </div>
-                </div>
+            <div className={styles.paiLogo}>
+                <img className={styles.logoImg} src="/images/logoBranco.png" alt="" />
             </div>
         </div>
     );
