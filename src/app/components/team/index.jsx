@@ -51,6 +51,8 @@ export default function TeamPage() {
   const [teams, setTeams] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+
 
   useEffect(() => {
     const fetchTeams = async () => {
@@ -97,15 +99,15 @@ export default function TeamPage() {
       <main className={styles.main}>
         <div className={styles.pai}>
           <div className={styles.containerTeam}>
-            <div className={styles.containerBanner}>
 
+  <div className={styles.containerBanner}>
               <div className={styles.banner}>
-                <img className={styles.bannerImage} src={team.banner} alt="Banner de cores do time" />
+                <img className={styles.bannerImage} src="https://img.freepik.com/vetores-gratis/fundo-preto-listrado-padrao-simples-em-vetor-branco_53876-151306.jpg?semt=ais_hybrid&w=740" alt="" />
               </div>
 
               <div className={styles.line}>
                 <div className={styles.shield}>
-                  <img className={styles.imagem} src={team.shield} alt="Escudo do time" />
+                  <img className={styles.imagem} src={team.shield} alt="" />
                 </div>
               </div>
             </div>
@@ -114,7 +116,7 @@ export default function TeamPage() {
               <div className={styles.containerInfosFilho}>
                 <div className={styles.tituloContainer}>
                   <h1 className={styles.name}>{team.name}</h1>
-                  <h2 className={styles.history}>Conheça um pouco da historia!</h2>
+                  <h2 className={styles.history}>Conheça um pouco da historia do {team.nickname}!</h2>
                 </div>
                 <div className={styles.containerTrofeus}>
                   {/* <img src="" alt="" /> */}
