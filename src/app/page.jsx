@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { useAuth } from "@/app/context/AuthContext.jsx";
+import Link from "next/link";
 
 import LoginForm from "./components/auth/loginForm";
 import RegisterForm from "./components/auth/registerForm";
@@ -42,9 +42,9 @@ export default function LoginPage() {
           </div>
           <div className={styles.newAccountContainer}>
             <h1 className={styles.newAccountText}>Não tem uma conta?</h1>
-            <a href="/register" className={styles.newAccountLink}>
+            <Link href="/register" className={styles.newAccountLink}>
               Clique aqui para se registrar
-            </a>
+            </Link>
           </div>
         </div>
       </main>
