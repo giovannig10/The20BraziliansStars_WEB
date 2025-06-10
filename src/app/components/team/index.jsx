@@ -98,24 +98,14 @@ export default function TeamPage() {
         <div className={styles.pai}>
           <div className={styles.containerTeam}>
             <div className={styles.containerBanner}>
-              <div className={styles.colors}>
-                <div className={styles.one} style={{background: team.color1}}></div>
-                <div className={styles.two} style={{background: team.color2}}></div>
-                <div className={styles.one} style={{background: team.color1}}></div>
-                <div className={styles.two} style={{background: team.color2}}></div>
-                <div className={styles.one} style={{background: team.color1}}></div>
-                <div className={styles.two} style={{background: team.color2}}></div>
-                <div className={styles.one} style={{background: team.color1}}></div>
-                <div className={styles.two} style={{background: team.color2}}></div>
-                <div className={styles.one} style={{background: team.color1}}></div>
-                <div className={styles.two} style={{background: team.color2}}></div>
-                <div className={styles.one} style={{background: team.color1}}></div>
 
+              <div className={styles.banner}>
+                <img className={styles.bannerImage} src={team.banner} alt="Banner de cores do time" />
               </div>
 
               <div className={styles.line}>
                 <div className={styles.shield}>
-                  <img className={styles.imagem} src={team.shield} alt="" />
+                  <img className={styles.imagem} src={team.shield} alt="Escudo do time" />
                 </div>
               </div>
             </div>
@@ -132,7 +122,7 @@ export default function TeamPage() {
                 <div className={styles.divisoria}></div>
                 <div className={styles.hino}>
                   <div className={styles.uniforme1}>
-                    {/* aqui vai a imagem do uniforme */}
+                    <img className={styles.uniformImage} src={team.uniformHome} alt="Uniforme Home" />
                   </div>
                   <div className={styles.hinoText}>
                     <div className={styles.year}>
@@ -143,7 +133,7 @@ export default function TeamPage() {
                     </div>
                   </div>
                   <div className={styles.uniforme2}>
-                    {/* aqui vai a imagem do uniforme 2 */}
+                    <img className={styles.uniformImage} src={team.uniformAway} alt="Uniforme Away" />
                   </div>
                 </div>
               </div>
