@@ -6,7 +6,7 @@ import Loading from "../loading";
 import styles from "./playersCard.module.css";
 
 export default function PlayersCard({ teamName }) {
-    console.log("PlayersCard montou!", teamName);
+  console.log("PlayersCard montou!", teamName);
 
   const url = "https://tbs-back.coolify.fps92.dev/players";
 
@@ -14,13 +14,13 @@ export default function PlayersCard({ teamName }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-          function normalize(str) {
-          return str
-            .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
-            .replace(/-/g, "")
-            .toLowerCase();
-        }
+  function normalize(str) {
+    return str
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/-/g, "")
+      .toLowerCase();
+  }
 
   useEffect(() => {
     const fetchPlayers = async () => {
@@ -28,10 +28,10 @@ export default function PlayersCard({ teamName }) {
         setLoading(true);
         const response = await axios.get(url);
 
-        console.log("teamName recebido:", teamName);
-        console.log("Dados da API:", response.data);
+        // console.log("teamName recebido:", teamName);
+        // console.log("Todos os jogadores:", response.data);
 
-        const filtered = response.data.filter(
+        const filtered = response.data.players.filter(
           (player) =>
             player.teamName &&
             normalize(player.teamName) === normalize(teamName)
@@ -39,6 +39,7 @@ export default function PlayersCard({ teamName }) {
 
         setPlayers(filtered);
         setLoading(false);
+
       } catch (error) {
         console.log("Erro ao buscar jogadores na API");
         setError("Não foi possível carregar os jogadores.");
