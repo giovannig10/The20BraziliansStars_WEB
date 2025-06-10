@@ -1,24 +1,24 @@
 import styles from "./teams.module.css";
 
-const Times = ({ time }) => {  
+const Teams = ({ team }) => {  
   return (
     <a href={`/${team.name}`} className={styles.container}>
       <div className={styles.cardTimeContainer} style={{
-      backgroundImage: `url(${time.fansBackground})`, 
+      backgroundImage: `url(${team.fansBackground})`, 
       backgroundSize: 'cover', 
       backgroundPosition: 'center'
       }}>
         <div className={styles.shieldContainer}>
             <div className={styles.shield}><img
-            src={time.shield}
+            src={team.shield}
             className={styles.shieldImage}
-            alt={`Escudo do ${time.name}`}
+            alt={`Escudo do ${team.name}`}
           /></div>
         </div>
         <div className={styles.nameContainer}>
           <div className={styles.nameBottomBar1}></div>
           <div className={styles.name}>
-            <h1 className={styles.teamName}>{time.name}</h1>
+            <h1 className={styles.teamName}>{team.name}</h1>
           </div>
           <div className={styles.nameBottomBar2}></div>
         </div>
@@ -27,4 +27,4 @@ const Times = ({ time }) => {
   );
 }
 
-export default Times;
+export default Teams;

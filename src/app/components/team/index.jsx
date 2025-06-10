@@ -40,7 +40,7 @@ const items = [
   },
 ];
 
-export default function AtleticoMG() {
+export default function TeamPage() {
   const url = "https://tbs-back.coolify.fps92.dev/teams";
   const params = useParams();
 

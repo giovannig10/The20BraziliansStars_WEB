@@ -87,6 +87,6 @@ const items = [
         );
     }
   return (
-    <Team items={items}/>
+    <Team items={items} team={team}/>
   );
 }
