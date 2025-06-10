@@ -48,7 +48,7 @@ export function AuthProvider({ children }) {
         setUser(data.userExists);
 
         // Redirecionar para dashboard
-        router.push("/dashboard");
+        router.push("/pages/home");
         return { success: true };
       } else {
         return {

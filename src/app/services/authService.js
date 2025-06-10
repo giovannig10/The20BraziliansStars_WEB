@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // URL base da API
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4001";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://tbs-back.coolify.fps92.dev";
 
 // Cliente axios com URL base configurada
 const apiClient = axios.create({
@@ -28,7 +28,7 @@ export const login = async (email, password) => {
   console.log("Fazendo login com:", email, password);
 
   try {
-    const response = await apiClient.post("/auth/login", { email, password });
+    const response = await apiClient.post("/users/login", { email, password });
     return {
       success: true,
       data: response.data,
