@@ -6,7 +6,6 @@ import Loading from "../loading";
 import styles from "./playersCard.module.css";
 
 export default function PlayersCard({ teamName }) {
-  console.log("PlayersCard montou!", teamName);
 
   const url = "https://tbs-back.coolify.fps92.dev/players";
 
