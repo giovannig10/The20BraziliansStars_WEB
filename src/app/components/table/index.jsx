@@ -7,8 +7,8 @@ import axios from "axios";
 
 const Tabela = () => {
   const urlTeams = "https://tbs-back.coolify.fps92.dev/teams";
-  //   const urlGames = "https://tbs-back.coolify.fps92.dev/games";
-  const urlGames = "http://localhost:4000/games";
+    const urlGames = "https://tbs-back.coolify.fps92.dev/games";
+  // const urlGames = "http://localhost:4000/games";
 
   const [teams, setTeams] = useState([]);
   const [games, setGames] = useState([]);
@@ -52,18 +52,14 @@ const Tabela = () => {
     time.games = 0;
     time.goalsFavor = 0;
     time.goalsOwn = 0;
+    time.goalsDifference = 0;
     time.wins = 0;
     time.losses = 0;
     time.draws = 0;
 
-    time.retrospect = time.retrospect || [];
-
-    console.log(time);
+    time.retrospect = time.retrospect || [""];
 
     games.forEach((jogo) => {
-
-      console.log(jogo);
-
       if (jogo.homeTeam === time.name) {
         time.games ++;
         time.goalsFavor += jogo.homeGoals;
@@ -129,7 +125,7 @@ const Tabela = () => {
   return (
     <section className={styles.cardsList}>
       {teams.map((team, index) => (
-        <TableItem key={team.id} team={team} index={index} />
+        <TableItem key={team.id} team={team} index={index} zebra={index % 2 === 0 ? "zebra" : ""}/>
       ))}
     </section>
   );
