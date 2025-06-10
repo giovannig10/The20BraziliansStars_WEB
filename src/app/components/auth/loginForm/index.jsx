@@ -34,53 +34,21 @@ const LoginForm = () => {
     setIsLoading(true);
 
     try {
-      const token = localStorage.getItem("token");
+      const result = await login(formData.email, formData.password);
 
-      const response = await fetch("https://tbs-back.coolify.fps92.dev/users/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: formData.email,
-          password: formData.password,
-        }),
-      });
-      const data = await response.json();
-      console.log(data);
-      if (response.ok) {
-        localStorage.setItem("token", data.token);
-        router.push("/pages/home");
-        setError("");
-        setIsLoading(false);
+      if (result.success) {
+        // Redirecionamento tratado internamente pelo AuthContext
       } else {
         setError(
-          data.error ||
-            data.message ||
-            "Falha ao fazer login. Verifique suas credenciais."
+          result.message || "Falha ao fazer login. Verifique suas credenciais."
         );
-        setIsLoading(false);
       }
     } catch (err) {
-      return { success: false, message: "Erro de conexão com o servidor." };
+      console.error("Erro ao fazer login:", err);
+      setError("Ocorreu um erro no servidor. Tente novamente mais tarde.");
+    } finally {
+      setIsLoading(false);
     }
-
-    // try {
-    //   const result = await login(formData.email, formData.password);
-
-    //   if (result.success) {
-    //     // Redirecionamento tratado internamente pelo AuthContext
-    //   } else {
-    //     setError(
-    //       result.message || "Falha ao fazer login. Verifique suas credenciais."
-    //     );
-    //   }
-    // } catch (err) {
-    //   console.error("Erro ao fazer login:", err);
-    //   setError("Ocorreu um erro no servidor. Tente novamente mais tarde.");
-    // } finally {
-    //   setIsLoading(false);
-    // }
   };
 
   return (

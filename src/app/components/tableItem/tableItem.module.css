@@ -44,9 +44,12 @@
     background-color: #DDDDDD;
     color: rgb(30, 30, 30)
 }
-.lose {
+.defeat {
     background-color: #FF0000;
 }
-.win {
+.victory {
     background-color: #00FF00;
+}
+.zebra {
+  background-color: rgb(37, 64, 106, 0.1);
 }

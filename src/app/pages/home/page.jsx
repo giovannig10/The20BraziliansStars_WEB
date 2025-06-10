@@ -139,6 +139,9 @@ export default function Home() {
                 <div className={styles.headerItem}>
                   <h1 className={styles.headerItemText}>GF</h1>
                 </div>
+                <div className={styles.headerItem}>
+                  <h1 className={styles.headerItemText}>SG</h1>
+                </div>
                 <div className={styles.retrospectItem}>
                   <h1 className={styles.headerItemText}>Últimas Cinco</h1>
                 </div>
