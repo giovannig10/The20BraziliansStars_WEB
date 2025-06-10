@@ -1,58 +1,65 @@
-import styles from './contact.module.css';
-import Header from '../../components/header';
-import Footer from '../../components/footer';
+import styles from "./contact.module.css";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
 
 const ContactPage = () => {
-    return (
-        <div className={styles.container}>
+  return (
+    <div className={styles.container}>
+      <Header />
 
-            <Header />
+      <main className={styles.pai}>
+        <div className={styles.main}>
+          <div className={styles.tituloContainer}>
+            <h1 className={styles.titulo}>Entre em contato conosco!</h1>
+            <p className={styles.subtitulo}>
+              Se você tiver alguma dúvida, sugestão ou apenas quiser enviar uma
+              mensagem, sinta-se à vontade.{" "}
+            </p>
+          </div>
 
-            <main className={styles.pai}>
+          <div className={styles.paiForms}>
+            <div className={styles.formsContainer}>
+              <form
+                className={styles.forms}
+                action="https://formspree.io/f/mldnjkve"
+                method="POST"
+                target="_blank"
+              >
+                <div className={styles.messageContainer}>
 
-                <div className={styles.main}>
-
-                    <h1>Entre em contato conosco</h1>
-
-                    <div className={styles.paiForms}>
-
-                        <form action="">
-                            <div>
-                                <label className={styles.label}>
-                                    Nome:
-                                    <input type="text" name="nome" className={styles.input} required />
-                                </label>
-                            </div>
-
-                            <div>
-                                <label className={styles.label}>
-                                    Email:
-                                    <input type="email" name="email" className={styles.input} required />
-                                </label>
-                            </div>
-
-                            <div>
-                                <label className={styles.label}>
-                                    Mensagem:
-                                    <textarea name="mensagem" className={styles.textarea} required></textarea>
-                                </label>
-                            </div>
-
-                            <div>
-                                <button type="submit" className={styles.button}>Enviar</button>
-                            </div>
-
-                        </form>
-
-                    </div>
+                  <label className={styles.labelMensagem}>
+                    
+                    <textarea
+                      name="mensagem"
+                      className={styles.mensagem}
+                      required
+                      placeholder="Mensagem:"
+                    ></textarea>
+                  </label>
                 </div>
 
-            </main>
+                <div className={styles.buttonContainer}>
+                  <button type="submit" className={styles.button}>
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
 
-            <Footer />
-
+            <div className={styles.imageContainer}>
+              <img
+                className={styles.imageGroup}
+                src="/images/grupo.jpg"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-    )
-}
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
 
 export default ContactPage;

@@ -10,25 +10,130 @@
     justify-content: center;
     height: 100%;
     width: 100%;
+    background-color: var(--cinza-fundo);
+
 }
 
 .main {
     width: 90%;
     height: 80%;	
-    margin-top: 4rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 0.5rem;
-    background-color: var(--cinza-fundo-escuro);
+    background-color: #ffffff;
+}
+
+.tituloContainer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--azul);
+    font-weight: bold;
+    gap: 1rem ;
+}
+
+.subtitulo {
+    width: 70%;
+    text-align: center;
 }
 
 .paiForms {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70%;
+}
+
+.formsContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
 }
 
+.forms {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: blue;
+}
+
+.messageContainer {
+    width: 80%;
+    height: 60%;
+}
+
+.mensagem {
+    width: 100%;
+    height: 90%;
+    background-color: var(--cinza-fundo);
+    padding: 1rem;
+    font-weight: bold;
+    color: black;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: inset 0 2px 8px 0 rgba(0,0,0,0.55);
+    resize: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.mensagem::placeholder {
+    color: var(--azul);
+    opacity: 1; /* Garante que a cor será aplicada */
+}
+
+.buttonContainer {
+    width: 30%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    width: 80%;
+    height: 100%;
+    background-color: var(--cinza-fundo-escuro);
+    color: var(--azul);
+    font-weight: bold;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--azul);
+    color: white;
+    transition: background-color 1s, color 0.1s, transform 0.3s;
+    transform: scale(1.15);
+}
+
+.imageContainer {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageGroup {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
