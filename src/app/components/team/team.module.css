@@ -25,28 +25,26 @@
 .containerTeam {
     height: 25%;
     width: 100%;
+    background-color: aqua;
 }
 
 .containerBanner {
-    height: 45%;
+    height: 50%;
     width: 100%;
 }
 
-.colors {
+.banner {
     height: 95%;
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.one {
+.bannerImage {
+    width: 100%;
     height: 100%;
-    width: 9.09090909091%;
-}
-
-.two {
-    height: 100%;
-    width: 9.09090909091%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .line {
@@ -94,7 +92,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.1rem;
     justify-content: center;
     align-items: center;
     color: var(--azul);
@@ -103,6 +101,12 @@
 
 .name {
     font-size: 3rem;
+}
+
+.history {
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 .containerTrofeus {
@@ -135,6 +139,13 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+.uniformImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .hinoText {

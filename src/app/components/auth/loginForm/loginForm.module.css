@@ -35,6 +35,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 1rem;
 }
 .input {
   width: 100%;
@@ -160,8 +161,8 @@
 }
 
 .submitButton {
-  width: 20%;
-  height: 30%;
+  width: 25%;
+  height: 20%;
   background-color: rgb(0, 0, 0, 0);
   margin-bottom: 0.7rem;
   display: flex;
@@ -175,7 +176,8 @@
 }
 
 .submitButton:hover {
-  transform: translateY(-1px);
+  transform: scale(1.1);
+  transition: transform 0.2s;
 }
 
 .submitButton:disabled {

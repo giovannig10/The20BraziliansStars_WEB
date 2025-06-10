@@ -6,15 +6,14 @@ import Loading from "../loading";
 import styles from "./playersCard.module.css";
 
 export default function PlayersCard({ teamName }) {
-  console.log("PlayersCard montou!", teamName);
-
   const url = "https://tbs-back.coolify.fps92.dev/players";
 
   const [players, setPlayers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  function normalize(str) { // Normaliza uma string: remove acentos, hífens e converte para minúsculas
+  function normalize(str) {
+    // Normaliza uma string: remove acentos, hífens e converte para minúsculas
     return str
       .normalize("NFD") // Remove acentos
       .replace(/[\u0300-\u036f]/g, "") // Remove marcas de acentuação
@@ -28,14 +27,20 @@ export default function PlayersCard({ teamName }) {
         setLoading(true);
         const response = await axios.get(url);
 
-        // console.log("teamName recebido:", teamName);
-        // console.log("Todos os jogadores:", response.data);
+        console.log("teamName recebido:", teamName);
+        console.log("Todos os jogadores:", response.data);
 
         const filtered = response.data.players.filter(
           (player) =>
             player.teamName &&
             normalize(player.teamName) === normalize(teamName)
         );
+
+        filtered.sort((a, b) => {
+          if (a.position === "goleiro" && b.position !== "goleiro") return -1;
+          if (a.position !== "goleiro" && b.position === "goleiro") return 1;
+          return a.name.localeCompare(b.name, "pt-BR");
+        });
 
         setPlayers(filtered);
         setLoading(false);
@@ -65,10 +70,10 @@ export default function PlayersCard({ teamName }) {
     );
 
   const positionColors = {
-    "goleiro": "red",
-    "defensor": "yellow",
+    goleiro: "red",
+    defensor: "orange",
     "meio-campista": "green",
-    "atacante": "blue",
+    atacante: "blue",
   };
 
   return (
@@ -77,7 +82,11 @@ export default function PlayersCard({ teamName }) {
         <div className={styles.card} key={players.id}>
           <div className={styles.cardImage}>
             <div className={styles.image}>
-              <img className={styles.imagePNG} src={players.image} alt="" />
+              <img
+                className={styles.imagePNG}
+                src={players.image}
+                alt="Imagem do jogador"
+              />
             </div>
           </div>
           <div className={styles.cardInfo}>
@@ -103,12 +112,12 @@ export default function PlayersCard({ teamName }) {
             </div>
 
             <div className={styles.cardPosition}>
-              <div className={styles.position}
+              <div
+                className={styles.position}
                 style={{
                   backgroundColor: positionColors[players.position] || "gray",
                 }}
-                >
-              </div>
+              ></div>
             </div>
           </div>
         </div>

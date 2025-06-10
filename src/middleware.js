@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 // Rotas que não exigem autenticação
-const publicRoutes = ["/", "/auth"];
+const publicRoutes = ["/", "/auth", "/register", "/login", "/images/Logotype.png"];
 
 export function middleware(request) {
   // Obter o token do cookie
