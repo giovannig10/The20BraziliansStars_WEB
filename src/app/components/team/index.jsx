@@ -80,7 +80,6 @@ export default function TeamPage() {
   if (!team) {
     return <div className={styles.error}>Time não encontrado.</div>;
   }
-  console.log(team.name, team.shield);
   return (
     <div className={styles.container}>
       <Header />
@@ -185,7 +184,7 @@ export default function TeamPage() {
               <BallPosition backgroundColor="blue" name="ATA" />
             </div>
             <div className={styles.playersContent}>
-              <PlayersCard />
+              <PlayersCard teamName={team.name}/>
             </div>
           </div>
         </div>
