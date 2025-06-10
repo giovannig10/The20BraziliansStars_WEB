@@ -6,14 +6,14 @@ import React from "react";
 import styles from "./teams.module.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import Times from "../../components/teams";
+import Teams from "../../components/teams";
 
 import { IoHomeOutline } from "react-icons/io5";
 import { BsFillShieldFill } from "react-icons/bs";
 import { IoPersonOutline } from "react-icons/io5";
 import axios from "axios";
 
-export default function TimesPage() {
+export default function TeamsPage() {
   const url = "https://tbs-back.coolify.fps92.dev/teams";
 
   const [teams, setTeams] = useState([]);
@@ -38,7 +38,7 @@ export default function TimesPage() {
   }, []);
 
   if (loading) {
-    return <div className={styles.loading}>Carregando Time...</div>;
+    return <div className={styles.loading}>Carregando Times...</div>;
   }
   if (error) {
     return <div className={styles.error}>{error}</div>;
@@ -52,8 +52,8 @@ export default function TimesPage() {
       />
 
       <section className={styles.teamsContainer}>
-        {teams.map((time) => (
-          <Times key={time.id} time={time} />
+        {teams.map((team) => (
+          <Teams key={team.id} team={team} />
         ))}
       </section>
 

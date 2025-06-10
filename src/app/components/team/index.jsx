@@ -13,6 +13,10 @@ import BallPosition from "../ballPosition";
 
 import { useParams } from "next/navigation";
 
+import { IoHomeOutline } from "react-icons/io5";
+import { BsFillShieldFill } from "react-icons/bs";
+import { IoPersonOutline } from "react-icons/io5";
+
 const items = [
   {
     name: "Estádio Mineirão",
@@ -40,7 +44,7 @@ const items = [
   },
 ];
 
-export default function AtleticoMG() {
+export default function TeamPage() {
   const url = "https://tbs-back.coolify.fps92.dev/teams";
   const params = useParams();
 
@@ -80,10 +84,15 @@ export default function AtleticoMG() {
   if (!team) {
     return <div className={styles.error}>Time não encontrado.</div>;
   }
-  console.log(team.name, team.shield);
   return (
     <div className={styles.container}>
-      <Header />
+      
+      <Header
+        homeIcon={<IoHomeOutline size={36} color={"white"} />}
+        shieldIcon={<BsFillShieldFill size={46} color={"white"} />}
+        userIcon={<IoPersonOutline size={36} color={"white"} />}
+      />
+
 
       <main className={styles.main}>
         <div className={styles.pai}>
@@ -115,6 +124,7 @@ export default function AtleticoMG() {
               <div className={styles.containerInfosFilho}>
                 <div className={styles.tituloContainer}>
                   <h1 className={styles.name}>{team.name}</h1>
+                  <h2 className={styles.history}>Conheça um pouco da historia!</h2>
                 </div>
                 <div className={styles.containerTrofeus}>
                   {/* <img src="" alt="" /> */}
@@ -185,7 +195,7 @@ export default function AtleticoMG() {
               <BallPosition backgroundColor="blue" name="ATA" />
             </div>
             <div className={styles.playersContent}>
-              <PlayersCard />
+              <PlayersCard teamName={team.name}/>
             </div>
           </div>
         </div>

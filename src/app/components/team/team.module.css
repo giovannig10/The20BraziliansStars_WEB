@@ -42,13 +42,11 @@
 .one {
     height: 100%;
     width: 9.09090909091%;
-    background-color: white;
 }
 
 .two {
     height: 100%;
     width: 9.09090909091%;
-    background-color: black;
 }
 
 .line {
@@ -71,6 +69,7 @@
 .imagem {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .containerInfos {
@@ -94,6 +93,8 @@
     height: 20%;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
     justify-content: center;
     align-items: center;
     color: var(--azul);
