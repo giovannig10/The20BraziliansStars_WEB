@@ -2,7 +2,7 @@ import styles from "./teams.module.css";
 
 const Teams = ({ team }) => {  
   return (
-    <a href={`/${team.name}`} className={styles.container}>
+    <a href={`/pages/teams/${team.name}`} className={styles.container}>
       <div className={styles.cardTimeContainer} style={{
       backgroundImage: `url(${team.fansBackground})`, 
       backgroundSize: 'cover', 
