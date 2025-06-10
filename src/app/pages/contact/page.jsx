@@ -1,8 +1,34 @@
+"use client";
+
+import { useState } from "react";
 import styles from "./contact.module.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 
 const ContactPage = () => {
+  const [mensagem, setMensagem] = useState("");
+  const [enviado, setEnviado] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch("https://formspree.io/f/mldnjkve", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ mensagem }),
+      });
+      if (res.ok) {
+        setEnviado(true);
+        setMensagem("");
+        setTimeout(() => setEnviado(false), 3000); // some após 3s
+      } else {
+        alert("Erro ao enviar mensagem.");
+      }
+    } catch {
+      alert("Erro ao enviar mensagem.");
+    }
+  };
+
   return (
     <div className={styles.container}>
       <Header />
@@ -21,19 +47,18 @@ const ContactPage = () => {
             <div className={styles.formsContainer}>
               <form
                 className={styles.forms}
-                action="https://formspree.io/f/mldnjkve"
-                method="POST"
-                target="_blank"
+                onSubmit={handleSubmit}
+                autoComplete="off"
               >
                 <div className={styles.messageContainer}>
-
                   <label className={styles.labelMensagem}>
-                    
                     <textarea
                       name="mensagem"
                       className={styles.mensagem}
                       required
                       placeholder="Mensagem:"
+                      value={mensagem}
+                      onChange={(e) => setMensagem(e.target.value)}
                     ></textarea>
                   </label>
                 </div>
@@ -43,6 +68,12 @@ const ContactPage = () => {
                     Enviar
                   </button>
                 </div>
+
+                {enviado && (
+                  <div className={styles.popupSucesso}>
+                    Mensagem enviada com sucesso!
+                  </div>
+                )}
               </form>
             </div>
 
