@@ -124,6 +124,7 @@ export default function TeamPage() {
               <div className={styles.containerInfosFilho}>
                 <div className={styles.tituloContainer}>
                   <h1 className={styles.name}>{team.name}</h1>
+                  <h2 className={styles.history}>Conheça um pouco da historia!</h2>
                 </div>
                 <div className={styles.containerTrofeus}>
                   {/* <img src="" alt="" /> */}

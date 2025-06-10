@@ -93,6 +93,8 @@
     height: 20%;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
     justify-content: center;
     align-items: center;
     color: var(--azul);
