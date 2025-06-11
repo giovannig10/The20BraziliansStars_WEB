@@ -1,28 +1,67 @@
-.container{
+.container {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 60px;
+    height: 2.67rem;
 }
-.teamInfos{
-    width: 8.35%;
+
+.positionReward {
+    width: 5px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1ec71e;
 }
+
+.champ {
+    background-color: gold;
+}
+
+.g4 {
+    background-color: #1ec71e;
+}
+
+.z4 {
+    background-color: #FF0000;
+}
+
+.default {
+    background-color: #e0e0e0;
+}
+
+.teamInfos,
+.position {
+    width: 8.35%;
+    height: 100%;
+}
+
+.teamInfos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.position{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px
+}
+
 .teamImageContainer {
     width: 14%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
+
 .teamImage {
     width: 60%;
     height: 80%;
     object-fit: contain;
 }
+
 .teamRetrospect {
     width: 19.2%;
     height: 100%;
@@ -31,35 +70,43 @@
     align-items: center;
     flex-direction: row;
 }
-.itemText{
+
+.itemText {
     color: var(--azul);
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    gap: 5px;
 }
-.draw, .defeat, .victory {
-    width: 20px;
-    height: 23px;
+
+.draw,
+.defeat,
+.victory {
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    color: #ffffff ;
-    font-size: 10px;
+    color: #ffffff;
+    font-size: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
 }
+
 .draw {
     background-color: #a5a7a8;
 }
+
 .defeat {
     background-color: #FF0000;
     color: #ffffff;
 }
+
 .victory {
-    background-color: #00FF00;
+    background-color: #1ec71e;
 }
+
 .zebra {
-  background-color: rgb(37, 64, 106, 0.1);
+    background-color: rgb(37, 64, 106, 0.1);
 }

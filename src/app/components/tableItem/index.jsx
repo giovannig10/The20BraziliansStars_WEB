@@ -1,10 +1,17 @@
 import styles from "./tableItem.module.css";
 
 const TableItem = ({ team, index, zebra }) => {
+  let rewardClass = styles.default;
+  
+  if (index === 0) rewardClass = styles.champ;
+  else if (index > 0 && index <= 3) rewardClass = styles.g4;
+  else if (index >= 16 && index <= 19) rewardClass = styles.z4;
+
   return (
     <div className={`${styles.container} ${zebra ? styles.zebra : ""}`}>
-      <div className={styles.teamInfos}>
-        <h2 className={styles.itemText}>{index + 1}</h2>
+      <div className={`${styles.teamInfos} ${styles.position}`}>
+        <div className={`${styles.positionReward} ${rewardClass}`}></div>
+        <h2 className={styles.itemText} >{index + 1}</h2>
       </div>
       <div className={styles.teamImageContainer}>
         <img className={styles.teamImage} src={team.shield} alt={team.name} />
