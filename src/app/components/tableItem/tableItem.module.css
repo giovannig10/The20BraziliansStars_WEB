@@ -29,23 +29,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 .itemText{
     color: var(--azul);
     font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
-.draw, .lose, .win {
+.draw, .defeat, .victory {
     width: 20px;
-    height: 20px;
+    height: 23px;
     border-radius: 50%;
     color: #ffffff ;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }
 .draw {
-    background-color: #DDDDDD;
-    color: rgb(30, 30, 30)
+    background-color: #a5a7a8;
 }
 .defeat {
     background-color: #FF0000;
+    color: #ffffff;
 }
 .victory {
     background-color: #00FF00;

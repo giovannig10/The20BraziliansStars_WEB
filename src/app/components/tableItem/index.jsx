@@ -1,11 +1,6 @@
 import styles from "./tableItem.module.css";
 
 const TableItem = ({ team, index, zebra }) => {
-  const lastFiveArray = team.teamRetrospect
-    ? team.teamRetrospect.split("")
-    : [];
-
-  console.log(lastFiveArray);
   return (
     <div className={`${styles.container} ${zebra ? styles.zebra : ""}`}>
       <div className={styles.teamInfos}>
@@ -40,37 +35,33 @@ const TableItem = ({ team, index, zebra }) => {
       </div>
       <div className={styles.teamRetrospect}>
         <div className={styles.itemText}>
-          {lastFiveArray.length > 0 ? (
-            lastFiveArray.map((game, i) => {
-              if (game === "V") {
-                return (
-                  <span key={i} className={styles.victory}>
-                    V
-                  </span>
-                );
-              } else if (game === "D") {
-                return (
-                  <span key={i} className={styles.defeat}>
-                    D
-                  </span>
-                );
-              } else if (game === "E") {
-                return (
-                  <span key={i} className={styles.draw}>
-                    E
-                  </span>
-                );
-              } else {
-                return (
-                  <span key={i} className={styles.empty}>
-                    -
-                  </span>
-                );
-              }
-            })
-          ) : (
-            <span>:/</span>
-          )}
+          {team.retrospect.map((game, i) => {
+            if (game === "V") {
+              return (
+                <div key={i} className={styles.victory}>
+                 <h2>V</h2> 
+                </div>
+              );
+            } else if (game === "D") {
+              return (
+                <div key={i} className={styles.defeat}>
+                  <h2>D</h2>
+                </div>
+              );
+            } else if (game === "E") {
+              return (
+                <div key={i} className={styles.draw}>
+                  <h2>E</h2>
+                </div>
+              );
+            } else {
+              return (
+                <div key={i} className={styles.empty}>
+                  -
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     </div>
