@@ -18,7 +18,7 @@ const RegisterForm = ({ onSuccess }) => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const { register } = useAuth();
+  const { user } = useAuth();
   const router = useRouter();
 
   const handleChange = (e) => {
@@ -31,10 +31,6 @@ const RegisterForm = ({ onSuccess }) => {
     e.preventDefault();
 
     // Validação básica
-    if (!formData.id) {
-      setError("O ID do usuário é obrigatório");
-      return;
-    }
     if (!formData.name || !formData.email || !formData.password) {
       setError("Preencha todos os campos obrigatórios");
       return;
@@ -61,7 +57,7 @@ const RegisterForm = ({ onSuccess }) => {
       if (userData.password) updateData.password = userData.password;
 
       const response = await fetch(
-        `https://tbs-back.coolify.fps92.dev/users/${id}`,
+        `https://tbs-back.coolify.fps92.dev/users/${user.id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -76,7 +72,7 @@ const RegisterForm = ({ onSuccess }) => {
         setTimeout(() => {
           if (onSuccess) onSuccess();
         }, 2000);
-        router.push("/pages/home");
+        router.push("/");
       } else {
         setError(
           result.error ||
@@ -125,22 +121,6 @@ const RegisterForm = ({ onSuccess }) => {
       )}
 
       <form onSubmit={handleSubmit} className={styles.form}>
-        <div className={styles.inputGroup}>
-          <label htmlFor="id" className={styles.label}>
-            ID de usuário <span className={styles.required}>*</span>
-          </label>
-          <div className={styles.inputWrapper}>
-            <input
-              type="text"
-              id="id"
-              name="id"
-              placeholder="Seu id"
-              value={formData.id}
-              onChange={handleChange}
-              className={styles.input}
-            />
-          </div>
-        </div>
         <div className={styles.inputGroup}>
           <label htmlFor="name" className={styles.label}>
             Nome Completo <span className={styles.required}>*</span>
