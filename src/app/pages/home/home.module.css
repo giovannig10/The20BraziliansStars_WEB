@@ -1,7 +1,6 @@
 .containerPai {
   background-color: var(--cinza-fundo);
   width: 100%;
-  height: 300vh;  
 }
 
 .containerHeader {
@@ -11,15 +10,38 @@
 
 .containerHeroSection {
   width: 100%;
-  height: 20%;
+  height: 25rem;
   color: var(--azul);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logoImage{
+  width: auto;
+  height: 50%;
+}
+.buttonImageContainer{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.containerButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
 }
 
 .containerTituloLogo {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 
 .containerTitulo {
@@ -41,11 +63,11 @@
 }
 
 .containerLogo {
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 70%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -53,18 +75,10 @@
   height: 100%;
 }
 
-.containerButton {
-  width: 98%;
-  height: 20%;
-  display: flex;
-  justify-content: flex-end;
-  align-items:center;
-}
-
 .conheca {
   background-color: var(--azul);
   color: white;
-  width: 55%;
+  width: 80%;
   border-radius: 5px;
   text-align: center;
   height: 5rem;
@@ -73,12 +87,12 @@
   align-items: center;
   border: none;
 
-  .a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: bold;
-  }
+}
+.buttonText {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 .conheca:hover {
@@ -95,7 +109,7 @@
   transition: background-color 0.2s ease, border 0.3s ease;
   border: 2px solid var(--azul);
 
-  .a {
+  .buttonText {
     color: var(--azul);
     text-decoration: none;
     font-size: 1.6rem;
@@ -239,5 +253,14 @@
     font-size: 2.8rem;
     width: 100%;
     text-align: center;
+  }
+  @media(max-width: 1024px) {
+    .containerHeroSection {
+      display: flex;
+      flex-direction: column;
+    }
+    .buttonText{
+      font-size: 12px;
+    }
   }
 }
