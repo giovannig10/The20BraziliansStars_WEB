@@ -221,7 +221,7 @@ export default function TeamPage() {
               <div className={styles.containerStadiumTitle}>
                 <h1> Estádio </h1>
               </div>
-              <CarouselStadium items={items} />
+              <CarouselStadium team={team} />
             </div>
           </div>
 
