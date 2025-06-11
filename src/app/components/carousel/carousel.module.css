@@ -126,6 +126,11 @@
     box-shadow: 0 0 16px 8px rgb(255, 255, 255);
 }
 
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .carouselButton {
     position: absolute;
     top: 50%;

@@ -16,6 +16,8 @@ import { useParams } from "next/navigation";
 import { IoHomeOutline } from "react-icons/io5";
 import { BsFillShieldFill } from "react-icons/bs";
 import { IoPersonOutline } from "react-icons/io5";
+import { PiCursorFill } from "react-icons/pi";
+
 
 const items = [
   {
@@ -51,8 +53,7 @@ export default function TeamPage() {
   const [teams, setTeams] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [showModal, setShowModal] = useState(false);
-
+  const [showCard, setShowCard] = useState(false);
 
   useEffect(() => {
     const fetchTeams = async () => {
@@ -88,21 +89,22 @@ export default function TeamPage() {
   }
   return (
     <div className={styles.container}>
-      
       <Header
         homeIcon={<IoHomeOutline size={36} color={"white"} />}
         shieldIcon={<BsFillShieldFill size={46} color={"white"} />}
         userIcon={<IoPersonOutline size={36} color={"white"} />}
       />
 
-
       <main className={styles.main}>
         <div className={styles.pai}>
           <div className={styles.containerTeam}>
-
-  <div className={styles.containerBanner}>
+            <div className={styles.containerBanner}>
               <div className={styles.banner}>
-                <img className={styles.bannerImage} src="https://img.freepik.com/vetores-gratis/fundo-preto-listrado-padrao-simples-em-vetor-branco_53876-151306.jpg?semt=ais_hybrid&w=740" alt="" />
+                <img
+                  className={styles.bannerImage}
+                  src="https://img.freepik.com/vetores-gratis/fundo-preto-listrado-padrao-simples-em-vetor-branco_53876-151306.jpg?semt=ais_hybrid&w=740"
+                  alt=""
+                />
               </div>
 
               <div className={styles.line}>
@@ -116,7 +118,46 @@ export default function TeamPage() {
               <div className={styles.containerInfosFilho}>
                 <div className={styles.tituloContainer}>
                   <h1 className={styles.name}>{team.name}</h1>
-                  <h2 className={styles.history}>Conheça um pouco da historia do {team.nickname}!</h2>
+                  <h2
+                    className={styles.history}
+                    onClick={() => setShowCard(true)}
+                  >
+                    Conheça um pouco da historia do {team.nickname}!
+                     <PiCursorFill />
+                  </h2>
+                  {showCard && (
+                    <div className={styles.popupCard}>
+                      <div className={styles.popupContent}>
+                        <div className={styles.popUpHeader}>
+                          <div className={styles.containerTitle}>
+                            <h2>História do {team.name}</h2>
+                          </div>
+
+                          <div className={styles.containerX}>
+                            <button
+                              className={styles.closeBtn}
+                              onClick={() => setShowCard(false)}
+                            >
+                              X
+                            </button>
+                          </div>
+                        </div>
+
+                        <div className={styles.linhaPopUpPai}>
+                          <div className={styles.linhaPopUp}></div>
+                        </div>
+
+                        <div className={styles.popUpHistory}>
+                          <div className={styles.popUpHistoryContent}>
+                            <p className={styles.historyText}>{team.history}</p>
+                            <p className={styles.historyText}>{team.history2}</p>
+                            </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <div className={styles.containerTrofeus}>
                   {/* <img src="" alt="" /> */}
@@ -124,7 +165,11 @@ export default function TeamPage() {
                 <div className={styles.divisoria}></div>
                 <div className={styles.hino}>
                   <div className={styles.uniforme1}>
-                    <img className={styles.uniformImage} src={team.uniformHome} alt="Uniforme Home" />
+                    <img
+                      className={styles.uniformImage}
+                      src={team.uniformHome}
+                      alt="Uniforme Home"
+                    />
                   </div>
                   <div className={styles.hinoText}>
                     <div className={styles.year}>
@@ -135,7 +180,11 @@ export default function TeamPage() {
                     </div>
                   </div>
                   <div className={styles.uniforme2}>
-                    <img className={styles.uniformImage} src={team.uniformAway} alt="Uniforme Away" />
+                    <img
+                      className={styles.uniformImage}
+                      src={team.uniformAway}
+                      alt="Uniforme Away"
+                    />
                   </div>
                 </div>
               </div>
@@ -187,7 +236,7 @@ export default function TeamPage() {
               <BallPosition backgroundColor="blue" name="ATA" />
             </div>
             <div className={styles.playersContent}>
-              <PlayersCard teamName={team.name}/>
+              <PlayersCard teamName={team.name} />
             </div>
           </div>
         </div>
