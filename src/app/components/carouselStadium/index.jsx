@@ -1,10 +1,12 @@
-// components/Carousel.js
 "use client";
 
 import { useState, useEffect, useRef } from "react";
 import styles from "./carousel.module.css";
 
-const CarouselStadium = ({ items }) => {
+export default function CarouselStadium({ team }) {
+  // Cria array de imagens válidas
+  const images = [team.stadiumImage1, team.stadiumImage2, team.stadiumImage3].filter(Boolean);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const carouselRef = useRef(null);
@@ -12,11 +14,8 @@ const CarouselStadium = ({ items }) => {
   // Número de slides visíveis por vez
   const visibleSlides = 1;
 
-  // Número total de posições únicas no carrossel
-  const totalItems = items.length;
-
-  // Duplica os itens para criar efeito de loop infinito
-  const extendedItems = [...items, ...items.slice(0, visibleSlides)];
+  // Número total de imagens
+  const totalImages = images.length;
 
   // Função para navegar para um slide específico
   const goToSlide = (index) => {
@@ -24,52 +23,44 @@ const CarouselStadium = ({ items }) => {
 
     setIsAnimating(true);
 
-    // Normaliza o índice para que fique dentro dos limites do array original
     let normalizedIndex = index;
 
-    if (index >= totalItems) {
+    if (index >= totalImages) {
       normalizedIndex = 0;
     } else if (index < 0) {
-      normalizedIndex = totalItems - 1;
+      normalizedIndex = totalImages - 1;
     }
 
     setCurrentIndex(normalizedIndex);
 
-    // Desativa a animação após a transição
     setTimeout(() => {
       setIsAnimating(false);
-    }, 500); // Igual à duração da transição CSS
+    }, 500);
   };
 
-  // Move apenas um card por vez
+  // Próximo slide
   const nextSlide = () => {
     goToSlide(currentIndex + 1);
   };
 
-  // Move apenas um card por vez
+  // Slide anterior
   const prevSlide = () => {
     goToSlide(currentIndex - 1);
   };
 
   // Reset para a primeira posição quando chegamos ao final
   useEffect(() => {
-    if (currentIndex >= totalItems) {
-      // Usando setTimeout para permitir que a animação termine
+    if (currentIndex >= totalImages) {
       setTimeout(() => {
-        // Desativa a transição temporariamente para um reset instantâneo
         if (carouselRef.current) {
           carouselRef.current.style.transition = "none";
           setCurrentIndex(0);
-
-          // Força um reflow para aplicar a mudança antes de reativar a transição
           void carouselRef.current.offsetWidth;
-
-          // Reativa a transição
           carouselRef.current.style.transition = "transform 0.5s ease";
         }
       }, 500);
     }
-  }, [currentIndex, totalItems]);
+  }, [currentIndex, totalImages]);
 
   return (
     <div className={styles.carouselContainer}>
@@ -101,26 +92,21 @@ const CarouselStadium = ({ items }) => {
             transform: `translateX(-${currentIndex * (100 / visibleSlides)}%)`,
           }}
         >
-          {extendedItems.map((item, index) => (
-            <div key={`${item.id}-${index}`} className={styles.carouselItem}>
-              <div className={styles.carouselCard}>
-                <div className={styles.cardImageContainer}>
-                  <img
-                    src={item.image[0]}
-                    alt={item.name}
-                    className={styles.cardImage}
-                  />
-                </div>
-                <div className={styles.cardContent}>
-                  <div className={styles.cardInfo}>
-                    <p className={styles.cardDescription}>
-                      Localização: 📍{item.location}{" "}
-                    </p>
-                    <span className={styles.cardDate}>
-                      Capacidade: 👥{item.capacity}{" "}
-                    </span>
-                  </div>
-                </div>
+          {images.map((img, idx) => (
+            <div key={idx} className={styles.carouselItem}>
+              <div className={styles.cardImageContainer}>
+                <img src={img} alt={team.stadiumName} className={styles.cardImage} />
+              </div>
+              <div className={styles.cardContent}>
+                <p className={styles.cardDescription}>
+                  Estádio: {team.stadiumName}
+                </p>
+                <p className={styles.cardDescription}>
+                  Localização: 📍{team.stadiumLocation}
+                </p>
+                <span className={styles.cardDate}>
+                  Capacidade: 👥{team.stadiumCapacity}
+                </span>
               </div>
             </div>
           ))}
@@ -149,7 +135,7 @@ const CarouselStadium = ({ items }) => {
 
       {/* Indicadores de paginação (bolinhas) */}
       <div className={styles.pagination}>
-        {items.map((_, index) => (
+        {images.map((_, index) => (
           <button
             key={index}
             className={`${styles.paginationDot} ${
@@ -162,6 +148,4 @@ const CarouselStadium = ({ items }) => {
       </div>
     </div>
   );
-};
-
-export default CarouselStadium;
+}

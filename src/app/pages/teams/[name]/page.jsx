@@ -11,33 +11,6 @@ import { useParams } from "next/navigation";
 
 
 export default function teamPage() {
-const items = [
-  {
-    name: "Estádio Mineirão",
-    image: [
-      "https://www.estadios.net/wp-content/uploads/2018/12/estadio-mineirao.jpg",
-    ],
-    location: "Belo Horizonte - MG",
-    capacity: "61.500",
-  },
-  {
-    name: "Estádio Mineirão",
-    image: [
-      "https://www.aeroportoconfins.net/wp-content/uploads/2014/06/mineirao.jpg",
-    ],
-    location: "Belo Horizonte - MG",
-    capacity: "61.500",
-  },
-  {
-    name: "Estádio Mineirão",
-    image: [
-      "https://portalbelohorizonte.com.br/sites/default/files/arquivos/ao-ar-livre-e-esportes/2021-07/mineirao-6.jpg",
-    ],
-    location: "Belo Horizonte - MG",
-    capacity: "61.500",
-  },
-
-];
 
     const url = "https://tbs-back.coolify.fps92.dev/teams";
     const params = useParams();
@@ -87,6 +60,6 @@ const items = [
         );
     }
   return (
-    <Team items={items} team={team}/>
+    <Team team={team}/>
   );
 }
