@@ -4,12 +4,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.2rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 .card {
     width: 15%;
-    height: 20%;
+    height: 28rem;
     border-radius: 10px;
     margin-left: 2rem;
     margin-right: 2rem;

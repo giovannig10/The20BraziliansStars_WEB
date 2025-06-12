@@ -103,7 +103,7 @@ const ContactPage = () => {
             <div className={styles.imageContainer}>
               <img
                 className={styles.imageGroup}
-                src="/images/grupo.jpg"
+                src="/images/grupo.jpeg"
                 alt=""
               />
             </div>

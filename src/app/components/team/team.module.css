@@ -1,5 +1,5 @@
 .container {
-    height: 500vh;
+    min-height: 200vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@
 }
 
 .line {
-    height: 5%;
+    height: 2rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -56,6 +56,7 @@
 }
 
 .shield {
+    margin-bottom: 13rem;
     width: 20rem;
     height: 30rem;
     display: flex;
@@ -105,6 +106,7 @@
 }
 
 .history {
+    margin: 2rem;
   font-weight: bold;
   font-size: 1.4rem;
   cursor: pointer;
@@ -265,7 +267,8 @@
 }
 
 .divisoria {
-    height: 2%;
+    margin-top: 1rem;
+    height: 0.3rem;
     width: 100%;
     background-color: var(--azul);
 }
@@ -328,11 +331,13 @@
 }
 
 .containerInfos2 {
-    height: 20%;
+    margin-top: 7rem;
+    height: auto;
     width: 100%;
 }
 
 .containerRetrospectiva {
+    margin-bottom: 2rem;
     height: 30%;
     width: 100%;
     display: flex;
@@ -410,7 +415,7 @@
 }
 
 .containerStadium {
-    height: 60%;
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
@@ -441,7 +446,7 @@
     font-weight: bold;
 }
 
-.containerStadiumImages {
+/* .containerStadiumImages {
     display: flex;
     width: 98%;
     height: 98%;
@@ -507,14 +512,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .containerPlayers {
-    height: 55%;
+    height: auto;
     width: 100%;
 }
 
 .containerPlayersTitle {
+    margin-bottom: 2rem;
     height: 5%;
     width: 100%;
     display: flex;
@@ -533,6 +539,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: row;
+    margin-bottom: 2rem;
 }
 
 .playersContent {
@@ -541,4 +548,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
