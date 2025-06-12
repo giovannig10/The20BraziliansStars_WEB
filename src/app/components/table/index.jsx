@@ -7,8 +7,7 @@ import axios from "axios";
 
 const Tabela = () => {
   const urlTeams = "https://tbs-back.coolify.fps92.dev/teams";
-    const urlGames = "https://tbs-back.coolify.fps92.dev/games";
-  // const urlGames = "http://localhost:4000/games";
+  const urlGames = "https://tbs-back.coolify.fps92.dev/games";
 
   const [teams, setTeams] = useState([]);
   const [games, setGames] = useState([]);
@@ -57,11 +56,11 @@ const Tabela = () => {
     time.losses = 0;
     time.draws = 0;
 
-    time.retrospect = time.retrospect || [""];
+    time.retrospect = [null, null, null, null, null];
 
     games.forEach((jogo) => {
       if (jogo.homeTeam === time.name) {
-        time.games ++;
+        time.games++;
         time.goalsFavor += jogo.homeGoals;
         time.goalsOwn += jogo.awayGoals;
 
@@ -105,30 +104,31 @@ const Tabela = () => {
     time.points = time.wins * 3 + time.draws * 1 + time.losses * 0;
     time.goalsDifference = time.goalsFavor - time.goalsOwn;
   });
-  let tabela = teams.sort((timeA, timeB) => {
-    if (timeA.points == timeB.points) {
-      if (timeA.wins == timeB.wins) {
-        if (timeA.goalsDifference == timeB.goalsDifference) {
-          return timeA.goalsFavor - timeB.goalsFavor;
-        }
 
-        return timeB.goalsDifference - timeA.goalsDifference;
+let tabela = teams.sort((timeA, timeB) => {
+  if (timeA.points == timeB.points) {
+    if (timeA.wins == timeB.wins) {
+      if (timeA.goalsDifference == timeB.goalsDifference) {
+        return timeA.goalsFavor - timeB.goalsFavor;
       }
 
-      return timeB.wins - timeA.wins;
+      return timeB.goalsDifference - timeA.goalsDifference;
     }
 
-    return timeB.points - timeA.points;
-  });
+    return timeB.wins - timeA.wins;
+  }
 
-  console.log(tabela);
-  return (
-    <section className={styles.cardsList}>
-      {teams.map((team, index) => (
-        <TableItem key={team.id} team={team} index={index} zebra={index % 2 === 0 ? "zebra" : ""}/>
-      ))}
-    </section>
-  );
+  return timeB.points - timeA.points;
+});
+
+console.log(tabela);
+return (
+  <section className={styles.cardsList}>
+    {teams.map((team, index) => (
+      <TableItem key={team.id} team={team} index={index} zebra={index % 2 === 0 ? "zebra" : ""} />
+    ))}
+  </section>
+);
 };
 
 export default Tabela;
