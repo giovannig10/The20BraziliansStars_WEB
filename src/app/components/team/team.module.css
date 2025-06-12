@@ -56,17 +56,19 @@
 }
 
 .shield {
-    width: 15rem;
-    height: 20rem;
+    width: 20rem;
+    height: 30rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .imagem {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
+    object-position: top;
 }
 
 .containerInfos {
@@ -112,7 +114,6 @@
   box-shadow: 0 2px 12px rgba(0,0,0,0.50);
   transition: background 0.2s, color 0.2s, transform 0.2s;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .history:hover {
@@ -138,7 +139,8 @@
   justify-content: center;
   align-items: flex-start;
   width: 70rem;
-  height: 48rem;
+  min-height: 35rem;
+  max-height: 55rem;
   border-radius: 1rem;
   box-shadow: inset 0 0 24px rgba(0,0,0,0.9);
   border: none;
@@ -178,9 +180,10 @@
 }
 
 .linhaPopUp {
-    height: 50%;
+    height: 4px; /* Use um valor fixo para altura */
     width: 90%;
     background-color: var(--azul);
+    border-radius: 2px;
 }
 
 .containerX {
@@ -235,6 +238,7 @@
     width: 100%;
     height: 100%;
     padding: 2rem;
+    line-height: 1.5;
     text-align: justify;
 }
 
@@ -324,12 +328,12 @@
 }
 
 .containerInfos2 {
-    height: 15%;
+    height: 20%;
     width: 100%;
 }
 
 .containerRetrospectiva {
-    height: 50%;
+    height: 30%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -406,7 +410,7 @@
 }
 
 .containerStadium {
-    height: 100%;
+    height: 60%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -426,8 +430,86 @@
     font-size: 1.2rem;
 }
 
+.containerStadiumContent {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+    font-weight: bold;
+}
+
+.containerStadiumImages {
+    display: flex;
+    width: 98%;
+    height: 98%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stadiumImage {
+    width: 30%;
+    height: 70%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+    background-color: var(--azul);
+}
+
+.imageStadium {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+.stadiumImage:hover {
+    transform: scale(1.15);
+    transition: transform 0.8s ease-in-out;
+    border-radius: 0.2rem;
+}
+
+.infosStadium {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--azul);
+    font-size: 1.2rem;
+}
+
+.infos {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.locationPai {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.capacityPai {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .containerPlayers {
-    margin-top: 15rem;
     height: 55%;
     width: 100%;
 }

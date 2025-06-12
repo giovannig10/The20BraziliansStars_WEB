@@ -97,7 +97,7 @@ export default function PlayersCard({ teamName }) {
               <h1>#{players.number}</h1>
             </div>
             <div className={styles.cardPlayerInfos}>
-              <h2 className={styles.height}>{players.height}</h2>
+              <h2 className={styles.height}>{players.height}m</h2>
               <h2 className={styles.age}>{players.birthdayYear}</h2>
             </div>
 
@@ -106,7 +106,7 @@ export default function PlayersCard({ teamName }) {
                 <img
                   className={styles.nationalityImage}
                   src={players.nationalityImage}
-                  alt=""
+                  alt="Imagem da nacionalidade"
                 />
               </div>
             </div>
@@ -115,7 +115,7 @@ export default function PlayersCard({ teamName }) {
               <div
                 className={styles.position}
                 style={{
-                  backgroundColor: positionColors[players.position] || "gray",
+                  backgroundColor: positionColors[players.position?.toLowerCase()] || "gray",
                 }}
               ></div>
             </div>
