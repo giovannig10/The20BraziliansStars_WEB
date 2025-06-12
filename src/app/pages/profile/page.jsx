@@ -49,11 +49,6 @@ const ProfilePage = () => {
                 <Edit3 size={32} color="#25406A" />
               </span>
             </a>
-            <button className={styles.profileEdit}>
-              <span className={styles.profileButtonIcon}>
-                <Heart size={32} color="#25406A" />
-              </span>
-            </button>
           </div>
         </div>
       </div>
