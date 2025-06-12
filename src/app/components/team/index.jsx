@@ -47,10 +47,14 @@ const items = [
 ];
 
 export default function TeamPage() {
-  const url = "https://tbs-back.coolify.fps92.dev/teams";
+  const urlTeams = "https://tbs-back.coolify.fps92.dev/teams";
+  const urlTitles = "https://tbs-back.coolify.fps92.dev/titles";
+  const urlGames = "https://tbs-back.coolify.fps92.dev/games";
   const params = useParams();
 
   const [teams, setTeams] = useState([]);
+  const [titles, setTitles] = useState([]);
+  const [games, setGames] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [showCard, setShowCard] = useState(false);
@@ -59,7 +63,7 @@ export default function TeamPage() {
     const fetchTeams = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(url);
+        const response = await axios.get(urlTeams);
         setTeams(response.data);
         setLoading(false);
       } catch (error) {
@@ -69,7 +73,36 @@ export default function TeamPage() {
         setLoading(false);
       }
     };
+    const fetchTitles = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(urlTitles);
+        setTitles(response.data.titles);
+        setLoading(false);
+      } catch (error) {
+        console.log("Erro ao buscar titulos na API");
+        console.error(error);
+        setError("Não foi possível carregar os titulos.");
+        setLoading(false);
+      }
+    };
+    const fetchGames = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(urlGames);
+        setGames(response.data.games);
+        setLoading(false);
+      } catch (error) {
+        console.log("Erro ao buscar jogos na API");
+        console.error(error);
+        setError("Não foi possível carregar os jogos.");
+        setLoading(false);
+      }
+    };
+
+    fetchGames();
     fetchTeams();
+    fetchTitles();
   }, []);
 
   if (loading) {
@@ -87,6 +120,42 @@ export default function TeamPage() {
   if (!team) {
     return <div className={styles.error}>Time não encontrado.</div>;
   }
+
+  teams.forEach((time) => {
+    time.retrospect = [null, null, null, null, null];
+
+    games.forEach((jogo) => {
+      if (jogo.homeTeam === time.name) {
+        if (jogo.homeGoals > jogo.awayGoals) {
+          time.retrospect.shift();
+          time.retrospect.push("V");
+        } else if (jogo.homeGoals < jogo.awayGoals) {
+          time.retrospect.shift();
+          time.retrospect.push("D");
+        } else {
+          time.retrospect.shift();
+          time.retrospect.push("E");
+        }
+      }
+
+      if (jogo.awayTeam === time.name) {
+        if (jogo.awayGoals > jogo.homeGoals) {
+          time.retrospect.shift();
+          time.retrospect.push("V");
+        } else if (jogo.awayGoals < jogo.homeGoals) {
+          time.retrospect.shift();
+          time.retrospect.push("D");
+        } else {
+          time.retrospect.shift();
+          time.retrospect.push("E");
+        }
+      }
+    });
+
+    time.points = time.wins * 3 + time.draws * 1 + time.losses * 0;
+    time.goalsDifference = time.goalsFavor - time.goalsOwn;
+  });
+
   return (
     <div className={styles.container}>
       <Header
@@ -102,14 +171,14 @@ export default function TeamPage() {
               <div className={styles.banner}>
                 <img
                   className={styles.bannerImage}
-                  src="https://img.freepik.com/vetores-gratis/fundo-preto-listrado-padrao-simples-em-vetor-branco_53876-151306.jpg?semt=ais_hybrid&w=740"
-                  alt=""
+                  src={team.teamBanner}
+                  alt={`Banner do ${team.nickName}`}
                 />
               </div>
 
               <div className={styles.line}>
                 <div className={styles.shield}>
-                  <img className={styles.imagem} src={team.shield} alt="" />
+                  <img className={styles.imagem} src={team.shield} alt={team.name} />
                 </div>
               </div>
             </div>
@@ -123,7 +192,7 @@ export default function TeamPage() {
                     onClick={() => setShowCard(true)}
                   >
                     Conheça um pouco da historia do {team.nickname}!
-                     <PiCursorFill />
+                    <PiCursorFill />
                   </h2>
                   {showCard && (
                     <div className={styles.popupCard}>
@@ -151,7 +220,7 @@ export default function TeamPage() {
                           <div className={styles.popUpHistoryContent}>
                             <p className={styles.historyText}>{team.history}</p>
                             <p className={styles.historyText}>{team.history2}</p>
-                            </div>
+                          </div>
                         </div>
 
 
@@ -160,7 +229,19 @@ export default function TeamPage() {
                   )}
                 </div>
                 <div className={styles.containerTrofeus}>
-                  {/* <img src="" alt="" /> */}
+                  {team.titles.split("").map(Number).map((titleId, idx) => {
+                    const titulo = titles.find(t => t.id === titleId);
+                    if (!titulo) return null;
+                    return (
+                      <div key={idx} className={styles.titleItem}>
+                        <img
+                          className={styles.titleImage}
+                          src={titulo.imageUrl}
+                          alt={titulo.name}
+                        />
+                      </div>
+                    );
+                  })}
                 </div>
                 <div className={styles.divisoria}></div>
                 <div className={styles.hino}>
@@ -197,51 +278,61 @@ export default function TeamPage() {
                 <h1> Retrospecto Recente </h1>
               </div>
               <div className={styles.containerResultados}>
-                <div className={styles.result}>
-                  <div className={styles.win}>
-                    <h1>V</h1>
-                  </div>
-                  <div className={styles.draw}>
-                    <h1>E</h1>
-                  </div>
-                  <div className={styles.lose}>
-                    <h1>D</h1>
-                  </div>
-                  <div className={styles.draw}>
-                    <h1>E</h1>
-                  </div>
-                  <div className={styles.win}>
-                    <h1>V</h1>
-                  </div>
+                {team.retrospect.map((resultado, index) => {
+                  if (resultado === "V") {
+                    return (
+                      <div key={index} className={styles.victory}>
+                        <h2>V</h2>
+                      </div>
+                    );
+                  } else if (resultado === "D") {
+                    return (
+                      <div key={index} className={styles.defeat}>
+                        <h2>D</h2>
+                      </div>
+                    );
+                  } else if (resultado === "E") {
+                    return (
+                      <div key={index} className={styles.draw}>
+                        <h2>E</h2>
+                      </div>
+                    );
+                  } else {
+                    return (
+                      <div key={index} className={styles.empty}>
+                        -
+                      </div>
+                    );
+                  }
+                }
+                )}
+              </div>
+
+              <div className={styles.containerStadium}>
+                <div className={styles.containerStadiumTitle}>
+                  <h1> Estádio </h1>
                 </div>
+                <CarouselStadium team={team} />
               </div>
             </div>
 
-            <div className={styles.containerStadium}>
-              <div className={styles.containerStadiumTitle}>
-                <h1> Estádio </h1>
+            <div className={styles.containerPlayers}>
+              <div className={styles.containerPlayersTitle}>
+                <h1>Principais Jogadores</h1>
               </div>
-              <CarouselStadium team={team} />
+              <div className={styles.containerPlayersPositions}>
+                <BallPosition backgroundColor="red" name="GOL" />
+                <BallPosition backgroundColor="orange" name="DEF" />
+                <BallPosition backgroundColor="green" name="MC" />
+                <BallPosition backgroundColor="blue" name="ATA" />
+              </div>
+              <div className={styles.playersContent}>
+                <PlayersCard teamName={team.name} />
+              </div>
             </div>
           </div>
-
-          <div className={styles.containerPlayers}>
-            <div className={styles.containerPlayersTitle}>
-              <h1>Principais Jogadores</h1>
-            </div>
-            <div className={styles.containerPlayersPositions}>
-              <BallPosition backgroundColor="red" name="GOL" />
-              <BallPosition backgroundColor="orange" name="DEF" />
-              <BallPosition backgroundColor="green" name="MC" />
-              <BallPosition backgroundColor="blue" name="ATA" />
-            </div>
-            <div className={styles.playersContent}>
-              <PlayersCard teamName={team.name} />
-            </div>
           </div>
-        </div>
       </main>
-
       <Footer />
     </div>
   );
