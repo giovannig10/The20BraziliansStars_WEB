@@ -245,6 +245,20 @@
     justify-content: center;
     align-items: center;
 }
+.titleItem {
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--azul);
+    font-size: 1.5rem;
+}
+.titleImage {
+    width: 100%;
+    height: auto;
+}
 
 .divisoria {
     height: 2%;
