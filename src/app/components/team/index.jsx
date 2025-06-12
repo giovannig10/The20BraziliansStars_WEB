@@ -287,51 +287,7 @@ export default function TeamPage() {
             </div>
 
             <div className={styles.containerStadium}>
-              <div className={styles.containerStadiumTitle}>
-                <h1> Estádio: {team.stadiumName} </h1>
-              </div>
 
-              <div className={styles.containerStadiumContent}>
-                <div className={styles.containerStadiumImages}>
-                  <div className={styles.stadiumImage}>
-                    <img
-                      src={team.stadiumImage1}
-                      className={styles.imageStadium1}
-                      alt="Imagem do estádio"
-                    />
-                  </div>
-                  <div className={styles.stadiumImage}>
-                    <img
-                      src={team.stadiumImage1}
-                      className={styles.imageStadium2}
-                      alt="Imagem do estádio"
-                    />
-                  </div>
-                  <div className={styles.stadiumImage}>
-                    <img
-                      src={team.stadiumImage1}
-                      className={styles.imageStadium3}
-                      alt="Imagem do estádio"
-                    />
-                  </div>
-
-                  <div className={styles.infosStadium}>
-                    <div className={styles.infos}>
-                      <div className={styles.locationPai}>
-                        <h2 className={styles.location}>
-                          Localização: {team.stadiumLocality}
-                        </h2>
-                      </div>
-
-                      <div className={styles.capacityPai}>
-                        <h2 className={styles.capacity}>
-                          Capacidade: {team.stadiumCapacity}{" "}
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
