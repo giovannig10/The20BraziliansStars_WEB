@@ -37,8 +37,10 @@ export default function PlayersCard({ teamName }) {
         );
 
         filtered.sort((a, b) => {
-          if (a.position === "goleiro" && b.position !== "goleiro") return -1;
-          if (a.position !== "goleiro" && b.position === "goleiro") return 1;
+          const order = ["goleiro", "defensor", "meio-campista", "atacante"];
+          const posA = order.indexOf(a.position?.toLowerCase());
+          const posB = order.indexOf(b.position?.toLowerCase());
+          if (posA !== posB) return posA - posB;
           return a.name.localeCompare(b.name, "pt-BR");
         });
 
@@ -115,7 +117,8 @@ export default function PlayersCard({ teamName }) {
               <div
                 className={styles.position}
                 style={{
-                  backgroundColor: positionColors[players.position?.toLowerCase()] || "gray",
+                  backgroundColor:
+                    positionColors[players.position?.toLowerCase()] || "gray",
                 }}
               ></div>
             </div>
