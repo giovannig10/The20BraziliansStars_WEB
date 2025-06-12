@@ -18,34 +18,6 @@ import { BsFillShieldFill } from "react-icons/bs";
 import { IoPersonOutline } from "react-icons/io5";
 import { PiCursorFill } from "react-icons/pi";
 
-
-const items = [
-  {
-    name: "Estádio Mineirão",
-    image: [
-      "https://www.estadios.net/wp-content/uploads/2018/12/estadio-mineirao.jpg",
-    ],
-    location: "Belo Horizonte - MG",
-    capacity: "61.500",
-  },
-  {
-    name: "Estádio Mineirão",
-    image: [
-      "https://www.aeroportoconfins.net/wp-content/uploads/2014/06/mineirao.jpg",
-    ],
-    location: "Belo Horizonte - MG",
-    capacity: "61.500",
-  },
-  {
-    name: "Estádio Mineirão",
-    image: [
-      "https://portalbelohorizonte.com.br/sites/default/files/arquivos/ao-ar-livre-e-esportes/2021-07/mineirao-6.jpg",
-    ],
-    location: "Belo Horizonte - MG",
-    capacity: "61.500",
-  },
-];
-
 export default function TeamPage() {
   const url = "https://tbs-back.coolify.fps92.dev/teams";
   const params = useParams();
@@ -102,14 +74,14 @@ export default function TeamPage() {
               <div className={styles.banner}>
                 <img
                   className={styles.bannerImage}
-                  src="https://img.freepik.com/vetores-gratis/fundo-preto-listrado-padrao-simples-em-vetor-branco_53876-151306.jpg?semt=ais_hybrid&w=740"
-                  alt=""
+                  src={team.teamBanner}
+                  alt="Banner do time"
                 />
               </div>
 
               <div className={styles.line}>
                 <div className={styles.shield}>
-                  <img className={styles.imagem} src={team.shield} alt="" />
+                  <img className={styles.imagem} src={team.shield} alt="Escudo da equipe" />
                 </div>
               </div>
             </div>
@@ -122,7 +94,7 @@ export default function TeamPage() {
                     className={styles.history}
                     onClick={() => setShowCard(true)}
                   >
-                    Conheça um pouco da historia do {team.nickname}!
+                    Conheça um pouco da historia do {team.nickName}!
                      <PiCursorFill />
                   </h2>
                   {showCard && (

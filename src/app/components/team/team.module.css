@@ -56,17 +56,19 @@
 }
 
 .shield {
-    width: 15rem;
-    height: 20rem;
+    width: 20rem;
+    height: 30rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .imagem {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
+    object-position: top;
 }
 
 .containerInfos {
@@ -138,7 +140,8 @@
   justify-content: center;
   align-items: flex-start;
   width: 70rem;
-  height: 48rem;
+  min-height: 35rem;
+  max-height: 55rem;
   border-radius: 1rem;
   box-shadow: inset 0 0 24px rgba(0,0,0,0.9);
   border: none;
@@ -178,9 +181,10 @@
 }
 
 .linhaPopUp {
-    height: 50%;
+    height: 4px; /* Use um valor fixo para altura */
     width: 90%;
     background-color: var(--azul);
+    border-radius: 2px;
 }
 
 .containerX {
@@ -235,6 +239,7 @@
     width: 100%;
     height: 100%;
     padding: 2rem;
+    line-height: 1.5;
     text-align: justify;
 }
 
