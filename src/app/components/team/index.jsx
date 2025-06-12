@@ -7,7 +7,6 @@ import styles from "./team.module.css";
 import Header from "../header";
 import Footer from "../footer";
 import Loading from "../loading";
-import CarouselStadium from "../carouselStadium";
 import PlayersCard from "../playersCard";
 import BallPosition from "../ballPosition";
 
@@ -17,34 +16,6 @@ import { IoHomeOutline } from "react-icons/io5";
 import { BsFillShieldFill } from "react-icons/bs";
 import { IoPersonOutline } from "react-icons/io5";
 import { PiCursorFill } from "react-icons/pi";
-
-
-const items = [
-  {
-    name: "Estádio Mineirão",
-    image: [
-      "https://www.estadios.net/wp-content/uploads/2018/12/estadio-mineirao.jpg",
-    ],
-    location: "Belo Horizonte - MG",
-    capacity: "61.500",
-  },
-  {
-    name: "Estádio Mineirão",
-    image: [
-      "https://www.aeroportoconfins.net/wp-content/uploads/2014/06/mineirao.jpg",
-    ],
-    location: "Belo Horizonte - MG",
-    capacity: "61.500",
-  },
-  {
-    name: "Estádio Mineirão",
-    image: [
-      "https://portalbelohorizonte.com.br/sites/default/files/arquivos/ao-ar-livre-e-esportes/2021-07/mineirao-6.jpg",
-    ],
-    location: "Belo Horizonte - MG",
-    capacity: "61.500",
-  },
-];
 
 export default function TeamPage() {
   const urlTeams = "https://tbs-back.coolify.fps92.dev/teams";
@@ -178,7 +149,11 @@ export default function TeamPage() {
 
               <div className={styles.line}>
                 <div className={styles.shield}>
-                  <img className={styles.imagem} src={team.shield} alt={team.name} />
+                  <img
+                    className={styles.imagem}
+                    src={team.shield}
+                    alt="Escudo da equipe"
+                  />
                 </div>
               </div>
             </div>
@@ -191,7 +166,7 @@ export default function TeamPage() {
                     className={styles.history}
                     onClick={() => setShowCard(true)}
                   >
-                    Conheça um pouco da historia do {team.nickname}!
+                    Conheça um pouco da historia do {team.nickName}!
                     <PiCursorFill />
                   </h2>
                   {showCard && (
@@ -219,29 +194,32 @@ export default function TeamPage() {
                         <div className={styles.popUpHistory}>
                           <div className={styles.popUpHistoryContent}>
                             <p className={styles.historyText}>{team.history}</p>
-                            <p className={styles.historyText}>{team.history2}</p>
+                            <p className={styles.historyText}>
+                              {team.history2}
+                            </p>
                           </div>
                         </div>
-
-
                       </div>
                     </div>
                   )}
                 </div>
                 <div className={styles.containerTrofeus}>
-                  {team.titles.split("").map(Number).map((titleId, idx) => {
-                    const titulo = titles.find(t => t.id === titleId);
-                    if (!titulo) return null;
-                    return (
-                      <div key={idx} className={styles.titleItem}>
-                        <img
-                          className={styles.titleImage}
-                          src={titulo.imageUrl}
-                          alt={titulo.name}
-                        />
-                      </div>
-                    );
-                  })}
+                  {team.titles
+                    .split("")
+                    .map(Number)
+                    .map((titleId, idx) => {
+                      const titulo = titles.find((t) => t.id === titleId);
+                      if (!titulo) return null;
+                      return (
+                        <div key={idx} className={styles.titleItem}>
+                          <img
+                            className={styles.titleImage}
+                            src={titulo.imageUrl}
+                            alt={titulo.name}
+                          />
+                        </div>
+                      );
+                    })}
                 </div>
                 <div className={styles.divisoria}></div>
                 <div className={styles.hino}>
@@ -304,34 +282,74 @@ export default function TeamPage() {
                       </div>
                     );
                   }
-                }
-                )}
+                })}
+              </div>
+            </div>
+
+            <div className={styles.containerStadium}>
+              <div className={styles.containerStadiumTitle}>
+                <h1> Estádio: {team.stadiumName} </h1>
               </div>
 
-              <div className={styles.containerStadium}>
-                <div className={styles.containerStadiumTitle}>
-                  <h1> Estádio </h1>
+              <div className={styles.containerStadiumContent}>
+                <div className={styles.containerStadiumImages}>
+                  <div className={styles.stadiumImage}>
+                    <img
+                      src={team.stadiumImage1}
+                      className={styles.imageStadium1}
+                      alt="Imagem do estádio"
+                    />
+                  </div>
+                  <div className={styles.stadiumImage}>
+                    <img
+                      src={team.stadiumImage1}
+                      className={styles.imageStadium2}
+                      alt="Imagem do estádio"
+                    />
+                  </div>
+                  <div className={styles.stadiumImage}>
+                    <img
+                      src={team.stadiumImage1}
+                      className={styles.imageStadium3}
+                      alt="Imagem do estádio"
+                    />
+                  </div>
+
+                  <div className={styles.infosStadium}>
+                    <div className={styles.infos}>
+                      <div className={styles.locationPai}>
+                        <h2 className={styles.location}>
+                          Localização: {team.stadiumLocality}
+                        </h2>
+                      </div>
+
+                      <div className={styles.capacityPai}>
+                        <h2 className={styles.capacity}>
+                          Capacidade: {team.stadiumCapacity}{" "}
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <CarouselStadium team={team} />
               </div>
             </div>
+          </div>
 
-            <div className={styles.containerPlayers}>
-              <div className={styles.containerPlayersTitle}>
-                <h1>Principais Jogadores</h1>
-              </div>
-              <div className={styles.containerPlayersPositions}>
-                <BallPosition backgroundColor="red" name="GOL" />
-                <BallPosition backgroundColor="orange" name="DEF" />
-                <BallPosition backgroundColor="green" name="MC" />
-                <BallPosition backgroundColor="blue" name="ATA" />
-              </div>
-              <div className={styles.playersContent}>
-                <PlayersCard teamName={team.name} />
-              </div>
+          <div className={styles.containerPlayers}>
+            <div className={styles.containerPlayersTitle}>
+              <h1>Principais Jogadores</h1>
+            </div>
+            <div className={styles.containerPlayersPositions}>
+              <BallPosition backgroundColor="red" name="GOL" />
+              <BallPosition backgroundColor="orange" name="DEF" />
+              <BallPosition backgroundColor="green" name="MC" />
+              <BallPosition backgroundColor="blue" name="ATA" />
+            </div>
+            <div className={styles.playersContent}>
+              <PlayersCard teamName={team.name} />
             </div>
           </div>
-          </div>
+        </div>
       </main>
       <Footer />
     </div>

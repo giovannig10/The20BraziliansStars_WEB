@@ -4,7 +4,7 @@ const Teams = ({ team }) => {
   return (
     <a href={`/pages/teams/${team.name}`} className={styles.container}>
       <div className={styles.cardTimeContainer} style={{
-      backgroundImage: `url(${team.fansBackground})`, 
+      backgroundImage: `url(${team.fansbackground})`, 
       backgroundSize: 'cover', 
       backgroundPosition: 'center'
       }}>
